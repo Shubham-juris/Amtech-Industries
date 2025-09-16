@@ -16,7 +16,7 @@ export default function ConfirmationPage() {
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground mb-6">
-            You will receive an email confirmation shortly with your order details. We appreciate your business with Amtech Hub.
+            You will receive an email confirmation shortly with your order details. We appreciate your business with Amtech Industries.
           </p>
           <Button asChild className="bg-primary hover:bg-primary/90">
             <Link href="/">Continue Shopping</Link>

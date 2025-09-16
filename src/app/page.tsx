@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <header className="mb-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary tracking-tight">Welcome to Amtech Hub</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-primary tracking-tight">Welcome to Amtech Industries</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
           Discover the pinnacle of innovation and quality with Amtech Industries. Browse our catalog of cutting-edge products.
         </p>

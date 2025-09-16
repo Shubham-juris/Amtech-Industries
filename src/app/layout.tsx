@@ -10,7 +10,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'Amtech Hub',
+  title: 'Amtech Industries',
   description: 'The official store for Amtech Industries products.',
 };
 

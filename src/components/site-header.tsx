@@ -29,7 +29,7 @@ const menuItems = {
 
 const MenuColumn = ({ title, items }: { title: string; items: string[] }) => (
     <div className="flex flex-col gap-2">
-      <h3 className="text-sm font-semibold text-foreground border-b pb-1 mb-1">{title}</h3>
+      <h3 className="text-sm font-semibold text-primary border-b border-border pb-1 mb-1">{title}</h3>
       <ul className="flex flex-col gap-1">
         {items.map(item => (
           <li key={item}>
@@ -83,7 +83,7 @@ export function SiteHeader() {
                     <ChevronDown className="relative top-[1px] ml-1 h-4 w-4" />
                   </button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-[--radix-dropdown-menu-content-available-width] max-w-7xl p-6" align="start">
+                <DropdownMenuContent className="w-[--radix-dropdown-menu-content-available-width] max-w-7xl p-6 bg-background text-foreground" align="start">
                     <div className="grid grid-cols-5 gap-x-8 gap-y-6">
                         <div className="flex flex-col gap-6">
                            <MenuColumn title="Accessories" items={menuItems['Accessories']} />

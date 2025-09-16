@@ -29,12 +29,12 @@ const menuItems = {
 
 const MenuColumn = ({ title, items }: { title: string; items: string[] }) => (
     <div className="flex flex-col gap-2">
-      <h3 className="text-sm font-semibold text-primary border-b border-border pb-1 mb-1">{title}</h3>
+      <h3 className="text-sm font-semibold text-primary-foreground border-b border-border pb-1 mb-1">{title}</h3>
       <ul className="flex flex-col gap-1">
         {items.map(item => (
           <li key={item}>
             <DropdownMenuItem asChild>
-                <Link href="#" className="text-muted-foreground hover:text-primary w-full">{item}</Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary-foreground w-full">{item}</Link>
             </DropdownMenuItem>
           </li>
         ))}

@@ -9,31 +9,38 @@ import { useState } from 'react';
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { cn } from '@/lib/utils';
 
-const accessories = ['Bags', 'Cap', 'Scarf', 'Sleepwear', 'Socks', 'Towels'];
-const customClothing = ['White Label Clothing', 'Sublimation'];
-const women = ['Dress', 'Coats', 'Jackets', 'Top Wear', 'Leggings', 'Lingerie'];
-const kids = {
-  'Girls Dresses Collection': [],
-  'Infants-0-24-Months': [],
-  'Little-4-7-Yrs': [],
-  'Toddlers-2-4-Yrs': [],
+
+const menuItems = {
+  'Accessories': ['Bags', 'Cap', 'Scarf', 'Sleepwear', 'Socks', 'Towels'],
+  'Custom Clothing': ['White Label Clothing', 'Sublimation'],
+  'Women': ['Dress', 'Coats', 'Jackets', 'Top Wear', 'Leggings', 'Lingerie'],
+  'Kids': ['Girls Dresses Collection', 'Infants-0-24-Months', 'Little-4-7-Yrs', 'Toddlers-2-4-Yrs'],
+  'Men': ['Hoody', 'Jackets', 'Pants', 'T-shirts', 'Shirts', 'Underwear'],
+  'Footwear': ['Flipflops', 'Formal Shoes', 'Lifestyle', 'Running Shoes'],
+  'Collection': ['New Catalog', 'New Arrivals', 'Jumpsuits', 'Polo T shirts', 'Womens Beachwear', 'Mens Beachwear'],
+  'Running Fitness': ['Activewear', 'Compression', 'Men Running Fitness', 'Women Running Fitness'],
+  'Sports': ['Athletics', 'Basketball', 'Boxing', 'Cycling', 'Dance Wear', 'Golf', 'Hockey', 'Marathons', 'Tennis', 'Triathlon'],
 };
-const men = ['Hoody', 'Jackets', 'Pants', 'T-shirts', 'Shirts', 'Underwear'];
-const footwear = ['Flipflops', 'Formal Shoes', 'Lifestyle', 'Running Shoes'];
-const collection = ['New Catalog', 'New Arrivals', 'Jumpsuits', 'Polo T shirts', 'Womens Beachwear', 'Mens Beachwear'];
-const runningFitness = ['Activewear', 'Compression', 'Men Running Fitness', 'Women Running Fitness'];
-const sports = ['Athletics', 'Basketball', 'Boxing', 'Cycling', 'Dance Wear', 'Golf', 'Hockey', 'Marathons', 'Tennis', 'Triathlon'];
+
+const MenuColumn = ({ title, items }: { title: string; items: string[] }) => (
+    <div className="flex flex-col gap-2">
+      <h3 className="text-sm font-semibold text-foreground border-b pb-1 mb-1">{title}</h3>
+      <ul className="flex flex-col gap-1">
+        {items.map(item => (
+          <li key={item}>
+            <DropdownMenuItem asChild>
+                <Link href="#" className="text-muted-foreground hover:text-primary w-full">{item}</Link>
+            </DropdownMenuItem>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 
 
 export function SiteHeader() {
@@ -76,79 +83,28 @@ export function SiteHeader() {
                     <ChevronDown className="relative top-[1px] ml-1 h-4 w-4" />
                   </button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-64">
-                  <DropdownMenuSub>
-                    <DropdownMenuSubTrigger>Accessories</DropdownMenuSubTrigger>
-                    <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
-                        {accessories.map(item => <DropdownMenuItem key={item}>{item}</DropdownMenuItem>)}
-                      </DropdownMenuSubContent>
-                    </DropdownMenuPortal>
-                  </DropdownMenuSub>
-                  <DropdownMenuSub>
-                    <DropdownMenuSubTrigger>Custom Clothing</DropdownMenuSubTrigger>
-                    <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
-                        {customClothing.map(item => <DropdownMenuItem key={item}>{item}</DropdownMenuItem>)}
-                      </DropdownMenuSubContent>
-                    </DropdownMenuPortal>
-                  </DropdownMenuSub>
-                   <DropdownMenuSub>
-                    <DropdownMenuSubTrigger>Women</DropdownMenuSubTrigger>
-                    <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
-                        {women.map(item => <DropdownMenuItem key={item}>{item}</DropdownMenuItem>)}
-                      </DropdownMenuSubContent>
-                    </DropdownMenuPortal>
-                  </DropdownMenuSub>
-                   <DropdownMenuSub>
-                    <DropdownMenuSubTrigger>Kids</DropdownMenuSubTrigger>
-                    <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
-                        {Object.keys(kids).map(item => <DropdownMenuItem key={item}>{item}</DropdownMenuItem>)}
-                      </DropdownMenuSubContent>
-                    </DropdownMenuPortal>
-                  </DropdownMenuSub>
-                  <DropdownMenuSub>
-                    <DropdownMenuSubTrigger>Men</DropdownMenuSubTrigger>
-                    <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
-                        {men.map(item => <DropdownMenuItem key={item}>{item}</DropdownMenuItem>)}
-                      </DropdownMenuSubContent>
-                    </DropdownMenuPortal>
-                  </DropdownMenuSub>
-                  <DropdownMenuSub>
-                    <DropdownMenuSubTrigger>Footwear</DropdownMenuSubTrigger>
-                    <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
-                        {footwear.map(item => <DropdownMenuItem key={item}>{item}</DropdownMenuItem>)}
-                      </DropdownMenuSubContent>
-                    </DropdownMenuPortal>
-                  </DropdownMenuSub>
-                   <DropdownMenuSub>
-                    <DropdownMenuSubTrigger>Collection</DropdownMenuSubTrigger>
-                    <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
-                        {collection.map(item => <DropdownMenuItem key={item}>{item}</DropdownMenuItem>)}
-                      </DropdownMenuSubContent>
-                    </DropdownMenuPortal>
-                  </DropdownMenuSub>
-                  <DropdownMenuSub>
-                    <DropdownMenuSubTrigger>Running Fitness</DropdownMenuSubTrigger>
-                    <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
-                        {runningFitness.map(item => <DropdownMenuItem key={item}>{item}</DropdownMenuItem>)}
-                      </DropdownMenuSubContent>
-                    </DropdownMenuPortal>
-                  </DropdownMenuSub>
-                  <DropdownMenuSub>
-                    <DropdownMenuSubTrigger>Sports</DropdownMenuSubTrigger>
-                    <DropdownMenuPortal>
-                      <DropdownMenuSubContent>
-                        {sports.map(item => <DropdownMenuItem key={item}>{item}</DropdownMenuItem>)}
-                      </DropdownMenuSubContent>
-                    </DropdownMenuPortal>
-                  </DropdownMenuSub>
+                <DropdownMenuContent className="w-[--radix-dropdown-menu-content-available-width] max-w-7xl p-6" align="start">
+                    <div className="grid grid-cols-5 gap-x-8 gap-y-6">
+                        <div className="flex flex-col gap-6">
+                           <MenuColumn title="Accessories" items={menuItems['Accessories']} />
+                           <MenuColumn title="Custom Clothing" items={menuItems['Custom Clothing']} />
+                        </div>
+                        <div className="flex flex-col gap-6">
+                            <MenuColumn title="Women" items={menuItems['Women']} />
+                            <MenuColumn title="Kids" items={menuItems['Kids']} />
+                        </div>
+                        <div className="flex flex-col gap-6">
+                            <MenuColumn title="Men" items={menuItems['Men']} />
+                            <MenuColumn title="Footwear" items={menuItems['Footwear']} />
+                        </div>
+                        <div className="flex flex-col gap-6">
+                            <MenuColumn title="Collection" items={menuItems['Collection']} />
+                            <MenuColumn title="Running Fitness" items={menuItems['Running Fitness']} />
+                        </div>
+                         <div className="flex flex-col gap-6">
+                           <MenuColumn title="Sports" items={menuItems['Sports']} />
+                        </div>
+                    </div>
                 </DropdownMenuContent>
               </DropdownMenu>
 

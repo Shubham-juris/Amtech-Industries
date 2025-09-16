@@ -1,3 +1,53 @@
+
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "1",
+      "description": "A futuristic drone with sleek design.",
+      "imageUrl": "https://picsum.photos/seed/tech1/600/400",
+      "imageHint": "drone technology"
+    },
+    {
+      "id": "2",
+      "description": "A high-tech virtual reality headset.",
+      "imageUrl": "https://picsum.photos/seed/tech2/600/400",
+      "imageHint": "vr headset"
+    },
+    {
+      "id": "3",
+      "description": "A sophisticated robotic arm in a lab setting.",
+      "imageUrl": "https://picsum.photos/seed/tech3/600/400",
+      "imageHint": "robotic arm"
+    },
+    {
+      "id": "4",
+      "description": "A modern smart watch with a glowing interface.",
+      "imageUrl": "https://picsum.photos/seed/tech4/600/400",
+      "imageHint": "smart watch"
+    },
+    {
+      "id": "5",
+      "description": "An advanced cybernetic implant.",
+      "imageUrl": "https://picsum.photos/seed/tech5/600/400",
+      "imageHint": "cybernetic implant"
+    },
+    {
+      "id": "6",
+      "description": "A personal AI assistant device.",
+      "imageUrl": "https://picsum.photos/seed/tech6/600/400",
+      "imageHint": "ai assistant"
+    },
+    {
+      "id": "7",
+      "description": "A quantum computing chip.",
+      "imageUrl": "https://picsum.photos/seed/tech7/600/400",
+      "imageHint": "quantum chip"
+    },
+    {
+      "id": "8",
+      "description": "An electric self-driving car.",
+      "imageUrl": "https://picsum.photos/seed/tech8/600/400",
+      "imageHint": "electric car"
+    }
+  ]
 }

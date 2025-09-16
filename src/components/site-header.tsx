@@ -25,13 +25,31 @@ export function SiteHeader() {
                 href="/"
                 className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
-                Products
+                Home
+              </Link>
+              <Link
+                href="/about"
+                className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                About
+              </Link>
+              <Link
+                href="/manufacturers"
+                className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                Manufacturers
+              </Link>
+              <Link
+                href="/wholesale"
+                className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                Wholesale
               </Link>
               <Link
                 href="/contact"
                 className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
-                Contact
+                Contact Us
               </Link>
             </nav>
           </div>

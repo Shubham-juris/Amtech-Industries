@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import Link from 'next/link';
 
 type WholesaleSubCategoryPageProps = {
   params: {
@@ -18,25 +19,34 @@ type WholesaleSubCategoryPageProps = {
   };
 };
 
+const menuItems = {
+    'Accessories': ['Bags', 'Cap', 'Scarf', 'Sleepwear', 'Socks', 'Towels'],
+    'Custom Clothing': ['White Label Clothing', 'Sublimation'],
+    'Women': ['Women Dress', 'Women Coats', 'Women Jackets', 'Women Top Wear', 'Women Leggings', 'Women Lingerie'],
+    'Kids': ['Girls Dresses Collection', 'Infants-0-24-Months', 'Little-4-7-Yrs', 'Toddlers-2-4-Yrs'],
+    'Men': ['Men Hoody', 'Men Jackets', 'Men Pants', 'Men T-shirts', 'Men Shirts', 'Men Underwear'],
+    'Footwear': ['Flipflops', 'Formal Shoes', 'Lifestyle', 'Running Shoes'],
+    'Collection': ['New Catalog', 'New Arrivals', 'Jumpsuits', 'Polo T shirts', 'Womens Beachwear', 'Mens Beachwear'],
+    'Running Fitness': ['Activewear', 'Compression', 'Men Running Fitness', 'Women Running Fitness'],
+    'Sports': ['Athletics', 'Basketball', 'Boxing', 'Cycling', 'Dance Wear', 'Golf', 'Hockey', 'Marathons', 'Tennis', 'Triathlon'],
+};
+
+const toSlug = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
+
 export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategoryPageProps) {
   const { category, subcategory } = use(params);
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [priceRange, setPriceRange] = useState([0, 150000]);
-  const [brands, setBrands] = useState<string[]>([]);
 
   const fromTitle = (slug: string) => slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   const pageTitle = fromTitle(subcategory);
-
-  const productCategories = ['Men', 'Women', 'Kids', 'Running Fitness', 'Custom Clothing', 'Sports', 'Accessories', 'Footwear'];
 
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true);
       
       const subcategoryParts = subcategory.split('-');
-      const searchKeyword = subcategoryParts[subcategoryParts.length - 1].replace(/s$/, ''); // Use the last part and remove plural 's'
+      const searchKeyword = subcategoryParts[subcategoryParts.length - 1].replace(/s$/, '');
 
       const filtered = allProducts.filter(p => 
         p.id.toLowerCase().includes(searchKeyword)
@@ -68,12 +78,20 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
         <aside className="space-y-8">
             <div className="p-4 border">
                 <h3 className="font-bold mb-4 text-lg">Product Categories</h3>
-                <Accordion type="multiple" defaultValue={['Men', 'Women', 'Kids']} className="w-full">
-                    {productCategories.map(cat => (
+                <Accordion type="multiple" defaultValue={Object.keys(menuItems)} className="w-full">
+                    {Object.entries(menuItems).map(([cat, subcats]) => (
                         <AccordionItem value={cat} key={cat}>
                              <AccordionTrigger className="font-medium text-sm py-2">{cat}</AccordionTrigger>
                              <AccordionContent>
-                                {/* Add sub-category links here if needed */}
+                                <ul className="flex flex-col gap-2 pl-2">
+                                    {subcats.map(subcat => (
+                                        <li key={subcat}>
+                                            <Link href={`/wholesale/${toSlug(cat)}/${toSlug(subcat)}`} className="text-muted-foreground hover:text-primary w-full text-sm">
+                                                {subcat}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
                              </AccordionContent>
                         </AccordionItem>
                     ))}

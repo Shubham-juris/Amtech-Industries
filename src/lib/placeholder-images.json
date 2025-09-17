@@ -642,8 +642,114 @@
         "description": "A designer hoodie in black and blue.",
         "imageUrl": "https://picsum.photos/seed/hoodie12/600/400",
         "imageHint": "black blue hoodie"
+    },
+    {
+        "id": "dress1",
+        "description": "A woman in a flowing floral maxi dress.",
+        "imageUrl": "https://picsum.photos/seed/dress1/600/400",
+        "imageHint": "floral dress"
+    },
+    {
+        "id": "dress2",
+        "description": "A woman wearing a chic little black dress.",
+        "imageUrl": "https://picsum.photos/seed/dress2/600/400",
+        "imageHint": "black dress"
+    },
+    {
+        "id": "dress3",
+        "description": "A woman in a vibrant red cocktail dress.",
+        "imageUrl": "https://picsum.photos/seed/dress3/600/400",
+        "imageHint": "red dress"
+    },
+    {
+        "id": "coat1",
+        "description": "A woman in a classic tan trench coat.",
+        "imageUrl": "https://picsum.photos/seed/coat1/600/400",
+        "imageHint": "trench coat"
+    },
+    {
+        "id": "coat2",
+        "description": "A woman wearing a cozy wool peacoat.",
+        "imageUrl": "https://picsum.photos/seed/coat2/600/400",
+        "imageHint": "wool peacoat"
+    },
+    {
+        "id": "coat3",
+        "description": "A stylish longline duster coat.",
+        "imageUrl": "https://picsum.photos/seed/coat3/600/400",
+        "imageHint": "duster coat"
+    },
+    {
+        "id": "jacket1",
+        "description": "A classic denim jacket.",
+        "imageUrl": "https://picsum.photos/seed/jacket1/600/400",
+        "imageHint": "denim jacket"
+    },
+    {
+        "id": "jacket2",
+        "description": "A sleek leather moto jacket.",
+        "imageUrl": "https://picsum.photos/seed/jacket2/600/400",
+        "imageHint": "leather jacket"
+    },
+    {
+        "id": "jacket3",
+        "description": "A trendy bomber jacket.",
+        "imageUrl": "https://picsum.photos/seed/jacket3/600/400",
+        "imageHint": "bomber jacket"
+    },
+    {
+        "id": "topwear1",
+        "description": "A crisp white button-down shirt.",
+        "imageUrl": "https://picsum.photos/seed/topwear1/600/400",
+        "imageHint": "white shirt"
+    },
+    {
+        "id": "topwear2",
+        "description": "A soft cashmere sweater.",
+        "imageUrl": "https://picsum.photos/seed/topwear2/600/400",
+        "imageHint": "cashmere sweater"
+    },
+    {
+        "id": "topwear3",
+        "description": "A casual striped t-shirt.",
+        "imageUrl": "https://picsum.photos/seed/topwear3/600/400",
+        "imageHint": "striped t-shirt"
+    },
+    {
+        "id": "leggings1",
+        "description": "High-waisted black yoga leggings.",
+        "imageUrl": "https://picsum.photos/seed/leggings1/600/400",
+        "imageHint": "yoga leggings"
+    },
+    {
+        "id": "leggings2",
+        "description": "Faux leather leggings for a chic look.",
+        "imageUrl": "https://picsum.photos/seed/leggings2/600/400",
+        "imageHint": "leather leggings"
+    },
+    {
+        "id": "leggings3",
+        "description": "Comfortable cotton leggings for everyday wear.",
+        "imageUrl": "https://picsum.photos/seed/leggings3/600/400",
+        "imageHint": "cotton leggings"
+    },
+    {
+        "id": "lingerie1",
+        "description": "A delicate lace bralette.",
+        "imageUrl": "https://picsum.photos/seed/lingerie1/600/400",
+        "imageHint": "lace bralette"
+    },
+    {
+        "id": "lingerie2",
+        "description": "A matching silk lingerie set.",
+        "imageUrl": "https://picsum.photos/seed/lingerie2/600/400",
+        "imageHint": "silk lingerie"
+    },
+    {
+        "id": "lingerie3",
+        "description": "A comfortable seamless underwear set.",
+        "imageUrl": "https://picsum.photos/seed/lingerie3/600/400",
+        "imageHint": "seamless underwear"
     }
   ]
 }
-
-    

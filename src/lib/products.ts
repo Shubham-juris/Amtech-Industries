@@ -987,11 +987,182 @@ export const allProducts: Product[] = [
     price: 85.00,
     image: getImage('hoodie12', 'hoodie12').url,
     imageHint: getImage('hoodie12', 'hoodie12').hint,
+  },
+   // Women's Dresses
+  {
+    id: 'dress_001',
+    name: 'Floral Maxi Dress',
+    description: 'A beautiful and flowing floral maxi dress.',
+    longDescription: 'Perfect for summer days, this floral maxi dress is made from lightweight fabric and features a flattering silhouette.',
+    price: 120.00,
+    image: getImage('dress1', 'dress1').url,
+    imageHint: getImage('dress1', 'dress1').hint,
+  },
+  {
+    id: 'dress_002',
+    name: 'Little Black Dress',
+    description: 'A timeless and versatile little black dress.',
+    longDescription: 'An essential for any wardrobe, this little black dress can be dressed up or down for any occasion.',
+    price: 95.00,
+    image: getImage('dress2', 'dress2').url,
+    imageHint: getImage('dress2', 'dress2').hint,
+  },
+  {
+    id: 'dress_003',
+    name: 'Red Cocktail Dress',
+    description: 'A stunning red cocktail dress for special events.',
+    longDescription: 'Turn heads in this vibrant red cocktail dress, featuring a figure-hugging fit and elegant design.',
+    price: 150.00,
+    image: getImage('dress3', 'dress3').url,
+    imageHint: getImage('dress3', 'dress3').hint,
+  },
+
+  // Women's Coats
+  {
+    id: 'coat_001',
+    name: 'Classic Trench Coat',
+    description: 'A timeless trench coat for a sophisticated look.',
+    longDescription: 'This classic tan trench coat is a must-have for any season, offering both style and practicality.',
+    price: 180.00,
+    image: getImage('coat1', 'coat1').url,
+    imageHint: getImage('coat1', 'coat1').hint,
+  },
+  {
+    id: 'coat_002',
+    name: 'Wool Peacoat',
+    description: 'A warm and stylish wool peacoat.',
+    longDescription: 'Stay warm in this classic double-breasted wool peacoat, perfect for colder weather.',
+    price: 220.00,
+    image: getImage('coat2', 'coat2').url,
+    imageHint: getImage('coat2', 'coat2').hint,
+  },
+  {
+    id: 'coat_003',
+    name: 'Duster Coat',
+    description: 'A chic and lightweight duster coat.',
+    longDescription: 'This longline duster coat adds a layer of sophistication to any outfit, perfect for transitional weather.',
+    price: 130.00,
+    image: getImage('coat3', 'coat3').url,
+    imageHint: getImage('coat3', 'coat3').hint,
+  },
+
+  // Women's Jackets
+  {
+    id: 'jacket_001',
+    name: 'Denim Jacket',
+    description: 'A versatile and timeless denim jacket.',
+    longDescription: 'A classic wardrobe staple, this denim jacket can be paired with almost any outfit for a casual, cool look.',
+    price: 90.00,
+    image: getImage('jacket1', 'jacket1').url,
+    imageHint: getImage('jacket1', 'jacket1').hint,
+  },
+  {
+    id: 'jacket_002',
+    name: 'Leather Moto Jacket',
+    description: 'A sleek and edgy leather moto jacket.',
+    longDescription: 'Add an edge to your look with this classic leather moto jacket, made from high-quality faux leather.',
+    price: 160.00,
+    image: getImage('jacket2', 'jacket2').url,
+    imageHint: getImage('jacket2', 'jacket2').hint,
+  },
+  {
+    id: 'jacket_003',
+    name: 'Bomber Jacket',
+    description: 'A trendy and comfortable bomber jacket.',
+    longDescription: 'This stylish bomber jacket is perfect for a casual, sporty look, made from a lightweight material.',
+    price: 110.00,
+    image: getImage('jacket3', 'jacket3').url,
+    imageHint: getImage('jacket3', 'jacket3').hint,
+  },
+
+  // Women's Top Wear
+  {
+    id: 'topwear_001',
+    name: 'White Button-Down Shirt',
+    description: 'A crisp and classic white button-down shirt.',
+    longDescription: 'An essential piece for any wardrobe, this white button-down shirt is perfect for both professional and casual settings.',
+    price: 65.00,
+    image: getImage('topwear1', 'topwear1').url,
+    imageHint: getImage('topwear1', 'topwear1').hint,
+  },
+  {
+    id: 'topwear_002',
+    name: 'Cashmere Sweater',
+    description: 'A luxurious and soft cashmere sweater.',
+    longDescription: 'Indulge in the softness of this beautiful cashmere sweater, perfect for staying warm and stylish.',
+    price: 180.00,
+    image: getImage('topwear2', 'topwear2').url,
+    imageHint: getImage('topwear2', 'topwear2').hint,
+  },
+  {
+    id: 'topwear_003',
+    name: 'Striped T-Shirt',
+    description: 'A classic and casual striped t-shirt.',
+    longDescription: 'This timeless striped t-shirt is made from soft cotton and is perfect for everyday wear.',
+    price: 40.00,
+    image: getImage('topwear3', 'topwear3').url,
+    imageHint: getImage('topwear3', 'topwear3').hint,
+  },
+
+  // Women's Leggings
+  {
+    id: 'leggings_001',
+    name: 'High-Waisted Yoga Leggings',
+    description: 'Comfortable and supportive high-waisted yoga leggings.',
+    longDescription: 'These high-waisted leggings are perfect for yoga or any workout, offering support and flexibility.',
+    price: 75.00,
+    image: getImage('leggings1', 'leggings1').url,
+    imageHint: getImage('leggings1', 'leggings1').hint,
+  },
+  {
+    id: 'leggings_002',
+    name: 'Faux Leather Leggings',
+    description: 'Chic and stylish faux leather leggings.',
+    longDescription: 'Elevate your look with these trendy faux leather leggings, perfect for a night out.',
+    price: 85.00,
+    image: getImage('leggings2', 'leggings2').url,
+    imageHint: getImage('leggings2', 'leggings2').hint,
+  },
+  {
+    id: 'leggings_003',
+    name: 'Cotton Leggings',
+    description: 'Basic and comfortable cotton leggings for daily wear.',
+    longDescription: 'These soft and breathable cotton leggings are a wardrobe staple for everyday comfort.',
+    price: 45.00,
+    image: getImage('leggings3', 'leggings3').url,
+    imageHint: getImage('leggings3', 'leggings3').hint,
+  },
+
+  // Women's Lingerie
+  {
+    id: 'lingerie_001',
+    name: 'Lace Bralette',
+    description: 'A delicate and beautiful lace bralette.',
+    longDescription: 'This intricate lace bralette is both comfortable and stylish, perfect for everyday wear or a special occasion.',
+    price: 50.00,
+    image: getImage('lingerie1', 'lingerie1').url,
+    imageHint: getImage('lingerie1', 'lingerie1').hint,
+  },
+  {
+    id: 'lingerie_002',
+    name: 'Silk Lingerie Set',
+    description: 'A luxurious and elegant silk lingerie set.',
+    longDescription: 'Feel exquisite in this matching lingerie set made from pure, soft silk.',
+    price: 120.00,
+    image: getImage('lingerie2', 'lingerie2').url,
+    imageHint: getImage('lingerie2', 'lingerie2').hint,
+  },
+  {
+    id: 'lingerie_003',
+    name: 'Seamless Underwear Set',
+    description: 'A comfortable and invisible seamless underwear set.',
+    longDescription: 'This seamless underwear set is perfect for a smooth and invisible look under any outfit.',
+    price: 60.00,
+    image: getImage('lingerie3', 'lingerie3').url,
+    imageHint: getImage('lingerie3', 'lingerie3').hint,
   }
 ];
 
 export const getProductById = (id: string): Product | undefined => {
   return allProducts.find(p => p.id === id);
 }
-
-    

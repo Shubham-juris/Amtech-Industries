@@ -29,8 +29,8 @@ const categories = {
 };
 
 const popularProductIds = [
-    'toddler_003', 'dress_002', 'men_pants_2', 'coat_003',
-    'coat_001', 'men_shirt_2', 'jacket_003', 'men_jacket_1'
+    'toddler_003', 'dress_002', 'men_pants_002', 'coat_003',
+    'coat_001', 'men_shirt_002', 'jacket_003', 'men_jacket_001'
 ];
 
 export function PopularProducts() {
@@ -45,8 +45,6 @@ export function PopularProducts() {
     const products = categories[category as keyof typeof categories] || [];
     return products.slice(0, 8);
   };
-
-  const products = getProductsForCategory(activeTab);
 
   return (
     <section className="py-12">

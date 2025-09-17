@@ -74,6 +74,24 @@
       "imageHint": "duffle bag"
     },
     {
+      "id": "bag13",
+      "description": "A sturdy hiking backpack.",
+      "imageUrl": "https://picsum.photos/seed/bag13/600/400",
+      "imageHint": "hiking backpack"
+    },
+    {
+      "id": "bag14",
+      "description": "A sleek black laptop bag.",
+      "imageUrl": "https://picsum.photos/seed/bag14/600/400",
+      "imageHint": "laptop bag"
+    },
+    {
+      "id": "bag15",
+      "description": "A versatile messenger bag.",
+      "imageUrl": "https://picsum.photos/seed/bag15/600/400",
+      "imageHint": "messenger bag"
+    },
+    {
       "id": "cap1",
       "description": "Man wearing a classic baseball cap backwards.",
       "imageUrl": "https://picsum.photos/seed/cap1/600/400",
@@ -102,6 +120,426 @@
       "description": "A person in a classic trucker hat.",
       "imageUrl": "https://picsum.photos/seed/cap5/600/400",
       "imageHint": "trucker hat"
+    },
+    {
+      "id": "cap6",
+      "description": "A person in a flat cap.",
+      "imageUrl": "https://picsum.photos/seed/cap6/600/400",
+      "imageHint": "flat cap"
+    },
+    {
+      "id": "cap7",
+      "description": "A person wearing a newsboy cap.",
+      "imageUrl": "https://picsum.photos/seed/cap7/600/400",
+      "imageHint": "newsboy cap"
+    },
+    {
+      "id": "cap8",
+      "description": "A person in a sun visor.",
+      "imageUrl": "https://picsum.photos/seed/cap8/600/400",
+      "imageHint": "sun visor"
+    },
+    {
+      "id": "cap9",
+      "description": "A person in a beret.",
+      "imageUrl": "https://picsum.photos/seed/cap9/600/400",
+      "imageHint": "beret"
+    },
+    {
+      "id": "cap10",
+      "description": "A person wearing a fedora.",
+      "imageUrl": "https://picsum.photos/seed/cap10/600/400",
+      "imageHint": "fedora"
+    },
+    {
+      "id": "cap11",
+      "description": "A person in a trapper hat.",
+      "imageUrl": "https://picsum.photos/seed/cap11/600/400",
+      "imageHint": "trapper hat"
+    },
+    {
+      "id": "cap12",
+      "description": "A person wearing a beanie with a pom-pom.",
+      "imageUrl": "https://picsum.photos/seed/cap12/600/400",
+      "imageHint": "pompom beanie"
+    },
+    {
+      "id": "cap13",
+      "description": "A person in a dad hat.",
+      "imageUrl": "https://picsum.photos/seed/cap13/600/400",
+      "imageHint": "dad hat"
+    },
+    {
+      "id": "cap14",
+      "description": "A person in a wide-brimmed sun hat.",
+      "imageUrl": "https://picsum.photos/seed/cap14/600/400",
+      "imageHint": "sun hat"
+    },
+    {
+      "id": "cap15",
+      "description": "A person wearing a simple black cap.",
+      "imageUrl": "https://picsum.photos/seed/cap15/600/400",
+      "imageHint": "black cap"
+    },
+    {
+      "id": "scarf1",
+      "description": "A person wearing a cozy wool scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf1/600/400",
+      "imageHint": "wool scarf"
+    },
+    {
+      "id": "scarf2",
+      "description": "A lightweight silk scarf with a floral print.",
+      "imageUrl": "https://picsum.photos/seed/scarf2/600/400",
+      "imageHint": "silk scarf"
+    },
+    {
+      "id": "scarf3",
+      "description": "A person wearing a stylish infinity scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf3/600/400",
+      "imageHint": "infinity scarf"
+    },
+    {
+      "id": "scarf4",
+      "description": "A plaid cashmere scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf4/600/400",
+      "imageHint": "cashmere scarf"
+    },
+    {
+      "id": "scarf5",
+      "description": "A chunky knit scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf5/600/400",
+      "imageHint": "knit scarf"
+    },
+    {
+      "id": "scarf6",
+      "description": "A fringed pashmina scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf6/600/400",
+      "imageHint": "pashmina scarf"
+    },
+    {
+      "id": "scarf7",
+      "description": "A cotton bandana scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf7/600/400",
+      "imageHint": "bandana scarf"
+    },
+    {
+      "id": "scarf8",
+      "description": "A person wearing a neck gaiter scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf8/600/400",
+      "imageHint": "neck gaiter"
+    },
+    {
+      "id": "scarf9",
+      "description": "A square satin scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf9/600/400",
+      "imageHint": "satin scarf"
+    },
+    {
+      "id": "scarf10",
+      "description": "A fleece winter scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf10/600/400",
+      "imageHint": "fleece scarf"
+    },
+    {
+      "id": "scarf11",
+      "description": "A lightweight linen scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf11/600/400",
+      "imageHint": "linen scarf"
+    },
+    {
+      "id": "scarf12",
+      "description": "A shawl wrap scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf12/600/400",
+      "imageHint": "shawl scarf"
+    },
+    {
+      "id": "scarf13",
+      "description": "A hooded scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf13/600/400",
+      "imageHint": "hooded scarf"
+    },
+    {
+      "id": "scarf14",
+      "description": "A triangular kerchief scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf14/600/400",
+      "imageHint": "kerchief scarf"
+    },
+    {
+      "id": "scarf15",
+      "description": "A vintage-style scarf.",
+      "imageUrl": "https://picsum.photos/seed/scarf15/600/400",
+      "imageHint": "vintage scarf"
+    },
+    {
+      "id": "sleepwear1",
+      "description": "A comfortable cotton pajama set.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear1/600/400",
+      "imageHint": "pajama set"
+    },
+    {
+      "id": "sleepwear2",
+      "description": "A luxurious silk nightgown.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear2/600/400",
+      "imageHint": "silk nightgown"
+    },
+    {
+      "id": "sleepwear3",
+      "description": "A cozy flannel pajama set.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear3/600/400",
+      "imageHint": "flannel pajamas"
+    },
+    {
+      "id": "sleepwear4",
+      "description": "A plush fleece robe.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear4/600/400",
+      "imageHint": "fleece robe"
+    },
+    {
+      "id": "sleepwear5",
+      "description": "A short pajama set with shorts and a tank top.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear5/600/400",
+      "imageHint": "short pajamas"
+    },
+    {
+      "id": "sleepwear6",
+      "description": "A satin chemise.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear6/600/400",
+      "imageHint": "satin chemise"
+    },
+    {
+      "id": "sleepwear7",
+      "description": "A onesie pajama.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear7/600/400",
+      "imageHint": "onesie pajama"
+    },
+    {
+      "id": "sleepwear8",
+      "description": "A thermal pajama set.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear8/600/400",
+      "imageHint": "thermal pajamas"
+    },
+    {
+      "id": "sleepwear9",
+      "description": "A babydoll nightie.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear9/600/400",
+      "imageHint": "babydoll nightie"
+    },
+    {
+      "id": "sleepwear10",
+      "description": "A lightweight jersey nightshirt.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear10/600/400",
+      "imageHint": "jersey nightshirt"
+    },
+    {
+      "id": "sleepwear11",
+      "description": "A long-sleeved pajama top.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear11/600/400",
+      "imageHint": "long-sleeve pajama"
+    },
+    {
+      "id": "sleepwear12",
+      "description": "A pair of lounge pants.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear12/600/400",
+      "imageHint": "lounge pants"
+    },
+    {
+      "id": "sleepwear13",
+      "description": "A sleep romper.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear13/600/400",
+      "imageHint": "sleep romper"
+    },
+    {
+      "id": "sleepwear14",
+      "description": "A waffle-knit sleep set.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear14/600/400",
+      "imageHint": "waffle-knit sleepwear"
+    },
+    {
+      "id": "sleepwear15",
+      "description": "A hooded sleep sweatshirt.",
+      "imageUrl": "https://picsum.photos/seed/sleepwear15/600/400",
+      "imageHint": "hooded sleepshirt"
+    },
+    {
+      "id": "sock1",
+      "description": "A pair of classic crew socks.",
+      "imageUrl": "https://picsum.photos/seed/sock1/600/400",
+      "imageHint": "crew socks"
+    },
+    {
+      "id": "sock2",
+      "description": "A pair of no-show ankle socks.",
+      "imageUrl": "https://picsum.photos/seed/sock2/600/400",
+      "imageHint": "ankle socks"
+    },
+    {
+      "id": "sock3",
+      "description": "A pair of cozy wool socks.",
+      "imageUrl": "https://picsum.photos/seed/sock3/600/400",
+      "imageHint": "wool socks"
+    },
+    {
+      "id": "sock4",
+      "description": "A pair of athletic performance socks.",
+      "imageUrl": "https://picsum.photos/seed/sock4/600/400",
+      "imageHint": "athletic socks"
+    },
+    {
+      "id": "sock5",
+      "description": "A pair of patterned dress socks.",
+      "imageUrl": "https://picsum.photos/seed/sock5/600/400",
+      "imageHint": "dress socks"
+    },
+    {
+      "id": "sock6",
+      "description": "A pair of compression socks.",
+      "imageUrl": "https://picsum.photos/seed/sock6/600/400",
+      "imageHint": "compression socks"
+    },
+    {
+      "id": "sock7",
+      "description": "A pair of fuzzy slipper socks.",
+      "imageUrl": "https://picsum.photos/seed/sock7/600/400",
+      "imageHint": "slipper socks"
+    },
+    {
+      "id": "sock8",
+      "description": "A pair of quarter-length socks.",
+      "imageUrl": "https://picsum.photos/seed/sock8/600/400",
+      "imageHint": "quarter socks"
+    },
+    {
+      "id": "sock9",
+      "description": "A pair of knee-high socks.",
+      "imageUrl": "https://picsum.photos/seed/sock9/600/400",
+      "imageHint": "knee-high socks"
+    },
+    {
+      "id": "sock10",
+      "description": "A pair of novelty graphic socks.",
+      "imageUrl": "https://picsum.photos/seed/sock10/600/400",
+      "imageHint": "graphic socks"
+    },
+    {
+      "id": "sock11",
+      "description": "A pair of thermal boot socks.",
+      "imageUrl": "https://picsum.photos/seed/sock11/600/400",
+      "imageHint": "boot socks"
+    },
+    {
+      "id": "sock12",
+      "description": "A pair of thigh-high socks.",
+      "imageUrl": "https://picsum.photos/seed/sock12/600/400",
+      "imageHint": "thigh-high socks"
+    },
+    {
+      "id": "sock13",
+      "description": "A pair of tabi socks.",
+      "imageUrl": "https://picsum.photos/seed/sock13/600/400",
+      "imageHint": "tabi socks"
+    },
+    {
+      "id": "sock14",
+      "description": "A pair of argyle socks.",
+      "imageUrl": "https://picsum.photos/seed/sock14/600/400",
+      "imageHint": "argyle socks"
+    },
+    {
+      "id": "sock15",
+      "description": "A pair of cotton tube socks.",
+      "imageUrl": "https://picsum.photos/seed/sock15/600/400",
+      "imageHint": "tube socks"
+    },
+    {
+      "id": "towel1",
+      "description": "A plush cotton bath towel.",
+      "imageUrl": "https://picsum.photos/seed/towel1/600/400",
+      "imageHint": "bath towel"
+    },
+    {
+      "id": "towel2",
+      "description": "A set of soft hand towels.",
+      "imageUrl": "https://picsum.photos/seed/towel2/600/400",
+      "imageHint": "hand towel"
+    },
+    {
+      "id": "towel3",
+      "description": "A quick-dry beach towel.",
+      "imageUrl": "https://picsum.photos/seed/towel3/600/400",
+      "imageHint": "beach towel"
+    },
+    {
+      "id": "towel4",
+      "description": "A luxurious Egyptian cotton towel set.",
+      "imageUrl": "https://picsum.photos/seed/towel4/600/400",
+      "imageHint": "towel set"
+    },
+    {
+      "id": "towel5",
+      "description": "A compact microfiber travel towel.",
+      "imageUrl": "https://picsum.photos/seed/towel5/600/400",
+      "imageHint": "travel towel"
+    },
+    {
+      "id": "towel6",
+      "description": "A set of washcloths.",
+      "imageUrl": "https://picsum.photos/seed/towel6/600/400",
+      "imageHint": "washcloths"
+    },
+    {
+      "id": "towel7",
+      "description": "A hooded towel for kids.",
+      "imageUrl": "https://picsum.photos/seed/towel7/600/400",
+      "imageHint": "hooded towel"
+    },
+    {
+      "id": "towel8",
+      "description": "A patterned kitchen towel set.",
+      "imageUrl": "https://picsum.photos/seed/towel8/600/400",
+      "imageHint": "kitchen towel"
+    },
+    {
+      "id": "towel9",
+      "description": "A gym towel with a hanging loop.",
+      "imageUrl": "https://picsum.photos/seed/towel9/600/400",
+      "imageHint": "gym towel"
+    },
+    {
+      "id": "towel10",
+      "description": "A Turkish peshtemal towel.",
+      "imageUrl": "https://picsum.photos/seed/towel10/600/400",
+      "imageHint": "peshtemal towel"
+    },
+    {
+      "id": "towel11",
+      "description": "A waffle-weave bath towel.",
+      "imageUrl": "https://picsum.photos/seed/towel11/600/400",
+      "imageHint": "waffle towel"
+    },
+    {
+      "id": "towel12",
+      "description": "A decorative fingertip towel.",
+      "imageUrl": "https://picsum.photos/seed/towel12/600/400",
+      "imageHint": "fingertip towel"
+    },
+    {
+      "id": "towel13",
+      "description": "A large bath sheet.",
+      "imageUrl": "https://picsum.photos/seed/towel13/600/400",
+      "imageHint": "bath sheet"
+    },
+    {
+      "id": "towel14",
+      "description": "A bamboo towel set.",
+      "imageUrl": "https://picsum.photos/seed/towel14/600/400",
+      "imageHint": "bamboo towel"
+    },
+    {
+      "id": "towel15",
+      "description": "A spa towel wrap.",
+      "imageUrl": "https://picsum.photos/seed/towel15/600/400",
+      "imageHint": "spa wrap"
     },
     {
       "id": "tshirt1",
@@ -207,3 +645,5 @@
     }
   ]
 }
+
+    

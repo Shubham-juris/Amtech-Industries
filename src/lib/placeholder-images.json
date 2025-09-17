@@ -132,6 +132,78 @@
       "description": "A person wearing a comfortable long-sleeve t-shirt.",
       "imageUrl": "https://picsum.photos/seed/tshirt5/600/400",
       "imageHint": "long-sleeve shirt"
+    },
+    {
+        "id": "hoodie1",
+        "description": "A man wearing a plush beige cotton hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie1/600/400",
+        "imageHint": "beige hoodie"
+    },
+    {
+        "id": "hoodie2",
+        "description": "A man in a stylish flannel hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie2/600/400",
+        "imageHint": "flannel hoodie"
+    },
+    {
+        "id": "hoodie3",
+        "description": "A man wearing a light gray hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie3/600/400",
+        "imageHint": "gray hoodie"
+    },
+    {
+        "id": "hoodie4",
+        "description": "A designer hoodie in gray and canary yellow.",
+        "imageUrl": "https://picsum.photos/seed/hoodie4/600/400",
+        "imageHint": "yellow hoodie"
+    },
+    {
+        "id": "hoodie5",
+        "description": "A designer hoodie in tomato red and white.",
+        "imageUrl": "https://picsum.photos/seed/hoodie5/600/400",
+        "imageHint": "red hoodie"
+    },
+    {
+        "id": "hoodie6",
+        "description": "A designer hoodie in gray and pastel green.",
+        "imageUrl": "https://picsum.photos/seed/hoodie6/600/400",
+        "imageHint": "green hoodie"
+    },
+    {
+        "id": "hoodie7",
+        "description": "A designer hoodie in white, gray, and black.",
+        "imageUrl": "https://picsum.photos/seed/hoodie7/600/400",
+        "imageHint": "designer hoodie"
+    },
+    {
+        "id": "hoodie8",
+        "description": "A designer hoodie in black with neon trimmings.",
+        "imageUrl": "https://picsum.photos/seed/hoodie8/600/400",
+        "imageHint": "black hoodie"
+    },
+    {
+        "id": "hoodie9",
+        "description": "A designer hoodie in royal blue and white.",
+        "imageUrl": "https://picsum.photos/seed/hoodie9/600/400",
+        "imageHint": "blue hoodie"
+    },
+    {
+        "id": "hoodie10",
+        "description": "A designer hoodie in red and black.",
+        "imageUrl": "https://picsum.photos/seed/hoodie10/600/400",
+        "imageHint": "red black hoodie"
+    },
+    {
+        "id": "hoodie11",
+        "description": "A designer hoodie in black and red.",
+        "imageUrl": "https://picsum.photos/seed/hoodie11/600/400",
+        "imageHint": "black red hoodie"
+    },
+    {
+        "id": "hoodie12",
+        "description": "A designer hoodie in black and blue.",
+        "imageUrl": "https://picsum.photos/seed/hoodie12/600/400",
+        "imageHint": "black blue hoodie"
     }
   ]
 }

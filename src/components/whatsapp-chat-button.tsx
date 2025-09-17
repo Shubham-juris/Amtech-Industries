@@ -3,24 +3,26 @@ import Link from 'next/link';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      {...props}
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+        fill="currentColor"
+        className="h-8 w-8"
     >
-      <path d="M16.75 13.96c.27.13.41.41.41.72v2.12c0 .4-.28.72-.63.84-1.12.38-2.36.5-3.6.5-4.88 0-8.84-3.95-8.84-8.82 0-1.25.22-2.48.6-3.6.12-.35.45-.63.84-.63h2.12c.31 0 .59.14.72.41.17.35.27.72.35 1.1.08.38.01.78-.18 1.1l-.88 1.56c-.19.34-.22.75-.06 1.11.43.95 1.14 1.83 2.11 2.54.39.28.9.22 1.2-.13l1.12-1.28c.34-.39.88-.47 1.3-.22.42.25.82.56 1.18.91zM19.34 4.66C17.2 2.52 14.68 1.4 12.01 1.4c-5.87 0-10.62 4.75-10.62 10.61 0 1.95.53 3.79 1.48 5.4l-1.6 5.83 5.96-1.57c1.55.85 3.32 1.31 5.18 1.31 5.87 0 10.62-4.75 10.62-10.61 0-2.67-1.12-5.18-2.96-7.31z" />
+        <path d="m16 2a14 14 0 0 0 -14 14a14 14 0 0 0 14 14a14.01 14.01 0 0 0 5.47 -1.13l6.53 2.13l-2.29-6.2a14 14 0 0 0 3.29-8.8a14 14 0 0 0 -13-14z" opacity=".05"/>
+        <path d="m16 3a13 13 0 0 0 -13 13a13 13 0 0 0 13 13a13.01 13.01 0 0 0 5.14-1.07l5.56 1.82l-1.95-5.28a13 13 0 0 0 3.25-8.47a13 13 0 0 0 -12-13z" fill="#40c351"/>
+        <path d="m16 4a12 12 0 0 0 -12 12a12 12 0 0 0 12 12a12.01 12.01 0 0 0 4.84-.98l4.63 1.51l-1.63-4.42a12 12 0 0 0 3.16-7.11a12 12 0 0 0 -11-12z" fill="#fff"/>
+        <path d="m22.23 18.4a3.24 3.24 0 0 1 -1.48.8a4.58 4.58 0 0 1 -1.84.28a6.45 6.45 0 0 1 -4.2-2.1a9.73 9.73 0 0 1 -3.23-5.23a4.25 4.25 0 0 1 .89-3.37a2.59 2.59 0 0 1 2.22-1.33h.1a1.25 1.25 0 0 1 1.2.95a5.73 5.73 0 0 1 .45 1.71a1.32 1.32 0 0 1 -.23 1a3.48 3.48 0 0 1 -.73.9a.4.4 0 0 0 -.13.31a5.39 5.39 0 0 0 1.32 2.39a5.41 5.41 0 0 0 2.65 1.41a.39.39 0 0 0 .4-.13a3.48 3.48 0 0 1 .9-.73a1.29 1.29 0 0 1 1.05-.23a5.73 5.73 0 0 1 1.71.45a1.25 1.25 0 0 1 .95 1.2v.1a2.59 2.59 0 0 1 -1.33 2.22z" fill="#40c351"/>
     </svg>
   );
 
 export function WhatsAppChatButton() {
   return (
-    <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 group">
+    <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="fixed bottom-24 right-6 z-50 group">
         <div className="relative">
             <div className="absolute inset-0 bg-green-500 rounded-full animate-pulse-ring"></div>
-            <div className="relative bg-green-500 text-white p-3 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-200 ease-in-out">
-                <WhatsAppIcon className="h-8 w-8" />
+            <div className="relative bg-white text-white p-3 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-200 ease-in-out">
+                <WhatsAppIcon />
             </div>
         </div>
     </Link>

@@ -1166,6 +1166,18 @@
       "imageHint": "denim dress"
     },
     {
+        "id": "girls_dress_4",
+        "description": "A unicorn rainbow dress for girls.",
+        "imageUrl": "https://picsum.photos/seed/girlsdress4/600/400",
+        "imageHint": "rainbow dress"
+    },
+    {
+        "id": "girls_dress_5",
+        "description": "A striped jersey dress for girls.",
+        "imageUrl": "https://picsum.photos/seed/girlsdress5/600/400",
+        "imageHint": "jersey dress"
+    },
+    {
       "id": "infant_1",
       "description": "A soft cotton onesie for infants.",
       "imageUrl": "https://picsum.photos/seed/infant1/600/400",
@@ -1182,6 +1194,18 @@
       "description": "A warm sleep sack for infants.",
       "imageUrl": "https://picsum.photos/seed/infant3/600/400",
       "imageHint": "sleep sack"
+    },
+    {
+        "id": "infant_4",
+        "description": "A pair of infant booties.",
+        "imageUrl": "https://picsum.photos/seed/infant4/600/400",
+        "imageHint": "infant booties"
+    },
+    {
+        "id": "infant_5",
+        "description": "A soft knit hat for infants.",
+        "imageUrl": "https://picsum.photos/seed/infant5/600/400",
+        "imageHint": "infant hat"
     },
     {
       "id": "toddler_1",
@@ -1202,6 +1226,18 @@
       "imageHint": "toddler hoodie"
     },
     {
+        "id": "toddler_4",
+        "description": "A two-piece tracksuit for toddlers.",
+        "imageUrl": "https://picsum.photos/seed/toddler4/600/400",
+        "imageHint": "toddler tracksuit"
+    },
+    {
+        "id": "toddler_5",
+        "description": "A pair of waterproof splash pants for toddlers.",
+        "imageUrl": "https://picsum.photos/seed/toddler5/600/400",
+        "imageHint": "splash pants"
+    },
+    {
       "id": "little_kid_1",
       "description": "A fun graphic t-shirt for little kids.",
       "imageUrl": "https://picsum.photos/seed/littlekid1/600/400",
@@ -1218,6 +1254,18 @@
       "description": "A cozy sweater for little kids.",
       "imageUrl": "https://picsum.photos/seed/littlekid3/600/400",
       "imageHint": "kids sweater"
+    },
+    {
+        "id": "little_kid_4",
+        "description": "A rain jacket for little kids.",
+        "imageUrl": "https://picsum.photos/seed/littlekid4/600/400",
+        "imageHint": "rain jacket"
+    },
+    {
+        "id": "little_kid_5",
+        "description": "A character pajama set for little kids.",
+        "imageUrl": "https://picsum.photos/seed/littlekid5/600/400",
+        "imageHint": "pajama set"
     },
     {
       "id": "flipflop1",

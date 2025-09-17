@@ -12,14 +12,14 @@ import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 type WholesaleSubCategoryPageProps = {
-  params: Promise<{
+  params: {
     category: string;
     subcategory: string;
-  }>;
+  };
 };
 
 export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategoryPageProps) {
-  const { category, subcategory } = use(params);
+  const { category, subcategory } = use(Promise.resolve(params));
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');

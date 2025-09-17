@@ -32,10 +32,11 @@ export default function WholesaleSubCategoryPage({
     const fetchProducts = async () => {
       setLoading(true);
       
-      const searchKeyword = subcategory.split('-').shift() || '';
+      const subcategoryParts = subcategory.split('-');
+      const searchKeyword = subcategoryParts.length > 1 ? subcategoryParts[1] : subcategoryParts[0];
 
       const filtered = allProducts.filter(p => 
-        p.id.toLowerCase().includes(searchKeyword)
+        p.id.toLowerCase().includes(searchKeyword.replace(/s$/, '')) // Also remove trailing 's' for plural like 'shirts'
       );
 
       setProducts(filtered);

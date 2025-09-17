@@ -1512,6 +1512,19 @@
       "description": "A sparkly tulle dress for girls.",
       "imageUrl": "https://picsum.photos/seed/girlsdress6/600/400",
       "imageHint": "tulle dress"
-    }
+    },
+    { "id": "featured_lingerie", "imageUrl": "https://picsum.photos/seed/lingerie/400/600", "imageHint": "lingerie model" },
+    { "id": "featured_womendress", "imageUrl": "https://picsum.photos/seed/womandress/400/600", "imageHint": "woman dress" },
+    { "id": "featured_coverups", "imageUrl": "https://picsum.photos/seed/coverups/400/600", "imageHint": "woman coverup" },
+    { "id": "featured_bags", "imageUrl": "https://picsum.photos/seed/bags/400/600", "imageHint": "handbag" },
+    { "id": "featured_towels", "imageUrl": "https://picsum.photos/seed/towels/400/600", "imageHint": "beach towel" },
+    { "id": "featured_formalshoes", "imageUrl": "https://picsum.photos/seed/formalshoes/400/600", "imageHint": "formal shoes" },
+    { "id": "featured_kids", "imageUrl": "https://picsum.photos/seed/kids/400/600", "imageHint": "kids fashion" },
+    { "id": "featured_men", "imageUrl": "https://picsum.photos/seed/men/400/600", "imageHint": "men fashion" },
+    { "id": "featured_mensshirts", "imageUrl": "https://picsum.photos/seed/mensshirts/400/600", "imageHint": "men shirt" },
+    { "id": "featured_activewear", "imageUrl": "https://picsum.photos/seed/activewear/400/600", "imageHint": "woman activewear" },
+    { "id": "featured_sports", "imageUrl": "https://picsum.photos/seed/sports/400/600", "imageHint": "sports equipment" },
+    { "id": "featured_dancewear", "imageUrl": "https://picsum.photos/seed/dancewear/400/600", "imageHint": "dance wear" },
+    { "id": "featured_tennis", "imageUrl": "https://picsum.photos/seed/tennis/400/600", "imageHint": "tennis player" }
   ]
 }

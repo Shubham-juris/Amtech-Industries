@@ -6,6 +6,7 @@ import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { PopularProducts } from '@/components/popular-products';
+import { FeaturedCategories } from '@/components/featured-categories';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -38,6 +39,8 @@ export default function Home() {
           <Button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full">Search</Button>
         </form>
       </div>
+
+      <FeaturedCategories />
 
       <PopularProducts />
 

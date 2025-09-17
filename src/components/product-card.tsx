@@ -3,12 +3,14 @@ import Image from 'next/image';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import type { Product } from '@/lib/types';
 import { Button } from './ui/button';
+import { useCart } from '@/hooks/use-cart';
 
 interface ProductCardProps {
   product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
+  const { addToCart } = useCart();
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
@@ -16,11 +18,17 @@ export function ProductCard({ product }: ProductCardProps) {
     }).format(price);
   };
 
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addToCart(product);
+  }
+
   return (
     <Link href={`/products/${product.id}`} className="group">
       <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:scale-105">
         <CardHeader className="p-0">
-          <div className="relative aspect-video w-full overflow-hidden">
+          <div className="relative aspect-square w-full overflow-hidden">
             <Image
               src={product.image}
               alt={product.name}
@@ -37,8 +45,8 @@ export function ProductCard({ product }: ProductCardProps) {
         </CardContent>
         <CardFooter className="p-4 pt-0 flex justify-between items-center">
           <p className="font-semibold text-primary">{formatPrice(product.price)}</p>
-          <Button asChild>
-            <span className="bg-accent text-accent-foreground">View More</span>
+          <Button onClick={handleAddToCart} asChild>
+            <span className="bg-accent text-accent-foreground">Add to Cart</span>
           </Button>
         </CardFooter>
       </Card>

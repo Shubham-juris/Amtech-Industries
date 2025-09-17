@@ -4,73 +4,73 @@
     {
       "id": "bag1",
       "description": "A man holding a brown travel bag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag1/600/400",
       "imageHint": "travel bag"
     },
     {
       "id": "bag2",
       "description": "A woman with a classy brown handbag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag2/600/400",
       "imageHint": "handbag"
     },
     {
       "id": "bag3",
       "description": "A woman holding a white tote bag with an ethnic print.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag3/600/400",
       "imageHint": "tote bag"
     },
     {
       "id": "bag4",
       "description": "A woman with a white and blue sling bag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag4/600/400",
       "imageHint": "sling bag"
     },
     {
       "id": "bag5",
       "description": "A woman holding a tan brown textured bag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag5/600/400",
       "imageHint": "textured bag"
     },
     {
       "id": "bag6",
       "description": "A woman with a chic gray circular bag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag6/600/400",
       "imageHint": "circular bag"
     },
     {
       "id": "bag7",
       "description": "A woman in a purple dress with a black sling bag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag7/600/400",
       "imageHint": "embellished bag"
     },
     {
       "id": "bag8",
       "description": "A woman holding a futuristic silver handbag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag8/600/400",
       "imageHint": "silver handbag"
     },
     {
       "id": "bag9",
       "description": "A classic black sports bag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag9/600/400",
       "imageHint": "sports bag"
     },
     {
       "id": "bag10",
       "description": "A red and black gym bag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag10/600/400",
       "imageHint": "gym bag"
     },
     {
       "id": "bag11",
       "description": "A green and black bag for fishing rods or similar equipment.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag11/600/400",
       "imageHint": "equipment bag"
     },
     {
       "id": "bag12",
       "description": "A black and gray duffle bag.",
-      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageUrl": "https://picsum.photos/seed/bag12/600/400",
       "imageHint": "duffle bag"
     }
   ]

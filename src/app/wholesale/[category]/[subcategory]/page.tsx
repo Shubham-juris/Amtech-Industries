@@ -14,10 +14,11 @@ import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export default function WholesaleSubCategoryPage({
-  params: { category, subcategory },
+  params,
 }: {
   params: { category: string; subcategory: string };
 }) {
+  const { category, subcategory } = params;
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
@@ -36,6 +37,7 @@ export default function WholesaleSubCategoryPage({
       const searchKeyword = subcategory.split('-').pop() || '';
 
       const filtered = allProducts.filter(p => 
+        p.id.toLowerCase().includes(searchKeyword) ||
         p.name.toLowerCase().includes(searchKeyword) ||
         p.description.toLowerCase().includes(searchKeyword)
       );
@@ -108,15 +110,9 @@ export default function WholesaleSubCategoryPage({
                 <p>Loading...</p>
              </div>
           ) : products.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product) => (
-                <div key={product.id} className="border p-4 text-center rounded-lg shadow-sm">
-                    <div className="relative aspect-square w-full mb-4">
-                         <Image src={product.image} alt={product.name} fill className="object-contain" />
-                    </div>
-                    <h4 className="font-medium text-sm mb-2">{product.name}</h4>
-                    <Button variant="default" size="sm" className="bg-black text-white hover:bg-gray-800">View More</Button>
-                </div>
+                <ProductCard key={product.id} product={product} />
               ))}
             </div>
           ) : (

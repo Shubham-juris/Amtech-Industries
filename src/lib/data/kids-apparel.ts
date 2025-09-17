@@ -48,6 +48,15 @@ export const kidsApparelProducts: Product[] = [
     image: getImage('girls_dress_5').url,
     imageHint: getImage('girls_dress_5').hint,
   },
+  {
+    id: 'girls_dress_006',
+    name: 'Sparkly Tulle Dress',
+    description: 'A dress for shining at any party.',
+    longDescription: 'This sparkly tulle dress is perfect for any special occasion, making your little one feel like a princess.',
+    price: 50.00,
+    image: getImage('girls_dress_6').url,
+    imageHint: getImage('girls_dress_6').hint,
+  },
 
   // Kids - Infants (0-24 months) (5 items)
   {

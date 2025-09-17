@@ -1506,6 +1506,12 @@
       "description": "Women's running shorts with a comfortable inner lining.",
       "imageUrl": "https://picsum.photos/seed/womenrunning4/600/400",
       "imageHint": "women's shorts"
+    },
+    {
+      "id": "girls_dress_6",
+      "description": "A sparkly tulle dress for girls.",
+      "imageUrl": "https://picsum.photos/seed/girlsdress6/600/400",
+      "imageHint": "tulle dress"
     }
   ]
 }

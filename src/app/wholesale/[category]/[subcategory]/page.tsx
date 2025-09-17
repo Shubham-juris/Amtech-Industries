@@ -1,10 +1,9 @@
 'use client';
 
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
 import { ProductCard } from '@/components/product-card';
 import { allProducts } from '@/lib/products';
 import { Product } from '@/lib/types';
-import { getFilteredProductsAction } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -34,7 +33,7 @@ const menuItems = {
 const toSlug = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 
 export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategoryPageProps) {
-  const { category, subcategory } = use(params);
+  const { category, subcategory } = params;
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -78,7 +77,7 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
         <aside className="space-y-8">
             <div className="p-4 border">
                 <h3 className="font-bold mb-4 text-lg">Product Categories</h3>
-                <Accordion type="multiple" defaultValue={Object.keys(menuItems)} className="w-full">
+                <Accordion type="multiple" className="w-full">
                     {Object.entries(menuItems).map(([cat, subcats]) => (
                         <AccordionItem value={cat} key={cat}>
                              <AccordionTrigger className="font-medium text-sm py-2">{cat}</AccordionTrigger>

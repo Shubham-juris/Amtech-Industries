@@ -750,6 +750,96 @@
         "description": "A comfortable seamless underwear set.",
         "imageUrl": "https://picsum.photos/seed/lingerie3/600/400",
         "imageHint": "seamless underwear"
+    },
+    {
+        "id": "men_jacket_1",
+        "description": "A man wearing a stylish blue denim jacket.",
+        "imageUrl": "https://picsum.photos/seed/menjacket1/600/400",
+        "imageHint": "denim jacket"
+    },
+    {
+        "id": "men_jacket_2",
+        "description": "A man in a classic black leather jacket.",
+        "imageUrl": "https://picsum.photos/seed/menjacket2/600/400",
+        "imageHint": "leather jacket"
+    },
+    {
+        "id": "men_jacket_3",
+        "description": "A man wearing a green bomber jacket.",
+        "imageUrl": "https://picsum.photos/seed/menjacket3/600/400",
+        "imageHint": "bomber jacket"
+    },
+    {
+        "id": "men_pants_1",
+        "description": "A man wearing classic blue jeans.",
+        "imageUrl": "https://picsum.photos/seed/menpants1/600/400",
+        "imageHint": "blue jeans"
+    },
+    {
+        "id": "men_pants_2",
+        "description": "A man in stylish khaki chino pants.",
+        "imageUrl": "https://picsum.photos/seed/menpants2/600/400",
+        "imageHint": "chino pants"
+    },
+    {
+        "id": "men_pants_3",
+        "description": "A man wearing comfortable gray sweatpants.",
+        "imageUrl": "https://picsum.photos/seed/menpants3/600/400",
+        "imageHint": "gray sweatpants"
+    },
+    {
+        "id": "men_tshirt_1",
+        "description": "A man in a plain black crewneck t-shirt.",
+        "imageUrl": "https://picsum.photos/seed/mentshirt1/600/400",
+        "imageHint": "black t-shirt"
+    },
+    {
+        "id": "men_tshirt_2",
+        "description": "A man wearing a gray v-neck t-shirt.",
+        "imageUrl": "https://picsum.photos/seed/mentshirt2/600/400",
+        "imageHint": "gray t-shirt"
+    },
+    {
+        "id": "men_tshirt_3",
+        "description": "A man in a striped pocket t-shirt.",
+        "imageUrl": "https://picsum.photos/seed/mentshirt3/600/400",
+        "imageHint": "striped t-shirt"
+    },
+    {
+        "id": "men_shirt_1",
+        "description": "A man wearing a classic white dress shirt.",
+        "imageUrl": "https://picsum.photos/seed/menshirt1/600/400",
+        "imageHint": "dress shirt"
+    },
+    {
+        "id": "men_shirt_2",
+        "description": "A man in a casual plaid flannel shirt.",
+        "imageUrl": "https://picsum.photos/seed/menshirt2/600/400",
+        "imageHint": "flannel shirt"
+    },
+    {
+        "id": "men_shirt_3",
+        "description": "A man wearing a blue short-sleeve button-up shirt.",
+        "imageUrl": "https://picsum.photos/seed/menshirt3/600/400",
+        "imageHint": "button-up shirt"
+    },
+    {
+        "id": "men_underwear_1",
+        "description": "A pack of comfortable cotton boxer briefs.",
+        "imageUrl": "https://picsum.photos/seed/menunderwear1/600/400",
+        "imageHint": "boxer briefs"
+    },
+    {
+        "id": "men_underwear_2",
+        "description": "A set of classic white briefs.",
+        "imageUrl": "https://picsum.photos/seed/menunderwear2/600/400",
+        "imageHint": "white briefs"
+    },
+    {
+        "id": "men_underwear_3",
+        "description": "A pair of patterned boxer shorts.",
+        "imageUrl": "https://picsum.photos/seed/menunderwear3/600/400",
+        "imageHint": "boxer shorts"
     }
   ]
 }

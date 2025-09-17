@@ -17,7 +17,7 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export function WhatsAppChatButton() {
   return (
-    <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="fixed bottom-24 right-6 z-50 group">
+    <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="fixed bottom-28 right-8 z-50 group">
         <div className="relative">
             <div className="absolute inset-0 bg-green-500 rounded-full animate-pulse-ring"></div>
             <div className="relative bg-green-500 text-white p-3 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-200 ease-in-out">

@@ -44,11 +44,11 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
     const fetchProducts = async () => {
       setLoading(true);
       
-      const subcategoryParts = subcategory.split('-');
-      const searchKeyword = subcategoryParts[subcategoryParts.length - 1].replace(/s$/, '');
+      // Improved filtering logic
+      const searchPrefix = subcategory.replace(/-/g, '_').replace(/s_collection$/, '').replace(/s$/, '');
 
       const filtered = allProducts.filter(p => 
-        p.id.toLowerCase().includes(searchKeyword)
+        p.id.toLowerCase().startsWith(searchPrefix)
       );
 
       setProducts(filtered);

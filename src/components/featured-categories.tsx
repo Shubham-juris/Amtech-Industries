@@ -50,12 +50,12 @@ export function FeaturedCategories() {
 
   return (
     <section 
-      className="relative grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 bg-[#FFFAE6] text-black" 
+      className="relative grid grid-cols-1 lg:grid-cols-4 bg-[#FFFAE6] text-black" 
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     >
         <Wave />
-      <div className="md:col-span-2 xl:col-span-3 py-20 overflow-hidden">
+      <div className="lg:col-span-3 py-20 overflow-hidden">
         <div 
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * (100 / ITEMS_TO_SHOW)}%)` }}
@@ -63,7 +63,7 @@ export function FeaturedCategories() {
           {extendedCategories.map((category, index) => (
             <div key={index} className="px-4 shrink-0 text-center" style={{ flexBasis: `${100 / ITEMS_TO_SHOW}%` }}>
               <Link href={category.href} className="group">
-                <div className="relative aspect-[3/4] mb-4">
+                <div className="relative aspect-square mb-4">
                   <Image
                     src={category.image}
                     alt={category.name}

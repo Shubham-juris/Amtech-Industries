@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { getImage } from '../products';
+import { getImage } from '../placeholder-images';
 
 export const footwearProducts: Product[] = [
     // Footwear - Flipflops
@@ -9,8 +9,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of classic beach flip-flops.',
     longDescription: 'These flip-flops are perfect for the beach, with a comfortable and durable design.',
     price: 20.00,
-    image: getImage('flipflop1', 'flipflop1').url,
-    imageHint: getImage('flipflop1', 'flipflop1').hint,
+    image: getImage('flipflop1').url,
+    imageHint: getImage('flipflop1').hint,
   },
   {
     id: 'flipflop_002',
@@ -18,8 +18,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of comfortable foam flip-flops.',
     longDescription: 'These foam flip-flops are lightweight and comfortable, ideal for casual wear.',
     price: 25.00,
-    image: getImage('flipflop2', 'flipflop2').url,
-    imageHint: getImage('flipflop2', 'flipflop2').hint,
+    image: getImage('flipflop2').url,
+    imageHint: getImage('flipflop2').hint,
   },
   {
     id: 'flipflop_003',
@@ -27,8 +27,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of stylish leather flip-flops.',
     longDescription: 'These leather flip-flops offer a more sophisticated look for summer.',
     price: 40.00,
-    image: getImage('flipflop3', 'flipflop3').url,
-    imageHint: getImage('flipflop3', 'flipflop3').hint,
+    image: getImage('flipflop3').url,
+    imageHint: getImage('flipflop3').hint,
   },
   {
     id: 'flipflop_004',
@@ -36,8 +36,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of sporty slide sandals.',
     longDescription: 'These slide sandals are perfect for post-workout or casual wear, with a comfortable footbed.',
     price: 30.00,
-    image: getImage('flipflop4', 'flipflop4').url,
-    imageHint: getImage('flipflop4', 'flipflop4').hint,
+    image: getImage('flipflop4').url,
+    imageHint: getImage('flipflop4').hint,
   },
 
   // Footwear - Formal Shoes
@@ -47,8 +47,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of classic black oxford shoes.',
     longDescription: 'These timeless black oxfords are perfect for any formal occasion.',
     price: 150.00,
-    image: getImage('formalshoe1', 'formalshoe1').url,
-    imageHint: getImage('formalshoe1', 'formalshoe1').hint,
+    image: getImage('formalshoe1').url,
+    imageHint: getImage('formalshoe1').hint,
   },
   {
     id: 'formal_shoe_002',
@@ -56,8 +56,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of elegant brown derby shoes.',
     longDescription: 'These brown derby shoes are a versatile addition to any formal wardrobe.',
     price: 140.00,
-    image: getImage('formalshoe2', 'formalshoe2').url,
-    imageHint: getImage('formalshoe2', 'formalshoe2').hint,
+    image: getImage('formalshoe2').url,
+    imageHint: getImage('formalshoe2').hint,
   },
   {
     id: 'formal_shoe_003',
@@ -65,8 +65,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of sophisticated monk strap shoes.',
     longDescription: 'These monk strap shoes offer a unique and stylish alternative to traditional formal shoes.',
     price: 160.00,
-    image: getImage('formalshoe3', 'formalshoe3').url,
-    imageHint: getImage('formalshoe3', 'formalshoe3').hint,
+    image: getImage('formalshoe3').url,
+    imageHint: getImage('formalshoe3').hint,
   },
   {
     id: 'formal_shoe_004',
@@ -74,8 +74,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of stylish loafers.',
     longDescription: 'These loafers are perfect for a smart-casual look, combining comfort and style.',
     price: 120.00,
-    image: getImage('formalshoe4', 'formalshoe4').url,
-    imageHint: getImage('formalshoe4', 'formalshoe4').hint,
+    image: getImage('formalshoe4').url,
+    imageHint: getImage('formalshoe4').hint,
   },
 
   // Footwear - Lifestyle
@@ -85,8 +85,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of trendy canvas sneakers.',
     longDescription: 'These canvas sneakers are a versatile and stylish choice for everyday wear.',
     price: 60.00,
-    image: getImage('lifestyleshoe1', 'lifestyleshoe1').url,
-    imageHint: getImage('lifestyleshoe1', 'lifestyleshoe1').hint,
+    image: getImage('lifestyleshoe1').url,
+    imageHint: getImage('lifestyleshoe1').hint,
   },
   {
     id: 'lifestyle_shoe_002',
@@ -94,8 +94,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of comfortable slip-on shoes.',
     longDescription: 'These slip-on shoes are easy to wear and provide all-day comfort.',
     price: 50.00,
-    image: getImage('lifestyleshoe2', 'lifestyleshoe2').url,
-    imageHint: getImage('lifestyleshoe2', 'lifestyleshoe2').hint,
+    image: getImage('lifestyleshoe2').url,
+    imageHint: getImage('lifestyleshoe2').hint,
   },
   {
     id: 'lifestyle_shoe_003',
@@ -103,8 +103,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of fashionable high-top sneakers.',
     longDescription: 'These high-top sneakers add a cool and trendy touch to any casual outfit.',
     price: 70.00,
-    image: getImage('lifestyleshoe3', 'lifestyleshoe3').url,
-    imageHint: getImage('lifestyleshoe3', 'lifestyleshoe3').hint,
+    image: getImage('lifestyleshoe3').url,
+    imageHint: getImage('lifestyleshoe3').hint,
   },
   {
     id: 'lifestyle_shoe_004',
@@ -112,8 +112,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of casual boat shoes.',
     longDescription: 'These boat shoes are a classic choice for a relaxed and preppy look.',
     price: 80.00,
-    image: getImage('lifestyleshoe4', 'lifestyleshoe4').url,
-    imageHint: getImage('lifestyleshoe4', 'lifestyleshoe4').hint,
+    image: getImage('lifestyleshoe4').url,
+    imageHint: getImage('lifestyleshoe4').hint,
   },
 
   // Footwear - Running Shoes
@@ -123,8 +123,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of lightweight running shoes.',
     longDescription: 'These lightweight running shoes are designed for speed and comfort.',
     price: 110.00,
-    image: getImage('runningshoe1', 'runningshoe1').url,
-    imageHint: getImage('runningshoe1', 'runningshoe1').hint,
+    image: getImage('runningshoe1').url,
+    imageHint: getImage('runningshoe1').hint,
   },
   {
     id: 'running_shoe_002',
@@ -132,8 +132,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of trail running shoes.',
     longDescription: 'These trail running shoes provide excellent grip and support for off-road adventures.',
     price: 130.00,
-    image: getImage('runningshoe2', 'runningshoe2').url,
-    imageHint: getImage('runningshoe2', 'runningshoe2').hint,
+    image: getImage('runningshoe2').url,
+    imageHint: getImage('runningshoe2').hint,
   },
   {
     id: 'running_shoe_003',
@@ -141,8 +141,8 @@ export const footwearProducts: Product[] = [
     description: 'A pair of cushioned running shoes.',
     longDescription: 'These running shoes offer maximum cushioning for a comfortable and supportive run.',
     price: 120.00,
-    image: getImage('runningshoe3', 'runningshoe3').url,
-    imageHint: getImage('runningshoe3', 'runningshoe3').hint,
+    image: getImage('runningshoe3').url,
+    imageHint: getImage('runningshoe3').hint,
   },
   {
     id: 'running_shoe_004',
@@ -150,7 +150,7 @@ export const footwearProducts: Product[] = [
     description: 'A pair of minimalist running shoes.',
     longDescription: 'These minimalist running shoes provide a natural running experience.',
     price: 100.00,
-    image: getImage('runningshoe4', 'runningshoe4').url,
-    imageHint: getImage('runningshoe4', 'runningshoe4').hint,
+    image: getImage('runningshoe4').url,
+    imageHint: getImage('runningshoe4').hint,
   },
 ];

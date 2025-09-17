@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { getImage } from '../products';
+import { getImage } from '../placeholder-images';
 
 export const runningFitnessProducts: Product[] = [
   // Running Fitness - Activewear
@@ -9,8 +9,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'A high-performance t-shirt for active lifestyles.',
     longDescription: 'This moisture-wicking t-shirt is designed to keep you cool and dry during intense workouts.',
     price: 40.00,
-    image: getImage('activewear1', 'activewear1').url,
-    imageHint: getImage('activewear1', 'activewear1').hint,
+    image: getImage('activewear1').url,
+    imageHint: getImage('activewear1').hint,
   },
   {
     id: 'activewear_002',
@@ -18,8 +18,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'A stylish and breathable tank top.',
     longDescription: 'The racerback design allows for full range of motion, making it perfect for any activity.',
     price: 35.00,
-    image: getImage('activewear2', 'activewear2').url,
-    imageHint: getImage('activewear2', 'activewear2').hint,
+    image: getImage('activewear2').url,
+    imageHint: getImage('activewear2').hint,
   },
   {
     id: 'activewear_003',
@@ -27,8 +27,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'Comfortable shorts for any workout.',
     longDescription: 'These shorts feature a built-in liner for support and a lightweight outer layer for comfort.',
     price: 50.00,
-    image: getImage('activewear3', 'activewear3').url,
-    imageHint: getImage('activewear3', 'activewear3').hint,
+    image: getImage('activewear3').url,
+    imageHint: getImage('activewear3').hint,
   },
   {
     id: 'activewear_004',
@@ -36,8 +36,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'A supportive sports bra for high-impact activities.',
     longDescription: 'This sports bra provides maximum support and comfort, designed for running and other high-impact sports.',
     price: 55.00,
-    image: getImage('activewear4', 'activewear4').url,
-    imageHint: getImage('activewear4', 'activewear4').hint,
+    image: getImage('activewear4').url,
+    imageHint: getImage('activewear4').hint,
   },
 
   // Running Fitness - Compression
@@ -47,8 +47,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'Supportive tights for enhanced performance.',
     longDescription: 'These compression tights improve blood flow and reduce muscle fatigue, helping you perform at your best.',
     price: 80.00,
-    image: getImage('compression1', 'compression1').url,
-    imageHint: getImage('compression1', 'compression1').hint,
+    image: getImage('compression1').url,
+    imageHint: getImage('compression1').hint,
   },
   {
     id: 'compression_002',
@@ -56,8 +56,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'Shorts that offer muscle support.',
     longDescription: 'Ideal for training, these compression shorts provide targeted support to key muscle groups.',
     price: 60.00,
-    image: getImage('compression2', 'compression2').url,
-    imageHint: getImage('compression2', 'compression2').hint,
+    image: getImage('compression2').url,
+    imageHint: getImage('compression2').hint,
   },
   {
     id: 'compression_003',
@@ -65,8 +65,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'A shirt for muscle recovery and performance.',
     longDescription: 'This long-sleeve compression shirt supports your upper body muscles and aids in recovery.',
     price: 70.00,
-    image: getImage('compression3', 'compression3').url,
-    imageHint: getImage('compression3', 'compression3').hint,
+    image: getImage('compression3').url,
+    imageHint: getImage('compression3').hint,
   },
   {
     id: 'compression_004',
@@ -74,8 +74,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'Socks designed to boost circulation.',
     longDescription: 'Improve your performance and speed up recovery with these specialized compression socks for athletes.',
     price: 25.00,
-    image: getImage('compression4', 'compression4').url,
-    imageHint: getImage('compression4', 'compression4').hint,
+    image: getImage('compression4').url,
+    imageHint: getImage('compression4').hint,
   },
 
   // Running Fitness - Men
@@ -85,8 +85,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'A lightweight, wind-resistant jacket.',
     longDescription: 'This jacket is perfect for running in unpredictable weather, offering protection without the bulk.',
     price: 90.00,
-    image: getImage('men_running_1', 'menrunning1').url,
-    imageHint: getImage('men_running_1', 'menrunning1').hint,
+    image: getImage('men_running_1').url,
+    imageHint: getImage('men_running_1').hint,
   },
   {
     id: 'men_running_fitness_002',
@@ -94,8 +94,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'Tights designed for cold-weather running.',
     longDescription: 'Stay warm and supported on your runs with these thermal running tights.',
     price: 75.00,
-    image: getImage('men_running_2', 'menrunning2').url,
-    imageHint: getImage('men_running_2', 'menrunning2').hint,
+    image: getImage('men_running_2').url,
+    imageHint: getImage('men_running_2').hint,
   },
   {
     id: 'men_running_fitness_003',
@@ -103,8 +103,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'Shorts with a built-in compression layer.',
     longDescription: 'Experience the best of both worlds with these running shorts that have a supportive inner tight.',
     price: 65.00,
-    image: getImage('men_running_3', 'menrunning3').url,
-    imageHint: getImage('men_running_3', 'menrunning3').hint,
+    image: getImage('men_running_3').url,
+    imageHint: getImage('men_running_3').hint,
   },
   {
     id: 'men_running_fitness_004',
@@ -112,8 +112,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'A breathable shirt for cool-weather runs.',
     longDescription: 'This long-sleeve shirt is made from moisture-wicking fabric to keep you comfortable on cooler days.',
     price: 45.00,
-    image: getImage('men_running_4', 'menrunning4').url,
-    imageHint: getImage('men_running_4', 'menrunning4').hint,
+    image: getImage('men_running_4').url,
+    imageHint: getImage('men_running_4').hint,
   },
   // Running Fitness - Women
   {
@@ -122,8 +122,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'A stylish and breathable running top.',
     longDescription: 'This top combines fashion and function, featuring a flattering fit and sweat-wicking material.',
     price: 45.00,
-    image: getImage('women_running_1', 'womenrunning1').url,
-    imageHint: getImage('women_running_1', 'womenrunning1').hint,
+    image: getImage('women_running_1').url,
+    imageHint: getImage('women_running_1').hint,
   },
   {
     id: 'women_running_fitness_002',
@@ -131,8 +131,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'Leggings with a secure, high-rise fit.',
     longDescription: 'These running leggings stay in place, offering a comfortable and supportive high-rise waistband.',
     price: 85.00,
-    image: getImage('women_running_2', 'womenrunning2').url,
-    imageHint: getImage('women_running_2', 'womenrunning2').hint,
+    image: getImage('women_running_2').url,
+    imageHint: getImage('women_running_2').hint,
   },
   {
     id: 'women_running_fitness_003',
@@ -140,8 +140,8 @@ export const runningFitnessProducts: Product[] = [
     description: 'Maximum support for running.',
     longDescription: 'Designed specifically for running, this sports bra offers maximum support and minimizes bounce.',
     price: 60.00,
-    image: getImage('women_running_3', 'womenrunning3').url,
-    imageHint: getImage('women_running_3', 'womenrunning3').hint,
+    image: getImage('women_running_3').url,
+    imageHint: getImage('women_running_3').hint,
   },
   {
     id: 'women_running_fitness_004',
@@ -149,7 +149,7 @@ export const runningFitnessProducts: Product[] = [
     description: 'Lightweight shorts designed for freedom of movement.',
     longDescription: 'Feel free and fast in these lightweight running shorts, featuring a comfortable waistband and inner brief.',
     price: 50.00,
-    image: getImage('women_running_4', 'womenrunning4').url,
-    imageHint: getImage('women_running_4', 'womenrunning4').hint,
+    image: getImage('women_running_4').url,
+    imageHint: getImage('women_running_4').hint,
   }
 ];

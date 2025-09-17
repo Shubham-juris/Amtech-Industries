@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { getImage } from '../products';
+import { getImage } from '../placeholder-images';
 
 export const customClothingProducts: Product[] = [
     // Custom Clothing - White Label
@@ -9,8 +9,8 @@ export const customClothingProducts: Product[] = [
     description: 'High-quality plain t-shirt for your brand.',
     longDescription: 'A premium, unbranded t-shirt made from 100% ring-spun cotton, ready for your custom labels and designs. Perfect for starting your own clothing line.',
     price: 15.00,
-    image: getImage('whitelabel1', 'whitelabel1').url,
-    imageHint: getImage('whitelabel1', 'whitelabel1').hint,
+    image: getImage('whitelabel1').url,
+    imageHint: getImage('whitelabel1').hint,
   },
   {
     id: 'whitelabel_002',
@@ -18,8 +18,8 @@ export const customClothingProducts: Product[] = [
     description: 'Plush, unbranded hoodie.',
     longDescription: 'A comfortable and stylish hoodie made from a soft cotton-poly blend. Features a kangaroo pocket and double-lined hood, ready for your branding.',
     price: 40.00,
-    image: getImage('whitelabel2', 'whitelabel2').url,
-    imageHint: getImage('whitelabel2', 'whitelabel2').hint,
+    image: getImage('whitelabel2').url,
+    imageHint: getImage('whitelabel2').hint,
   },
   {
     id: 'whitelabel_003',
@@ -27,8 +27,8 @@ export const customClothingProducts: Product[] = [
     description: 'Classic unbranded polo shirt.',
     longDescription: 'A high-quality piqué polo shirt with a ribbed collar and cuffs. Ideal for corporate branding or a sophisticated clothing line.',
     price: 25.00,
-    image: getImage('whitelabel3', 'whitelabel3').url,
-    imageHint: getImage('whitelabel3', 'whitelabel3').hint,
+    image: getImage('whitelabel3').url,
+    imageHint: getImage('whitelabel3').hint,
   },
   {
     id: 'whitelabel_004',
@@ -36,8 +36,8 @@ export const customClothingProducts: Product[] = [
     description: 'Cozy, plain sweatshirt.',
     longDescription: 'A classic crewneck sweatshirt made from a durable fleece fabric. A perfect canvas for your custom graphics and branding.',
     price: 35.00,
-    image: getImage('whitelabel4', 'whitelabel4').url,
-    imageHint: getImage('whitelabel4', 'whitelabel4').hint,
+    image: getImage('whitelabel4').url,
+    imageHint: getImage('whitelabel4').hint,
   },
   {
     id: 'whitelabel_005',
@@ -45,8 +45,8 @@ export const customClothingProducts: Product[] = [
     description: 'Durable, unbranded cotton tote bag.',
     longDescription: 'A sturdy and spacious tote bag made from heavy-duty cotton canvas, perfect for custom printing and branding.',
     price: 12.00,
-    image: getImage('whitelabel5', 'whitelabel5').url,
-    imageHint: getImage('whitelabel5', 'whitelabel5').hint,
+    image: getImage('whitelabel5').url,
+    imageHint: getImage('whitelabel5').hint,
   },
   {
     id: 'whitelabel_006',
@@ -54,8 +54,8 @@ export const customClothingProducts: Product[] = [
     description: 'Blank cap for embroidery.',
     longDescription: 'A classic six-panel baseball cap with an adjustable strap, ready for your custom logo embroidery.',
     price: 10.00,
-    image: getImage('whitelabel6', 'whitelabel6').url,
-    imageHint: getImage('whitelabel6', 'whitelabel6').hint,
+    image: getImage('whitelabel6').url,
+    imageHint: getImage('whitelabel6').hint,
   },
   {
     id: 'whitelabel_007',
@@ -63,8 +63,8 @@ export const customClothingProducts: Product[] = [
     description: 'High-quality plain leggings.',
     longDescription: 'Stretchy and comfortable leggings made from a premium spandex blend, perfect for fitness or fashion branding.',
     price: 28.00,
-    image: getImage('whitelabel7', 'whitelabel7').url,
-    imageHint: getImage('whitelabel7', 'whitelabel7').hint,
+    image: getImage('whitelabel7').url,
+    imageHint: getImage('whitelabel7').hint,
   },
   {
     id: 'whitelabel_008',
@@ -72,8 +72,8 @@ export const customClothingProducts: Product[] = [
     description: 'Comfortable, unbranded joggers.',
     longDescription: 'Stylish and comfortable joggers with an adjustable waistband and tapered fit, ready for your custom branding.',
     price: 38.00,
-    image: getImage('whitelabel8', 'whitelabel8').url,
-    imageHint: getImage('whitelabel8', 'whitelabel8').hint,
+    image: getImage('whitelabel8').url,
+    imageHint: getImage('whitelabel8').hint,
   },
 
   // Custom Clothing - Sublimation
@@ -83,8 +83,8 @@ export const customClothingProducts: Product[] = [
     description: '100% polyester t-shirt for sublimation.',
     longDescription: 'A high-quality, 100% polyester t-shirt specifically designed for vibrant and durable sublimation printing. Soft and moisture-wicking.',
     price: 18.00,
-    image: getImage('sublimation1', 'sublimation1').url,
-    imageHint: getImage('sublimation1', 'sublimation1').hint,
+    image: getImage('sublimation1').url,
+    imageHint: getImage('sublimation1').hint,
   },
   {
     id: 'sublimation_002',
@@ -92,8 +92,8 @@ export const customClothingProducts: Product[] = [
     description: 'Ceramic mug with sublimation coating.',
     longDescription: 'A classic ceramic mug with a special coating that ensures your sublimation prints are bright and long-lasting. Dishwasher and microwave safe.',
     price: 8.00,
-    image: getImage('sublimation2', 'sublimation2').url,
-    imageHint: getImage('sublimation2', 'sublimation2').hint,
+    image: getImage('sublimation2').url,
+    imageHint: getImage('sublimation2').hint,
   },
   {
     id: 'sublimation_003',
@@ -101,8 +101,8 @@ export const customClothingProducts: Product[] = [
     description: 'Blank phone case for custom printing.',
     longDescription: 'A durable, blank phone case with a metal insert for high-quality sublimation printing. Available for various phone models.',
     price: 10.00,
-    image: getImage('sublimation3', 'sublimation3').url,
-    imageHint: getImage('sublimation3', 'sublimation3').hint,
+    image: getImage('sublimation3').url,
+    imageHint: getImage('sublimation3').hint,
   },
   {
     id: 'sublimation_004',
@@ -110,8 +110,8 @@ export const customClothingProducts: Product[] = [
     description: 'Blank mouse pad for custom designs.',
     longDescription: 'A non-slip rubber mouse pad with a polyester top layer, perfect for creating custom designs with sublimation.',
     price: 6.00,
-    image: getImage('sublimation4', 'sublimation4').url,
-    imageHint: getImage('sublimation4', 'sublimation4').hint,
+    image: getImage('sublimation4').url,
+    imageHint: getImage('sublimation4').hint,
   },
   {
     id: 'sublimation_005',
@@ -119,8 +119,8 @@ export const customClothingProducts: Product[] = [
     description: 'Polyester hoodie for vibrant prints.',
     longDescription: 'A 100% polyester hoodie designed for all-over sublimation printing, allowing for bold and vibrant designs.',
     price: 45.00,
-    image: getImage('sublimation5', 'sublimation5').url,
-    imageHint: getImage('sublimation5', 'sublimation5').hint,
+    image: getImage('sublimation5').url,
+    imageHint: getImage('sublimation5').hint,
   },
   {
     id: 'sublimation_006',
@@ -128,8 +128,8 @@ export const customClothingProducts: Product[] = [
     description: 'Blank socks ready for custom printing.',
     longDescription: 'Create unique, custom socks with these polyester-blend blanks, perfect for vibrant sublimation prints.',
     price: 9.00,
-    image: getImage('sublimation6', 'sublimation6').url,
-    imageHint: getImage('sublimation6', 'sublimation6').hint,
+    image: getImage('sublimation6').url,
+    imageHint: getImage('sublimation6').hint,
   },
   {
     id: 'sublimation_007',
@@ -137,8 +137,8 @@ export const customClothingProducts: Product[] = [
     description: 'Polyester tote for all-over prints.',
     longDescription: 'A durable polyester tote bag that is perfect for creating custom, all-over sublimation prints.',
     price: 14.00,
-    image: getImage('sublimation7', 'sublimation7').url,
-    imageHint: getImage('sublimation7', 'sublimation7').hint,
+    image: getImage('sublimation7').url,
+    imageHint: getImage('sublimation7').hint,
   },
   {
     id: 'sublimation_008',
@@ -146,7 +146,7 @@ export const customClothingProducts: Product[] = [
     description: 'Performance jersey for team branding.',
     longDescription: 'A moisture-wicking, 100% polyester sports jersey, ideal for creating custom team uniforms with sublimation printing.',
     price: 30.00,
-    image: getImage('sublimation8', 'sublimation8').url,
-    imageHint: getImage('sublimation8', 'sublimation8').hint,
+    image: getImage('sublimation8').url,
+    imageHint: getImage('sublimation8').hint,
   },
 ];

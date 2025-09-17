@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { getImage } from '../products';
+import { getImage } from '../placeholder-images';
 
 export const sportsProducts: Product[] = [
   // Sports - Athletics
@@ -9,8 +9,8 @@ export const sportsProducts: Product[] = [
     description: 'High-performance running shoes.',
     longDescription: 'Engineered for speed and comfort, these running shoes are perfect for competitive athletics.',
     price: 130.00,
-    image: getImage('athletics1', 'athletics1').url,
-    imageHint: getImage('athletics1', 'athletics1').hint,
+    image: getImage('athletics1').url,
+    imageHint: getImage('athletics1').hint,
   },
   {
     id: 'athletics_002',
@@ -18,8 +18,8 @@ export const sportsProducts: Product[] = [
     description: 'Moisture-wicking athletic shorts.',
     longDescription: 'Stay dry and comfortable during intense workouts with these moisture-wicking athletic shorts.',
     price: 45.00,
-    image: getImage('athletics2', 'athletics2').url,
-    imageHint: getImage('athletics2', 'athletics2').hint,
+    image: getImage('athletics2').url,
+    imageHint: getImage('athletics2').hint,
   },
   // Sports - Basketball
   {
@@ -28,8 +28,8 @@ export const sportsProducts: Product[] = [
     description: 'A professional-grade basketball.',
     longDescription: 'The official size and weight basketball for serious players, with superior grip and durability.',
     price: 40.00,
-    image: getImage('basketball1', 'basketball1').url,
-    imageHint: getImage('basketball1', 'basketball1').hint,
+    image: getImage('basketball1').url,
+    imageHint: getImage('basketball1').hint,
   },
   {
     id: 'basketball_002',
@@ -37,8 +37,8 @@ export const sportsProducts: Product[] = [
     description: 'A stylish basketball jersey.',
     longDescription: 'Represent your team with this breathable and lightweight basketball jersey, available in multiple colors.',
     price: 60.00,
-    image: getImage('basketball2', 'basketball2').url,
-    imageHint: getImage('basketball2', 'basketball2').hint,
+    image: getImage('basketball2').url,
+    imageHint: getImage('basketball2').hint,
   },
   // Sports - Boxing
   {
@@ -47,8 +47,8 @@ export const sportsProducts: Product[] = [
     description: 'Professional boxing gloves.',
     longDescription: 'These professional-grade boxing gloves provide excellent protection and support for training and competition.',
     price: 80.00,
-    image: getImage('boxing1', 'boxing1').url,
-    imageHint: getImage('boxing1', 'boxing1').hint,
+    image: getImage('boxing1').url,
+    imageHint: getImage('boxing1').hint,
   },
   {
     id: 'boxing_002',
@@ -56,8 +56,8 @@ export const sportsProducts: Product[] = [
     description: 'A set of hand wraps for boxing.',
     longDescription: 'Protect your hands and wrists with these durable and supportive hand wraps, essential for any boxer.',
     price: 15.00,
-    image: getImage('boxing2', 'boxing2').url,
-    imageHint: getImage('boxing2', 'boxing2').hint,
+    image: getImage('boxing2').url,
+    imageHint: getImage('boxing2').hint,
   },
   // Sports - Cycling
   {
@@ -66,8 +66,8 @@ export const sportsProducts: Product[] = [
     description: 'A lightweight cycling helmet.',
     longDescription: 'This aerodynamic cycling helmet provides excellent protection and ventilation for long rides.',
     price: 120.00,
-    image: getImage('cycling1', 'cycling1').url,
-    imageHint: getImage('cycling1', 'cycling1').hint,
+    image: getImage('cycling1').url,
+    imageHint: getImage('cycling1').hint,
   },
   {
     id: 'cycling_002',
@@ -75,8 +75,8 @@ export const sportsProducts: Product[] = [
     description: 'Padded cycling shorts for comfort.',
     longDescription: 'These padded cycling shorts are designed for maximum comfort on long rides, reducing chafing and discomfort.',
     price: 70.00,
-    image: getImage('cycling2', 'cycling2').url,
-    imageHint: getImage('cycling2', 'cycling2').hint,
+    image: getImage('cycling2').url,
+    imageHint: getImage('cycling2').hint,
   },
   // Sports - Dance Wear
   {
@@ -85,8 +85,8 @@ export const sportsProducts: Product[] = [
     description: 'A classic ballet leotard.',
     longDescription: 'A comfortable and elegant leotard, perfect for ballet and other forms of dance.',
     price: 40.00,
-    image: getImage('dancewear1', 'dancewear1').url,
-    imageHint: getImage('dancewear1', 'dancewear1').hint,
+    image: getImage('dancewear1').url,
+    imageHint: getImage('dancewear1').hint,
   },
   {
     id: 'dancewear_002',
@@ -94,8 +94,8 @@ export const sportsProducts: Product[] = [
     description: 'A pair of comfortable ballet shoes.',
     longDescription: 'These ballet shoes offer a perfect fit and support for dancers of all levels.',
     price: 35.00,
-    image: getImage('dancewear2', 'dancewear2').url,
-    imageHint: getImage('dancewear2', 'dancewear2').hint,
+    image: getImage('dancewear2').url,
+    imageHint: getImage('dancewear2').hint,
   },
   // Sports - Golf
   {
@@ -104,8 +104,8 @@ export const sportsProducts: Product[] = [
     description: 'A set of professional golf clubs.',
     longDescription: 'This complete set of golf clubs is designed for performance and precision, suitable for all skill levels.',
     price: 500.00,
-    image: getImage('golf1', 'golf1').url,
-    imageHint: getImage('golf1', 'golf1').hint,
+    image: getImage('golf1').url,
+    imageHint: getImage('golf1').hint,
   },
   {
     id: 'golf_002',
@@ -113,8 +113,8 @@ export const sportsProducts: Product[] = [
     description: 'A classic golf polo shirt.',
     longDescription: 'Stay cool and comfortable on the course with this performance golf polo, made from moisture-wicking fabric.',
     price: 55.00,
-    image: getImage('golf2', 'golf2').url,
-    imageHint: getImage('golf2', 'golf2').hint,
+    image: getImage('golf2').url,
+    imageHint: getImage('golf2').hint,
   },
   // Sports - Hockey
   {
@@ -123,8 +123,8 @@ export const sportsProducts: Product[] = [
     description: 'A durable hockey stick.',
     longDescription: 'This lightweight and durable composite hockey stick is designed for powerful shots and precise control.',
     price: 150.00,
-    image: getImage('hockey1', 'hockey1').url,
-    imageHint: getImage('hockey1', 'hockey1').hint,
+    image: getImage('hockey1').url,
+    imageHint: getImage('hockey1').hint,
   },
   {
     id: 'hockey_002',
@@ -132,8 +132,8 @@ export const sportsProducts: Product[] = [
     description: 'A set of protective hockey pads.',
     longDescription: 'This set of hockey pads provides complete protection for shins, elbows, and shoulders.',
     price: 200.00,
-    image: getImage('hockey2', 'hockey2').url,
-    imageHint: getImage('hockey2', 'hockey2').hint,
+    image: getImage('hockey2').url,
+    imageHint: getImage('hockey2').hint,
   },
   // Sports - Marathons
   {
@@ -142,8 +142,8 @@ export const sportsProducts: Product[] = [
     description: 'A hydration pack for long runs.',
     longDescription: 'Stay hydrated during long-distance runs with this lightweight and comfortable hydration pack.',
     price: 60.00,
-    image: getImage('marathon1', 'marathon1').url,
-    imageHint: getImage('marathon1', 'marathon1').hint,
+    image: getImage('marathon1').url,
+    imageHint: getImage('marathon1').hint,
   },
   {
     id: 'marathon_002',
@@ -151,8 +151,8 @@ export const sportsProducts: Product[] = [
     description: 'Lightweight running shorts for marathons.',
     longDescription: 'These lightweight and breathable running shorts are designed for maximum comfort during marathons.',
     price: 50.00,
-    image: getImage('marathon2', 'marathon2').url,
-    imageHint: getImage('marathon2', 'marathon2').hint,
+    image: getImage('marathon2').url,
+    imageHint: getImage('marathon2').hint,
   },
   // Sports - Tennis
   {
@@ -161,8 +161,8 @@ export const sportsProducts: Product[] = [
     description: 'A high-performance tennis racket.',
     longDescription: 'This high-performance tennis racket offers a great balance of power and control for competitive players.',
     price: 180.00,
-    image: getImage('tennis1', 'tennis1').url,
-    imageHint: getImage('tennis1', 'tennis1').hint,
+    image: getImage('tennis1').url,
+    imageHint: getImage('tennis1').hint,
   },
   {
     id: 'tennis_002',
@@ -170,8 +170,8 @@ export const sportsProducts: Product[] = [
     description: 'A can of professional tennis balls.',
     longDescription: 'This can of championship-quality tennis balls is perfect for matches and practice sessions.',
     price: 5.00,
-    image: getImage('tennis2', 'tennis2').url,
-    imageHint: getImage('tennis2', 'tennis2').hint,
+    image: getImage('tennis2').url,
+    imageHint: getImage('tennis2').hint,
   },
   // Sports - Triathlon
   {
@@ -180,8 +180,8 @@ export const sportsProducts: Product[] = [
     description: 'A full-body wetsuit for triathlons.',
     longDescription: 'This full-body wetsuit provides buoyancy and thermal protection for the swimming leg of a triathlon.',
     price: 250.00,
-    image: getImage('triathlon1', 'triathlon1').url,
-    imageHint: getImage('triathlon1', 'triathlon1').hint,
+    image: getImage('triathlon1').url,
+    imageHint: getImage('triathlon1').hint,
   },
   {
     id: 'triathlon_002',
@@ -189,7 +189,7 @@ export const sportsProducts: Product[] = [
     description: 'A comfortable and aerodynamic tri-suit.',
     longDescription: 'This tri-suit is designed for performance across all three disciplines of a triathlon, offering comfort and aerodynamics.',
     price: 200.00,
-    image: getImage('triathlon2', 'triathlon2').url,
-    imageHint: getImage('triathlon2', 'triathlon2').hint,
+    image: getImage('triathlon2').url,
+    imageHint: getImage('triathlon2').hint,
   },
 ];

@@ -1,5 +1,5 @@
 import type { Product } from '../types';
-import { getImage } from '../products';
+import { getImage } from '../placeholder-images';
 
 export const menApparelProducts: Product[] = [
     // T-Shirts (5)
@@ -9,8 +9,8 @@ export const menApparelProducts: Product[] = [
     description: 'A basic essential for any wardrobe.',
     longDescription: 'Crafted from soft, breathable cotton, this crewneck T-shirt offers a classic fit for everyday comfort.',
     price: 20.00,
-    image: getImage('tshirt1', 'tshirt1').url,
-    imageHint: getImage('tshirt1', 'tshirt1').hint,
+    image: getImage('tshirt1').url,
+    imageHint: getImage('tshirt1').hint,
   },
   {
     id: 't-shirt_004',
@@ -18,8 +18,8 @@ export const menApparelProducts: Product[] = [
     description: 'A classic polo for a smart-casual look.',
     longDescription: 'This polo T-shirt is made from high-quality piqué cotton, offering a refined yet comfortable style.',
     price: 45.00,
-    image: getImage('tshirt4', 'tshirt4').url,
-    imageHint: getImage('tshirt4', 'tshirt4').hint,
+    image: getImage('tshirt4').url,
+    imageHint: getImage('tshirt4').hint,
   },
   {
     id: 't-shirt_005',
@@ -27,8 +27,8 @@ export const menApparelProducts: Product[] = [
     description: 'Perfect for layering in cooler weather.',
     longDescription: 'This long-sleeve T-shirt is made from a soft and warm cotton fabric, ideal for transitional seasons.',
     price: 30.00,
-    image: getImage('tshirt5', 'tshirt5').url,
-    imageHint: getImage('tshirt5', 'tshirt5').hint,
+    image: getImage('tshirt5').url,
+    imageHint: getImage('tshirt5').hint,
   },
   // Hoodies (12)
   {
@@ -37,8 +37,8 @@ export const menApparelProducts: Product[] = [
     description: 'A comfortable and stylish beige hoodie.',
     longDescription: 'Made from plush cotton, this beige hoodie offers both comfort and style, perfect for a casual look.',
     price: 60.00,
-    image: getImage('hoodie1', 'hoodie1').url,
-    imageHint: getImage('hoodie1', 'hoodie1').hint,
+    image: getImage('hoodie1').url,
+    imageHint: getImage('hoodie1').hint,
   },
   {
     id: 'hoodie_002',
@@ -46,8 +46,8 @@ export const menApparelProducts: Product[] = [
     description: 'A trendy flannel hoodie for a rugged look.',
     longDescription: 'This flannel hoodie combines the warmth of a jacket with the comfort of a hoodie, ideal for outdoor adventures.',
     price: 75.00,
-    image: getImage('hoodie2', 'hoodie2').url,
-    imageHint: getImage('hoodie2', 'hoodie2').hint,
+    image: getImage('hoodie2').url,
+    imageHint: getImage('hoodie2').hint,
   },
   {
     id: 'hoodie_003',
@@ -55,8 +55,8 @@ export const menApparelProducts: Product[] = [
     description: 'A classic light gray hoodie for everyday wear.',
     longDescription: 'A versatile and comfortable light gray hoodie that pairs well with any outfit.',
     price: 55.00,
-    image: getImage('hoodie3', 'hoodie3').url,
-    imageHint: getImage('hoodie3', 'hoodie3').hint,
+    image: getImage('hoodie3').url,
+    imageHint: getImage('hoodie3').hint,
   },
   {
     id: 'hoodie_004',
@@ -64,8 +64,8 @@ export const menApparelProducts: Product[] = [
     description: 'A striking designer hoodie in gray and yellow.',
     longDescription: 'Make a statement with this designer hoodie featuring a bold color-block design in gray and canary yellow.',
     price: 85.00,
-    image: getImage('hoodie4', 'hoodie4').url,
-    imageHint: getImage('hoodie4', 'hoodie4').hint,
+    image: getImage('hoodie4').url,
+    imageHint: getImage('hoodie4').hint,
   },
   {
     id: 'hoodie_005',
@@ -73,8 +73,8 @@ export const menApparelProducts: Product[] = [
     description: 'A vibrant designer hoodie in red and white.',
     longDescription: 'This eye-catching hoodie in tomato red and white is perfect for a sporty and stylish look.',
     price: 80.00,
-    image: getImage('hoodie5', 'hoodie5').url,
-    imageHint: getImage('hoodie5', 'hoodie5').hint,
+    image: getImage('hoodie5').url,
+    imageHint: getImage('hoodie5').hint,
   },
   {
     id: 'hoodie_006',
@@ -82,8 +82,8 @@ export const menApparelProducts: Product[] = [
     description: 'A cool designer hoodie in gray and pastel green.',
     longDescription: 'A modern and stylish hoodie with a unique color combination of gray and pastel green.',
     price: 82.00,
-    image: getImage('hoodie6', 'hoodie6').url,
-    imageHint: getImage('hoodie6', 'hoodie6').hint,
+    image: getImage('hoodie6').url,
+    imageHint: getImage('hoodie6').hint,
   },
   {
     id: 'hoodie_007',
@@ -91,8 +91,8 @@ export const menApparelProducts: Product[] = [
     description: 'A sleek designer hoodie in a monochrome palette.',
     longDescription: 'This hoodie features a sophisticated color-block design in white, gray, and black for a modern aesthetic.',
     price: 90.00,
-    image: getImage('hoodie7', 'hoodie7').url,
-    imageHint: getImage('hoodie7', 'hoodie7').hint,
+    image: getImage('hoodie7').url,
+    imageHint: getImage('hoodie7').hint,
   },
   {
     id: 'hoodie_008',
@@ -100,8 +100,8 @@ export const menApparelProducts: Product[] = [
     description: 'A black hoodie with vibrant neon details.',
     longDescription: 'Stand out with this black designer hoodie featuring bright neon green trimmings for a futuristic look.',
     price: 88.00,
-    image: getImage('hoodie8', 'hoodie8').url,
-    imageHint: getImage('hoodie8', 'hoodie8').hint,
+    image: getImage('hoodie8').url,
+    imageHint: getImage('hoodie8').hint,
   },
   {
     id: 'hoodie_009',
@@ -109,8 +109,8 @@ export const menApparelProducts: Product[] = [
     description: 'A classic designer hoodie in blue and white.',
     longDescription: 'This hoodie combines royal blue and white for a timeless and sporty look.',
     price: 85.00,
-    image: getImage('hoodie9', 'hoodie9').url,
-    imageHint: getImage('hoodie9', 'hoodie9').hint,
+    image: getImage('hoodie9').url,
+    imageHint: getImage('hoodie9').hint,
   },
   {
     id: 'hoodie_010',
@@ -118,8 +118,8 @@ export const menApparelProducts: Product[] = [
     description: 'A bold designer hoodie in red and black.',
     longDescription: 'This hoodie features a powerful color combination of red and black, perfect for a confident look.',
     price: 85.00,
-    image: getImage('hoodie10', 'hoodie10').url,
-    imageHint: getImage('hoodie10', 'hoodie10').hint,
+    image: getImage('hoodie10').url,
+    imageHint: getImage('hoodie10').hint,
   },
   {
     id: 'hoodie_011',
@@ -127,8 +127,8 @@ export const menApparelProducts: Product[] = [
     description: 'A sleek black hoodie with red accents.',
     longDescription: 'A stylish and modern black hoodie with striking red details for a sharp look.',
     price: 88.00,
-    image: getImage('hoodie11', 'hoodie11').url,
-    imageHint: getImage('hoodie11', 'hoodie11').hint,
+    image: getImage('hoodie11').url,
+    imageHint: getImage('hoodie11').hint,
   },
   {
     id: 'hoodie_012',
@@ -136,8 +136,8 @@ export const menApparelProducts: Product[] = [
     description: 'A cool designer hoodie in black and blue.',
     longDescription: 'This hoodie features a subtle yet stylish combination of black and blue, perfect for a relaxed look.',
     price: 85.00,
-    image: getImage('hoodie12', 'hoodie12').url,
-    imageHint: getImage('hoodie12', 'hoodie12').hint,
+    image: getImage('hoodie12').url,
+    imageHint: getImage('hoodie12').hint,
   },
   // Men's Jackets
   {
@@ -146,8 +146,8 @@ export const menApparelProducts: Product[] = [
     description: 'A classic blue denim jacket for men.',
     longDescription: 'This versatile denim jacket is a timeless piece for any man\'s wardrobe, perfect for a casual look.',
     price: 95.00,
-    image: getImage('men_jacket_1', 'menjacket1').url,
-    imageHint: getImage('men_jacket_1', 'menjacket1').hint,
+    image: getImage('men_jacket_1').url,
+    imageHint: getImage('men_jacket_1').hint,
   },
   {
     id: 'men_jacket_002',
@@ -155,8 +155,8 @@ export const menApparelProducts: Product[] = [
     description: 'A sleek black leather jacket for men.',
     longDescription: 'This classic black leather jacket adds a cool and edgy vibe to any outfit.',
     price: 180.00,
-    image: getImage('men_jacket_2', 'menjacket2').url,
-    imageHint: getImage('men_jacket_2', 'menjacket2').hint,
+    image: getImage('men_jacket_2').url,
+    imageHint: getImage('men_jacket_2').hint,
   },
   {
     id: 'men_jacket_003',
@@ -164,8 +164,8 @@ export const menApparelProducts: Product[] = [
     description: 'A stylish green bomber jacket for men.',
     longDescription: 'Stay on-trend with this green bomber jacket, perfect for a modern and casual style.',
     price: 120.00,
-    image: getImage('men_jacket_3', 'menjacket3').url,
-    imageHint: getImage('men_jacket_3', 'menjacket3').hint,
+    image: getImage('men_jacket_3').url,
+    imageHint: getImage('men_jacket_3').hint,
   },
 
   // Men's Pants
@@ -175,8 +175,8 @@ export const menApparelProducts: Product[] = [
     description: 'A classic pair of blue jeans for men.',
     longDescription: 'These timeless blue jeans are a wardrobe staple, offering a comfortable and versatile fit.',
     price: 70.00,
-    image: getImage('men_pants_1', 'menpants1').url,
-    imageHint: getImage('men_pants_1', 'menpants1').hint,
+    image: getImage('men_pants_1').url,
+    imageHint: getImage('men_pants_1').hint,
   },
   {
     id: 'men_pants_002',
@@ -184,8 +184,8 @@ export const menApparelProducts: Product[] = [
     description: 'Stylish khaki chino pants for men.',
     longDescription: 'These khaki chino pants are perfect for a smart-casual look, offering both style and comfort.',
     price: 65.00,
-    image: getImage('men_pants_2', 'menpants2').url,
-    imageHint: getImage('men_pants_2', 'menpants2').hint,
+    image: getImage('men_pants_2').url,
+    imageHint: getImage('men_pants_2').hint,
   },
   {
     id: 'men_pants_003',
@@ -193,8 +193,8 @@ export const menApparelProducts: Product[] = [
     description: 'Comfortable gray sweatpants for men.',
     longDescription: 'These soft and comfortable gray sweatpants are perfect for lounging or a casual day out.',
     price: 50.00,
-    image: getImage('men_pants_3', 'menpants3').url,
-    imageHint: getImage('men_pants_3', 'menpants3').hint,
+    image: getImage('men_pants_3').url,
+    imageHint: getImage('men_pants_3').hint,
   },
 
   // Men's T-Shirts
@@ -204,8 +204,8 @@ export const menApparelProducts: Product[] = [
     description: 'A classic black crewneck t-shirt for men.',
     longDescription: 'This essential black t-shirt is made from soft cotton, perfect for any casual occasion.',
     price: 25.00,
-    image: getImage('men_tshirt_1', 'mentshirt1').url,
-    imageHint: getImage('men_tshirt_1', 'mentshirt1').hint,
+    image: getImage('men_tshirt_1').url,
+    imageHint: getImage('men_tshirt_1').hint,
   },
   {
     id: 'men_tshirt_002',
@@ -213,8 +213,8 @@ export const menApparelProducts: Product[] = [
     description: 'A stylish gray v-neck t-shirt for men.',
     longDescription: 'This gray v-neck t-shirt offers a modern fit and is made from a comfortable cotton blend.',
     price: 28.00,
-    image: getImage('men_tshirt_2', 'mentshirt2').url,
-    imageHint: getImage('men_tshirt_2', 'mentshirt2').hint,
+    image: getImage('men_tshirt_2').url,
+    imageHint: getImage('men_tshirt_2').hint,
   },
   {
     id: 'men_tshirt_003',
@@ -222,8 +222,8 @@ export const menApparelProducts: Product[] = [
     description: 'A casual striped pocket t-shirt for men.',
     longDescription: 'This striped t-shirt with a pocket detail is a stylish and casual choice for everyday wear.',
     price: 32.00,
-    image: getImage('men_tshirt_3', 'mentshirt3').url,
-    imageHint: getImage('men_tshirt_3', 'mentshirt3').hint,
+    image: getImage('men_tshirt_3').url,
+    imageHint: getImage('men_tshirt_3').hint,
   },
 
   // Men's Shirts
@@ -233,8 +233,8 @@ export const menApparelProducts: Product[] = [
     description: 'A classic white dress shirt for men.',
     longDescription: 'This crisp white dress shirt is perfect for formal occasions or a professional look.',
     price: 60.00,
-    image: getImage('men_shirt_1', 'menshirt1').url,
-    imageHint: getImage('men_shirt_1', 'menshirt1').hint,
+    image: getImage('men_shirt_1').url,
+    imageHint: getImage('men_shirt_1').hint,
   },
   {
     id: 'men_shirt_002',
@@ -242,8 +242,8 @@ export const menApparelProducts: Product[] = [
     description: 'A casual plaid flannel shirt for men.',
     longDescription: 'Stay warm and stylish with this classic plaid flannel shirt, perfect for a rugged, outdoor look.',
     price: 55.00,
-    image: getImage('men_shirt_2', 'menshirt2').url,
-    imageHint: getImage('men_shirt_2', 'menshirt2').hint,
+    image: getImage('men_shirt_2').url,
+    imageHint: getImage('men_shirt_2').hint,
   },
   {
     id: 'men_shirt_003',
@@ -251,8 +251,8 @@ export const menApparelProducts: Product[] = [
     description: 'A blue short-sleeve button-up shirt for men.',
     longDescription: 'This short-sleeve button-up shirt is perfect for warm weather and a relaxed, casual style.',
     price: 45.00,
-    image: getImage('men_shirt_3', 'menshirt3').url,
-    imageHint: getImage('men_shirt_3', 'menshirt3').hint,
+    image: getImage('men_shirt_3').url,
+    imageHint: getImage('men_shirt_3').hint,
   },
 
   // Men's Underwear
@@ -262,8 +262,8 @@ export const menApparelProducts: Product[] = [
     description: 'A pack of comfortable cotton boxer briefs for men.',
     longDescription: 'These boxer briefs are made from a soft and breathable cotton blend for all-day comfort.',
     price: 35.00,
-    image: getImage('men_underwear_1', 'menunderwear1').url,
-    imageHint: getImage('men_underwear_1', 'menunderwear1').hint,
+    image: getImage('men_underwear_1').url,
+    imageHint: getImage('men_underwear_1').hint,
   },
   {
     id: 'men_underwear_002',
@@ -271,8 +271,8 @@ export const menApparelProducts: Product[] = [
     description: 'A set of classic white briefs for men.',
     longDescription: 'These classic white briefs offer a secure and comfortable fit for everyday wear.',
     price: 30.00,
-    image: getImage('men_underwear_2', 'menunderwear2').url,
-    imageHint: getImage('men_underwear_2', 'menunderwear2').hint,
+    image: getImage('men_underwear_2').url,
+    imageHint: getImage('men_underwear_2').hint,
   },
   {
     id: 'men_underwear_003',
@@ -280,7 +280,7 @@ export const menApparelProducts: Product[] = [
     description: 'A pair of patterned boxer shorts for men.',
     longDescription: 'These fun patterned boxer shorts are made from lightweight cotton for a comfortable fit.',
     price: 25.00,
-    image: getImage('men_underwear_3', 'menunderwear3').url,
-    imageHint: getImage('men_underwear_3', 'menunderwear3').hint,
+    image: getImage('men_underwear_3').url,
+    imageHint: getImage('men_underwear_3').hint,
   },
 ];

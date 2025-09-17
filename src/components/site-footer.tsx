@@ -1,23 +1,6 @@
 import { Sparkles, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 
-const WhatsAppIcon = () => (
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      width="24" 
-      height="24" 
-      viewBox="0 0 24 24" 
-      fill="none" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round" 
-      className="h-6 w-6"
-    >
-      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-    </svg>
-  );
-
 export function SiteFooter() {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -72,9 +55,6 @@ export function SiteFooter() {
               <Link href="#" className="text-muted-foreground hover:text-primary-foreground transition-colors"><Twitter className="h-6 w-6" /></Link>
               <Link href="#" className="text-muted-foreground hover:text-primary-foreground transition-colors"><Instagram className="h-6 w-6" /></Link>
               <Link href="#" className="text-muted-foreground hover:text-primary-foreground transition-colors"><Linkedin className="h-6 w-6" /></Link>
-               <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary-foreground transition-colors">
-                <WhatsAppIcon />
-              </Link>
             </div>
           </div>
         </div>

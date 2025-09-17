@@ -1050,6 +1050,102 @@
       "description": "A comfortable and aerodynamic tri-suit.",
       "imageUrl": "https://picsum.photos/seed/triathlon2/600/400",
       "imageHint": "tri-suit"
+    },
+    {
+      "id": "whitelabel1",
+      "description": "Plain white t-shirt for custom branding.",
+      "imageUrl": "https://picsum.photos/seed/whitelabel1/600/400",
+      "imageHint": "white t-shirt"
+    },
+    {
+      "id": "whitelabel2",
+      "description": "Blank black hoodie ready for your design.",
+      "imageUrl": "https://picsum.photos/seed/whitelabel2/600/400",
+      "imageHint": "black hoodie"
+    },
+    {
+      "id": "whitelabel3",
+      "description": "Unbranded polo shirt in multiple colors.",
+      "imageUrl": "https://picsum.photos/seed/whitelabel3/600/400",
+      "imageHint": "polo shirt"
+    },
+    {
+      "id": "whitelabel4",
+      "description": "Plain gray sweatshirt for printing.",
+      "imageUrl": "https://picsum.photos/seed/whitelabel4/600/400",
+      "imageHint": "gray sweatshirt"
+    },
+    {
+      "id": "whitelabel5",
+      "description": "Basic cotton tote bag for custom designs.",
+      "imageUrl": "https://picsum.photos/seed/whitelabel5/600/400",
+      "imageHint": "tote bag"
+    },
+    {
+      "id": "whitelabel6",
+      "description": "Simple baseball cap, ready for embroidery.",
+      "imageUrl": "https://picsum.photos/seed/whitelabel6/600/400",
+      "imageHint": "baseball cap"
+    },
+    {
+      "id": "whitelabel7",
+      "description": "Plain leggings for custom printing.",
+      "imageUrl": "https://picsum.photos/seed/whitelabel7/600/400",
+      "imageHint": "plain leggings"
+    },
+    {
+      "id": "whitelabel8",
+      "description": "Blank joggers for your clothing line.",
+      "imageUrl": "https://picsum.photos/seed/whitelabel8/600/400",
+      "imageHint": "blank joggers"
+    },
+    {
+      "id": "sublimation1",
+      "description": "Polyester t-shirt ideal for sublimation printing.",
+      "imageUrl": "https://picsum.photos/seed/sublimation1/600/400",
+      "imageHint": "sublimation t-shirt"
+    },
+    {
+      "id": "sublimation2",
+      "description": "Sublimation-ready ceramic mug.",
+      "imageUrl": "https://picsum.photos/seed/sublimation2/600/400",
+      "imageHint": "sublimation mug"
+    },
+    {
+      "id": "sublimation3",
+      "description": "Blank phone case for sublimation.",
+      "imageUrl": "https://picsum.photos/seed/sublimation3/600/400",
+      "imageHint": "phone case"
+    },
+    {
+      "id": "sublimation4",
+      "description": "Sublimation mouse pad.",
+      "imageUrl": "https://picsum.photos/seed/sublimation4/600/400",
+      "imageHint": "mouse pad"
+    },
+    {
+      "id": "sublimation5",
+      "description": "Blank polyester hoodie for vibrant prints.",
+      "imageUrl": "https://picsum.photos/seed/sublimation5/600/400",
+      "imageHint": "sublimation hoodie"
+    },
+    {
+      "id": "sublimation6",
+      "description": "Sublimation-friendly socks.",
+      "imageUrl": "https://picsum.photos/seed/sublimation6/600/400",
+      "imageHint": "sublimation socks"
+    },
+    {
+      "id": "sublimation7",
+      "description": "Blank tote bag for all-over sublimation printing.",
+      "imageUrl": "https://picsum.photos/seed/sublimation7/600/400",
+      "imageHint": "sublimation tote"
+    },
+    {
+      "id": "sublimation8",
+      "description": "Polyester sports jersey for sublimation.",
+      "imageUrl": "https://picsum.photos/seed/sublimation8/600/400",
+      "imageHint": "sports jersey"
     }
   ]
 }

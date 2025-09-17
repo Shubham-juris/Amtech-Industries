@@ -12,11 +12,10 @@ import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export default function WholesaleSubCategoryPage({
-  params,
+  params: { category, subcategory },
 }: {
   params: { category: string; subcategory: string };
 }) {
-  const { category, subcategory } = params;
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
@@ -33,10 +32,10 @@ export default function WholesaleSubCategoryPage({
       setLoading(true);
       
       const subcategoryParts = subcategory.split('-');
-      const searchKeyword = subcategoryParts.length > 1 ? subcategoryParts[1] : subcategoryParts[0];
+      const searchKeyword = subcategoryParts[subcategoryParts.length - 1].replace(/s$/, ''); // Use the last part and remove plural 's'
 
       const filtered = allProducts.filter(p => 
-        p.id.toLowerCase().includes(searchKeyword.replace(/s$/, '')) // Also remove trailing 's' for plural like 'shirts'
+        p.id.toLowerCase().includes(searchKeyword)
       );
 
       setProducts(filtered);

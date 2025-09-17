@@ -27,6 +27,8 @@ const menuItems = {
   'Sports': ['Athletics', 'Basketball', 'Boxing', 'Cycling', 'Dance Wear', 'Golf', 'Hockey', 'Marathons', 'Tennis', 'Triathlon'],
 };
 
+const toSlug = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
+
 const MenuColumn = ({ title, items }: { title: string; items: string[] }) => (
     <div className="flex flex-col gap-2">
       <h3 className="text-sm font-semibold text-primary-foreground border-b border-border pb-1 mb-1">{title}</h3>
@@ -34,7 +36,7 @@ const MenuColumn = ({ title, items }: { title: string; items: string[] }) => (
         {items.map(item => (
           <li key={item}>
             <DropdownMenuItem asChild>
-                <Link href="#" className="text-muted-foreground hover:text-primary-foreground w-full">{item}</Link>
+                <Link href={`/wholesale/${toSlug(title)}/${toSlug(item)}`} className="text-muted-foreground hover:text-primary-foreground w-full">{item}</Link>
             </DropdownMenuItem>
           </li>
         ))}

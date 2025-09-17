@@ -1218,6 +1218,102 @@
       "description": "A cozy sweater for little kids.",
       "imageUrl": "https://picsum.photos/seed/littlekid3/600/400",
       "imageHint": "kids sweater"
+    },
+    {
+      "id": "flipflop1",
+      "description": "A pair of classic beach flip-flops.",
+      "imageUrl": "https://picsum.photos/seed/flipflop1/600/400",
+      "imageHint": "beach flip-flops"
+    },
+    {
+      "id": "flipflop2",
+      "description": "A pair of comfortable foam flip-flops.",
+      "imageUrl": "https://picsum.photos/seed/flipflop2/600/400",
+      "imageHint": "foam flip-flops"
+    },
+    {
+      "id": "flipflop3",
+      "description": "A pair of stylish leather flip-flops.",
+      "imageUrl": "https://picsum.photos/seed/flipflop3/600/400",
+      "imageHint": "leather flip-flops"
+    },
+    {
+      "id": "flipflop4",
+      "description": "A pair of sporty slide sandals.",
+      "imageUrl": "https://picsum.photos/seed/flipflop4/600/400",
+      "imageHint": "slide sandals"
+    },
+    {
+      "id": "formalshoe1",
+      "description": "A pair of classic black oxford shoes.",
+      "imageUrl": "https://picsum.photos/seed/formalshoe1/600/400",
+      "imageHint": "oxford shoes"
+    },
+    {
+      "id": "formalshoe2",
+      "description": "A pair of elegant brown derby shoes.",
+      "imageUrl": "https://picsum.photos/seed/formalshoe2/600/400",
+      "imageHint": "derby shoes"
+    },
+    {
+      "id": "formalshoe3",
+      "description": "A pair of sophisticated monk strap shoes.",
+      "imageUrl": "https://picsum.photos/seed/formalshoe3/600/400",
+      "imageHint": "monk strap"
+    },
+    {
+      "id": "formalshoe4",
+      "description": "A pair of stylish loafers.",
+      "imageUrl": "https://picsum.photos/seed/formalshoe4/600/400",
+      "imageHint": "loafers"
+    },
+    {
+      "id": "lifestyleshoe1",
+      "description": "A pair of trendy canvas sneakers.",
+      "imageUrl": "https://picsum.photos/seed/lifestyleshoe1/600/400",
+      "imageHint": "canvas sneakers"
+    },
+    {
+      "id": "lifestyleshoe2",
+      "description": "A pair of comfortable slip-on shoes.",
+      "imageUrl": "https://picsum.photos/seed/lifestyleshoe2/600/400",
+      "imageHint": "slip-on shoes"
+    },
+    {
+      "id": "lifestyleshoe3",
+      "description": "A pair of fashionable high-top sneakers.",
+      "imageUrl": "https://picsum.photos/seed/lifestyleshoe3/600/400",
+      "imageHint": "high-top sneakers"
+    },
+    {
+      "id": "lifestyleshoe4",
+      "description": "A pair of casual boat shoes.",
+      "imageUrl": "https://picsum.photos/seed/lifestyleshoe4/600/400",
+      "imageHint": "boat shoes"
+    },
+    {
+      "id": "runningshoe1",
+      "description": "A pair of lightweight running shoes.",
+      "imageUrl": "https://picsum.photos/seed/runningshoe1/600/400",
+      "imageHint": "running shoes"
+    },
+    {
+      "id": "runningshoe2",
+      "description": "A pair of trail running shoes.",
+      "imageUrl": "https://picsum.photos/seed/runningshoe2/600/400",
+      "imageHint": "trail running"
+    },
+    {
+      "id": "runningshoe3",
+      "description": "A pair of cushioned running shoes.",
+      "imageUrl": "https://picsum.photos/seed/runningshoe3/600/400",
+      "imageHint": "cushioned running"
+    },
+    {
+      "id": "runningshoe4",
+      "description": "A pair of minimalist running shoes.",
+      "imageUrl": "https://picsum.photos/seed/runningshoe4/600/400",
+      "imageHint": "minimalist running"
     }
   ]
 }

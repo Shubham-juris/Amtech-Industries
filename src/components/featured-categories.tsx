@@ -41,6 +41,14 @@ export function FeaturedCategories() {
 
     return () => clearInterval(interval);
   }, [isHovered]);
+
+  const handlePrev = () => {
+    setCurrentIndex(prevIndex => (prevIndex - 1 + categories.length) % categories.length);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex(prevIndex => (prevIndex + 1) % categories.length);
+  };
   
   const Wave = () => (
     <svg className="absolute top-0 left-0 w-full h-auto" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,12 +93,15 @@ export function FeaturedCategories() {
         <h2 className="font-serif text-4xl font-bold mb-4">FEATURED<br/>CATEGORIES</h2>
         <p className="text-xl text-neutral-300 mb-8 max-w-xs">Discover the most trending products in Amtech.</p>
         <div className="flex items-center gap-4">
-            <button className="border border-white/50 rounded-full p-2 hover:bg-white/10 transition-colors">
-                <ChevronLeft className="h-6 w-6"/>
-            </button>
-             <button className="border border-white/50 rounded-full p-2 hover:bg-white/10 transition-colors">
-                <ChevronRight className="h-6 w-6"/>
-            </button>
+        <button 
+            onClick={handlePrev} 
+            className="border border-white/50 rounded-full p-2 hover:bg-white/10 transition-colors"
+        >
+            <ChevronLeft className="h-6 w-6" />
+        </button>
+         <button onClick={handleNext} className="border border-white/50 rounded-full p-2 hover:bg-white/10 transition-colors">
+            <ChevronRight className="h-6 w-6"/>
+        </button>
         </div>
       </div>
     </section>

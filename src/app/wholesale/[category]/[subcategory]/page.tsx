@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { ProductCard } from '@/components/product-card';
 import { allProducts } from '@/lib/products';
 import { Product } from '@/lib/types';
@@ -12,13 +12,14 @@ import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 type WholesaleSubCategoryPageProps = {
-  params: {
+  params: Promise<{
     category: string;
     subcategory: string;
-  };
+  }>;
 };
 
-export default function WholesaleSubCategoryPage({ params: { category, subcategory } }: WholesaleSubCategoryPageProps) {
+export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategoryPageProps) {
+  const { category, subcategory } = use(params);
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');

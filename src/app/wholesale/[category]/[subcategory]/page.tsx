@@ -63,7 +63,7 @@ export default function WholesaleSubCategoryPage({
       <div className="container mx-auto px-4 py-12 grid md:grid-cols-[300px_1fr] gap-12">
         <aside className="space-y-8">
             <div className="p-4 border">
-                <h3 className="font-bold mb-4">Product Categories</h3>
+                <h3 className="font-bold mb-4 text-lg">Product Categories</h3>
                 <Accordion type="multiple" defaultValue={['Men', 'Women', 'Kids']} className="w-full">
                     {productCategories.map(cat => (
                         <AccordionItem value={cat} key={cat}>

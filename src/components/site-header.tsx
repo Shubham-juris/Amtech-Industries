@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 
 const menuItems = {
@@ -46,6 +47,7 @@ const MenuColumn = ({ title, items }: { title: string; items: string[] }) => (
 
 export function SiteHeader() {
   const { itemCount, setCartOpen } = useCart();
+  const isMobile = useIsMobile();
 
   return (
     <>
@@ -59,7 +61,7 @@ export function SiteHeader() {
           </div>
 
           <div className="flex flex-1 items-center justify-end space-x-4">
-            <nav className="hidden md:flex gap-6 items-center">
+            <nav className={cn("items-center space-x-4 lg:space-x-6", isMobile ? "hidden" : "flex")}>
               <Link
                 href="/"
                 className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
@@ -117,17 +119,8 @@ export function SiteHeader() {
               >
                 Contact Us
               </Link>
-               <Button variant="ghost" size="icon" className="relative" onClick={() => setCartOpen(true)}>
-                <ShoppingBag className="h-5 w-5" />
-                {itemCount > 0 && (
-                  <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-accent-foreground text-xs font-bold">
-                    {itemCount}
-                  </span>
-                )}
-                <span className="sr-only">Open shopping cart</span>
-              </Button>
             </nav>
-             <Button variant="ghost" size="icon" className="relative md:hidden" onClick={() => setCartOpen(true)}>
+            <Button variant="ghost" size="icon" className="relative" onClick={() => setCartOpen(true)}>
                 <ShoppingBag className="h-5 w-5" />
                 {itemCount > 0 && (
                   <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-accent-foreground text-xs font-bold">
@@ -135,7 +128,7 @@ export function SiteHeader() {
                   </span>
                 )}
                 <span className="sr-only">Open shopping cart</span>
-              </Button>
+            </Button>
           </div>
         </div>
       </header>

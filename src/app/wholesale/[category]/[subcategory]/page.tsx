@@ -88,6 +88,33 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
   const { category, subcategory } = use(params);
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+  const [openCategories, setOpenCategories] = useState<string[]>([]);
+
+  useEffect(() => {
+    try {
+      const storedCategories = localStorage.getItem('openCategories');
+      if (storedCategories) {
+        setOpenCategories(JSON.parse(storedCategories));
+      } else if (category) {
+        const currentCategoryTitle = fromTitle(category);
+        setOpenCategories([currentCategoryTitle]);
+      }
+    } catch (error) {
+      console.error('Failed to parse open categories from localStorage', error);
+      if (category) {
+        const currentCategoryTitle = fromTitle(category);
+        setOpenCategories([currentCategoryTitle]);
+      }
+    }
+  }, [category]);
+  
+  useEffect(() => {
+    try {
+        localStorage.setItem('openCategories', JSON.stringify(openCategories));
+    } catch (error) {
+        console.error('Failed to save open categories to localStorage', error);
+    }
+  }, [openCategories]);
 
   const fromTitle = (slug: string) => slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   const pageTitle = fromTitle(subcategory);
@@ -110,6 +137,10 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
     }
   }, [subcategory]);
 
+  const handleAccordionChange = (value: string[]) => {
+    setOpenCategories(value);
+  };
+
 
   return (
     <div>
@@ -130,7 +161,7 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
         <aside className="space-y-8">
             <div className="p-4 border">
                 <h3 className="font-bold mb-4 text-lg">Product Categories</h3>
-                <Accordion type="multiple" className="w-full">
+                <Accordion type="multiple" className="w-full" value={openCategories} onValueChange={handleAccordionChange}>
                     {Object.entries(menuItems).map(([cat, subcats]) => (
                         <AccordionItem value={cat} key={cat}>
                              <AccordionTrigger className="font-medium text-sm py-2">{cat}</AccordionTrigger>

@@ -6,6 +6,16 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { getImage } from '@/lib/placeholder-images';
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+import * as React from 'react';
 
 
 const categories = [
@@ -25,56 +35,52 @@ const categories = [
 ];
 
 export function FeaturedCategories() {
-  return (
-    <section className="relative w-full overflow-hidden">
-      <div className="flex">
-        <div className="w-full lg:w-3/4 bg-yellow-300 p-8 lg:p-12 relative">
-            <div className="absolute top-0 left-0 w-full h-16 bg-white" style={{ clipPath: 'url(#wavy-clip-path)' }}></div>
-            <svg width="0" height="0">
-                <defs>
-                    <clipPath id="wavy-clip-path" clipPathUnits="objectBoundingBox">
-                        <path d="M0,0.5 Q0.05,0, 0.1,0.5 T0.2,0.5 Q0.25,0, 0.3,0.5 T0.4,0.5 Q0.45,0, 0.5,0.5 T0.6,0.5 Q0.65,0, 0.7,0.5 T0.8,0.5 Q0.85,0, 0.9,0.5 T1,0.5 V0 H0 Z" />
-                    </clipPath>
-                </defs>
-            </svg>
-          
-          <div className="relative overflow-hidden group h-full">
-            <div className="flex animate-scroll group-hover:pause">
-              {[...categories, ...categories].map((category, index) => (
-                <div key={index} className="flex-shrink-0 mx-4 text-center w-48">
-                  <div className="relative h-64 w-full mb-4">
-                    <Image
-                      src={category.image}
-                      alt={category.name}
-                      data-ai-hint={category.hint}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <Link href={category.href}>
-                    <span className="inline-block bg-white px-4 py-2 text-black font-semibold shadow-md hover:bg-gray-200 transition-colors">
-                      {category.name}
-                    </span>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+    const plugin = React.useRef(
+        Autoplay({ delay: 3000, stopOnInteraction: true, stopOnMouseEnter: true })
+    )
 
-        <div className="hidden lg:flex w-1/4 bg-black text-white flex-col justify-center items-start p-12">
-          <h2 className="text-4xl font-bold tracking-widest leading-tight">FEATURED<br/>CATEGORIES</h2>
-          <p className="mt-4 text-gray-400">Discover the most trending products in Amtech.</p>
-          <div className="mt-8 flex gap-4">
-            <Button variant="outline" size="icon" className="bg-transparent text-white border-white hover:bg-white hover:text-black">
-              <ArrowLeft />
-            </Button>
-            <Button variant="outline" size="icon" className="bg-transparent text-white border-white hover:bg-white hover:text-black">
-              <ArrowRight />
-            </Button>
-          </div>
+  return (
+    <section className="py-12">
+        <div className="container mx-auto">
+            <h2 className="text-3xl font-bold text-primary text-center mb-8">Featured Categories</h2>
+            <Carousel 
+                plugins={[plugin.current]}
+                className="w-full"
+                opts={{
+                    align: "start",
+                    loop: true,
+                }}
+            >
+                <CarouselContent>
+                {categories.map((category, index) => (
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
+                    <div className="p-1">
+                        <Card className="overflow-hidden group">
+                            <CardContent className="relative flex aspect-square items-center justify-center p-0">
+                                <Image
+                                    src={category.image}
+                                    alt={category.name}
+                                    data-ai-hint={category.hint}
+                                    fill
+                                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                                    <Link href={category.href}>
+                                        <span className="inline-block bg-white/90 text-black px-6 py-2 text-lg font-semibold shadow-md hover:bg-white transition-colors">
+                                            {category.name}
+                                        </span>
+                                    </Link>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                    </CarouselItem>
+                ))}
+                </CarouselContent>
+                <CarouselPrevious className="hidden sm:flex" />
+                <CarouselNext className="hidden sm:flex" />
+            </Carousel>
         </div>
-      </div>
     </section>
   );
 }

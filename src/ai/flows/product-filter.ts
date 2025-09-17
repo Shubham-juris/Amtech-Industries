@@ -9,7 +9,6 @@
 
 import { ai } from "@/ai/genkit";
 import { z } from "genkit";
-import { allProducts } from "@/lib/products";
 
 const ProductSchema = z.object({
     id: z.string(),
@@ -21,7 +20,7 @@ const ProductSchema = z.object({
     imageHint: z.string(),
 });
 
-export const ProductFilterInputSchema = z.object({
+const ProductFilterInputSchema = z.object({
   category: z.string().optional().describe("The product category to filter by."),
   subcategory: z.string().optional().describe("The product subcategory to filter by."),
   searchTerm: z.string().optional().describe("A search term to filter product names and descriptions."),

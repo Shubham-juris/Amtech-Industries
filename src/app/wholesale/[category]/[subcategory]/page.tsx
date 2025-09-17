@@ -32,26 +32,33 @@ export default function WholesaleSubCategoryPage({
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true);
-      // For now, we will just show all products.
-      // In a real app, you would filter based on category/subcategory.
-      setProducts(allProducts.filter(p => p.name.toLowerCase().includes('bag')));
+      
+      const searchKeyword = subcategory.split('-').pop() || '';
+
+      const filtered = allProducts.filter(p => 
+        p.name.toLowerCase().includes(searchKeyword) ||
+        p.description.toLowerCase().includes(searchKeyword)
+      );
+
+      setProducts(filtered);
       setLoading(false);
     };
     fetchProducts();
   }, [category, subcategory]);
+
 
   return (
     <div>
         <div className="relative h-64 bg-gray-200">
             <Image 
                 src="https://picsum.photos/seed/cityscape/1200/400"
-                alt="Bags"
+                alt={pageTitle}
                 fill
                 className="object-cover"
             />
             <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-start p-12">
                 <h1 className="text-5xl font-bold text-white">{pageTitle}</h1>
-                <p className="text-white">Home / {pageTitle}</p>
+                <p className="text-white">Home / {fromTitle(category)} / {pageTitle}</p>
             </div>
         </div>
 
@@ -60,9 +67,9 @@ export default function WholesaleSubCategoryPage({
             <div className="p-4 border">
                 <h3 className="font-bold mb-4">Product Categories</h3>
                 <Accordion type="multiple" defaultValue={['Men', 'Women', 'Kids']} className="w-full">
-                    {productCategories.map(category => (
-                        <AccordionItem value={category} key={category}>
-                             <AccordionTrigger className="font-medium text-sm py-2">{category}</AccordionTrigger>
+                    {productCategories.map(cat => (
+                        <AccordionItem value={cat} key={cat}>
+                             <AccordionTrigger className="font-medium text-sm py-2">{cat}</AccordionTrigger>
                              <AccordionContent>
                                 {/* Add sub-category links here if needed */}
                              </AccordionContent>
@@ -114,7 +121,7 @@ export default function WholesaleSubCategoryPage({
             </div>
           ) : (
             <div className="text-center py-16">
-              <p className="text-xl text-muted-foreground">No products found.</p>
+              <p className="text-xl text-muted-foreground">No products found for "{pageTitle}".</p>
             </div>
           )}
 

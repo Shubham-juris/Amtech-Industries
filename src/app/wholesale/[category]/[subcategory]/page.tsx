@@ -10,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 type WholesaleSubCategoryPageProps = {
   params: {
@@ -111,14 +112,10 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
   }, [category]);
   
   useEffect(() => {
-    // This effect should only run when openCategories changes, not on initial load
-    // to prevent overwriting localStorage with a potentially empty initial state.
-    if (openCategories.length > 0) {
-      try {
-          localStorage.setItem('openCategories', JSON.stringify(openCategories));
-      } catch (error) {
-          console.error('Failed to save open categories to localStorage', error);
-      }
+    try {
+        localStorage.setItem('openCategories', JSON.stringify(openCategories));
+    } catch (error) {
+        console.error('Failed to save open categories to localStorage', error);
     }
   }, [openCategories]);
 
@@ -174,7 +171,7 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
                                 <ul className="flex flex-col gap-2 pl-2">
                                     {subcats.map(subcat => (
                                         <li key={subcat}>
-                                            <Link href={`/wholesale/${toSlug(cat)}/${toSlug(subcat)}`} className="text-muted-foreground hover:text-primary w-full text-sm">
+                                            <Link href={`/wholesale/${toSlug(cat)}/${toSlug(subcat)}`} className={cn("hover:text-primary w-full text-sm", toSlug(subcat) === subcategory ? 'text-primary font-semibold' : 'text-muted-foreground')}>
                                                 {subcat}
                                             </Link>
                                         </li>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
 import { ProductCard } from '@/components/product-card';
 import { allProducts } from '@/lib/products';
 import { Product } from '@/lib/types';
@@ -19,7 +19,7 @@ type WholesaleSubCategoryPageProps = {
 };
 
 export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategoryPageProps) {
-  const { category, subcategory } = use(Promise.resolve(params));
+  const { category, subcategory } = params;
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');

@@ -6,6 +6,7 @@ import { CartProvider } from '@/hooks/use-cart';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Toaster } from "@/components/ui/toaster"
+import { WholesaleBanner } from '@/components/wholesale-banner';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <SiteFooter />
             <Toaster />
+            <WholesaleBanner />
           </div>
         </CartProvider>
       </body>

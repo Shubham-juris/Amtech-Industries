@@ -3,7 +3,7 @@
 import { useState, useEffect, use } from 'react';
 import { ProductCard } from '@/components/product-card';
 import { allProducts } from '@/lib/products';
-import { Product } from '@/lib/types';
+import type { Product } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -33,7 +33,7 @@ const menuItems = {
 const toSlug = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 
 export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategoryPageProps) {
-  const { category, subcategory } = params;
+  const { category, subcategory } = use(params);
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 

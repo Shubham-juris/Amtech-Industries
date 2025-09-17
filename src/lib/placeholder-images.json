@@ -644,6 +644,54 @@
         "imageHint": "black blue hoodie"
     },
     {
+        "id": "hoodie13",
+        "description": "A comfortable pullover hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie13/600/400",
+        "imageHint": "pullover hoodie"
+    },
+    {
+        "id": "hoodie14",
+        "description": "A stylish zip-up hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie14/600/400",
+        "imageHint": "zip-up hoodie"
+    },
+    {
+        "id": "hoodie15",
+        "description": "A lightweight athletic hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie15/600/400",
+        "imageHint": "athletic hoodie"
+    },
+    {
+        "id": "hoodie16",
+        "description": "A hoodie with a graphic print.",
+        "imageUrl": "https://picsum.photos/seed/hoodie16/600/400",
+        "imageHint": "graphic hoodie"
+    },
+    {
+        "id": "hoodie17",
+        "description": "A sherpa-lined hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie17/600/400",
+        "imageHint": "sherpa hoodie"
+    },
+    {
+        "id": "hoodie18",
+        "description": "A sleeveless workout hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie18/600/400",
+        "imageHint": "sleeveless hoodie"
+    },
+    {
+        "id": "hoodie19",
+        "description": "A color-block hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie19/600/400",
+        "imageHint": "color-block hoodie"
+    },
+    {
+        "id": "hoodie20",
+        "description": "An oversized hoodie.",
+        "imageUrl": "https://picsum.photos/seed/hoodie20/600/400",
+        "imageHint": "oversized hoodie"
+    },
+    {
         "id": "dress1",
         "description": "A woman in a flowing floral maxi dress.",
         "imageUrl": "https://picsum.photos/seed/dress1/600/400",

@@ -18,7 +18,8 @@ type WholesaleSubCategoryPageProps = {
   };
 };
 
-export default function WholesaleSubCategoryPage({ params: { category, subcategory } }: WholesaleSubCategoryPageProps) {
+export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategoryPageProps) {
+  const { category, subcategory } = params;
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');

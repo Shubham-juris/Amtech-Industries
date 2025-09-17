@@ -1314,6 +1314,102 @@
       "description": "A pair of minimalist running shoes.",
       "imageUrl": "https://picsum.photos/seed/runningshoe4/600/400",
       "imageHint": "minimalist running"
+    },
+    {
+      "id": "activewear1",
+      "description": "A woman wearing a high-performance activewear top.",
+      "imageUrl": "https://picsum.photos/seed/activewear1/600/400",
+      "imageHint": "activewear top"
+    },
+    {
+      "id": "activewear2",
+      "description": "A set of stylish and functional activewear.",
+      "imageUrl": "https://picsum.photos/seed/activewear2/600/400",
+      "imageHint": "activewear set"
+    },
+    {
+      "id": "activewear3",
+      "description": "A man in moisture-wicking activewear shorts.",
+      "imageUrl": "https://picsum.photos/seed/activewear3/600/400",
+      "imageHint": "activewear shorts"
+    },
+    {
+      "id": "activewear4",
+      "description": "Close-up of breathable activewear fabric.",
+      "imageUrl": "https://picsum.photos/seed/activewear4/600/400",
+      "imageHint": "activewear fabric"
+    },
+    {
+      "id": "compression1",
+      "description": "A runner wearing black compression tights.",
+      "imageUrl": "https://picsum.photos/seed/compression1/600/400",
+      "imageHint": "compression tights"
+    },
+    {
+      "id": "compression2",
+      "description": "A pair of compression shorts for workouts.",
+      "imageUrl": "https://picsum.photos/seed/compression2/600/400",
+      "imageHint": "compression shorts"
+    },
+    {
+      "id": "compression3",
+      "description": "A man wearing a long-sleeve compression shirt.",
+      "imageUrl": "https://picsum.photos/seed/compression3/600/400",
+      "imageHint": "compression shirt"
+    },
+    {
+      "id": "compression4",
+      "description": "A pair of supportive compression socks.",
+      "imageUrl": "https://picsum.photos/seed/compression4/600/400",
+      "imageHint": "compression socks"
+    },
+    {
+      "id": "men_running_1",
+      "description": "A man running in a lightweight fitness jacket.",
+      "imageUrl": "https://picsum.photos/seed/menrunning1/600/400",
+      "imageHint": "men running"
+    },
+    {
+      "id": "men_running_2",
+      "description": "A man wearing running tights for cold weather.",
+      "imageUrl": "https://picsum.photos/seed/menrunning2/600/400",
+      "imageHint": "men running"
+    },
+    {
+      "id": "men_running_3",
+      "description": "Men's running shorts with a split design for better movement.",
+      "imageUrl": "https://picsum.photos/seed/menrunning3/600/400",
+      "imageHint": "running shorts"
+    },
+    {
+      "id": "men_running_4",
+      "description": "A man in a long-sleeve shirt designed for running.",
+      "imageUrl": "https://picsum.photos/seed/menrunning4/600/400",
+      "imageHint": "running shirt"
+    },
+    {
+      "id": "women_running_1",
+      "description": "A woman running in a stylish and breathable top.",
+      "imageUrl": "https://picsum.photos/seed/womenrunning1/600/400",
+      "imageHint": "women running"
+    },
+    {
+      "id": "women_running_2",
+      "description": "A woman wearing supportive running leggings.",
+      "imageUrl": "https://picsum.photos/seed/womenrunning2/600/400",
+      "imageHint": "running leggings"
+    },
+    {
+      "id": "women_running_3",
+      "description": "A woman in a high-impact sports bra for running.",
+      "imageUrl": "https://picsum.photos/seed/womenrunning3/600/400",
+      "imageHint": "sports bra"
+    },
+    {
+      "id": "women_running_4",
+      "description": "Women's running shorts with a comfortable inner lining.",
+      "imageUrl": "https://picsum.photos/seed/womenrunning4/600/400",
+      "imageHint": "women's shorts"
     }
   ]
 }

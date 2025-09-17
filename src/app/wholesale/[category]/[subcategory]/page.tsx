@@ -5,8 +5,6 @@ import { ProductCard } from '@/components/product-card';
 import { allProducts } from '@/lib/products';
 import { Product } from '@/lib/types';
 import { getFilteredProductsAction } from '@/app/actions';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -37,7 +35,7 @@ export default function WholesaleSubCategoryPage({
       const searchKeyword = subcategory.split('-').shift() || '';
 
       const filtered = allProducts.filter(p => 
-        p.id.toLowerCase().startsWith(searchKeyword)
+        p.id.toLowerCase().includes(searchKeyword)
       );
 
       setProducts(filtered);

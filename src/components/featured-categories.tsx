@@ -50,12 +50,12 @@ export function FeaturedCategories() {
 
   return (
     <section 
-      className="relative grid grid-cols-1 lg:grid-cols-3 bg-[#FFFAE6] text-black" 
+      className="relative grid grid-cols-1 lg:grid-cols-5 bg-[#FFFAE6] text-black" 
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     >
         <Wave />
-      <div className="lg:col-span-2 py-20 overflow-hidden">
+      <div className="lg:col-span-3 py-20 overflow-hidden">
         <div 
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * (100 / ITEMS_TO_SHOW)}%)` }}
@@ -81,7 +81,7 @@ export function FeaturedCategories() {
           ))}
         </div>
       </div>
-      <div className="bg-black text-white flex flex-col justify-center items-center text-center p-8 lg:p-16">
+      <div className="lg:col-span-2 bg-black text-white flex flex-col justify-center items-center text-center p-8 lg:p-16">
         <h2 className="font-serif text-4xl font-bold mb-4">FEATURED<br/>CATEGORIES</h2>
         <p className="text-xl text-neutral-300 mb-8 max-w-xs">Discover the most trending products in Amtech.</p>
         <div className="flex items-center gap-4">

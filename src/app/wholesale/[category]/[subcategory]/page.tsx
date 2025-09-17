@@ -14,7 +14,7 @@ import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export default function WholesaleSubCategoryPage({
-  params,
+  params: { category, subcategory },
 }: {
   params: { category: string; subcategory: string };
 }) {
@@ -25,7 +25,7 @@ export default function WholesaleSubCategoryPage({
   const [brands, setBrands] = useState<string[]>([]);
 
   const fromTitle = (slug: string) => slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-  const pageTitle = fromTitle(params.subcategory);
+  const pageTitle = fromTitle(subcategory);
 
   const productCategories = ['Men', 'Women', 'Kids', 'Running Fitness', 'Custom Clothing', 'Sports', 'Accessories', 'Footwear'];
 
@@ -38,7 +38,7 @@ export default function WholesaleSubCategoryPage({
       setLoading(false);
     };
     fetchProducts();
-  }, [params.category, params.subcategory]);
+  }, [category, subcategory]);
 
   return (
     <div>

@@ -930,6 +930,126 @@
       "description": "An item from the new catalog.",
       "imageUrl": "https://picsum.photos/seed/newcatalog1/600/400",
       "imageHint": "catalog item"
+    },
+    {
+      "id": "athletics1",
+      "description": "High-performance running shoes.",
+      "imageUrl": "https://picsum.photos/seed/athletics1/600/400",
+      "imageHint": "running shoes"
+    },
+    {
+      "id": "athletics2",
+      "description": "Moisture-wicking athletic shorts.",
+      "imageUrl": "https://picsum.photos/seed/athletics2/600/400",
+      "imageHint": "athletic shorts"
+    },
+    {
+      "id": "basketball1",
+      "description": "A professional-grade basketball.",
+      "imageUrl": "https://picsum.photos/seed/basketball1/600/400",
+      "imageHint": "basketball"
+    },
+    {
+      "id": "basketball2",
+      "description": "A stylish basketball jersey.",
+      "imageUrl": "https://picsum.photos/seed/basketball2/600/400",
+      "imageHint": "basketball jersey"
+    },
+    {
+      "id": "boxing1",
+      "description": "Professional boxing gloves.",
+      "imageUrl": "https://picsum.photos/seed/boxing1/600/400",
+      "imageHint": "boxing gloves"
+    },
+    {
+      "id": "boxing2",
+      "description": "A set of hand wraps for boxing.",
+      "imageUrl": "https://picsum.photos/seed/boxing2/600/400",
+      "imageHint": "hand wraps"
+    },
+    {
+      "id": "cycling1",
+      "description": "A lightweight cycling helmet.",
+      "imageUrl": "https://picsum.photos/seed/cycling1/600/400",
+      "imageHint": "cycling helmet"
+    },
+    {
+      "id": "cycling2",
+      "description": "Padded cycling shorts for comfort.",
+      "imageUrl": "https://picsum.photos/seed/cycling2/600/400",
+      "imageHint": "cycling shorts"
+    },
+    {
+      "id": "dancewear1",
+      "description": "A classic ballet leotard.",
+      "imageUrl": "https://picsum.photos/seed/dancewear1/600/400",
+      "imageHint": "ballet leotard"
+    },
+    {
+      "id": "dancewear2",
+      "description": "A pair of comfortable ballet shoes.",
+      "imageUrl": "https://picsum.photos/seed/dancewear2/600/400",
+      "imageHint": "ballet shoes"
+    },
+    {
+      "id": "golf1",
+      "description": "A set of professional golf clubs.",
+      "imageUrl": "https://picsum.photos/seed/golf1/600/400",
+      "imageHint": "golf clubs"
+    },
+    {
+      "id": "golf2",
+      "description": "A classic golf polo shirt.",
+      "imageUrl": "https://picsum.photos/seed/golf2/600/400",
+      "imageHint": "golf shirt"
+    },
+    {
+      "id": "hockey1",
+      "description": "A durable hockey stick.",
+      "imageUrl": "https://picsum.photos/seed/hockey1/600/400",
+      "imageHint": "hockey stick"
+    },
+    {
+      "id": "hockey2",
+      "description": "A set of protective hockey pads.",
+      "imageUrl": "https://picsum.photos/seed/hockey2/600/400",
+      "imageHint": "hockey pads"
+    },
+    {
+      "id": "marathon1",
+      "description": "A hydration pack for long runs.",
+      "imageUrl": "https://picsum.photos/seed/marathon1/600/400",
+      "imageHint": "hydration pack"
+    },
+    {
+      "id": "marathon2",
+      "description": "Lightweight running shorts for marathons.",
+      "imageUrl": "https://picsum.photos/seed/marathon2/600/400",
+      "imageHint": "running shorts"
+    },
+    {
+      "id": "tennis1",
+      "description": "A high-performance tennis racket.",
+      "imageUrl": "https://picsum.photos/seed/tennis1/600/400",
+      "imageHint": "tennis racket"
+    },
+    {
+      "id": "tennis2",
+      "description": "A can of professional tennis balls.",
+      "imageUrl": "https://picsum.photos/seed/tennis2/600/400",
+      "imageHint": "tennis balls"
+    },
+    {
+      "id": "triathlon1",
+      "description": "A full-body wetsuit for triathlons.",
+      "imageUrl": "https://picsum.photos/seed/triathlon1/600/400",
+      "imageHint": "wetsuit"
+    },
+    {
+      "id": "triathlon2",
+      "description": "A comfortable and aerodynamic tri-suit.",
+      "imageUrl": "https://picsum.photos/seed/triathlon2/600/400",
+      "imageHint": "tri-suit"
     }
   ]
 }

@@ -81,9 +81,9 @@ export function FeaturedCategories() {
           ))}
         </div>
       </div>
-      <div className="bg-black text-white flex flex-col justify-center p-8 lg:p-16">
+      <div className="bg-black text-white flex flex-col justify-center items-center text-center p-8 lg:p-16">
         <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">FEATURED<br/>CATEGORIES</h2>
-        <p className="text-lg text-neutral-300 mb-8">Discover the most trending products in Amtech.</p>
+        <p className="text-xl text-neutral-300 mb-8 max-w-xs">Discover the most trending products in Amtech.</p>
         <div className="flex items-center gap-4">
             <button className="border border-white/50 rounded-full p-2 hover:bg-white/10 transition-colors">
                 <ChevronLeft className="h-6 w-6"/>

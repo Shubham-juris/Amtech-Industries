@@ -7,7 +7,7 @@ export function WholesaleBanner() {
         <div className="bg-black text-white px-2 py-4 rounded-l-md shadow-lg cursor-pointer">
           <p
             className="text-center font-semibold tracking-wider"
-            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', transform: 'rotate(180deg)' }}
           >
             GET 40% OFF ON WHOLESALE
           </p>

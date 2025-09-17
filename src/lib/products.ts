@@ -1,8 +1,8 @@
 import type { Product } from './types';
-import { PlaceHolderImages } from './placeholder-images';
+import { placeholderImages } from './placeholder-images';
 
 const getImage = (id: string) => {
-  const image = PlaceHolderImages.find(img => img.id === id);
+  const image = placeholderImages.find(img => img.id === id);
   return {
     url: image?.imageUrl ?? `https://picsum.photos/seed/default/600/400`,
     hint: image?.imageHint ?? 'placeholder'

@@ -840,6 +840,96 @@
         "description": "A pair of patterned boxer shorts.",
         "imageUrl": "https://picsum.photos/seed/menunderwear3/600/400",
         "imageHint": "boxer shorts"
+    },
+    {
+      "id": "jumpsuit1",
+      "description": "A woman in a stylish denim jumpsuit.",
+      "imageUrl": "https://picsum.photos/seed/jumpsuit1/600/400",
+      "imageHint": "denim jumpsuit"
+    },
+    {
+      "id": "jumpsuit2",
+      "description": "A woman wearing an elegant black jumpsuit.",
+      "imageUrl": "https://picsum.photos/seed/jumpsuit2/600/400",
+      "imageHint": "black jumpsuit"
+    },
+    {
+      "id": "jumpsuit3",
+      "description": "A woman in a casual floral print jumpsuit.",
+      "imageUrl": "https://picsum.photos/seed/jumpsuit3/600/400",
+      "imageHint": "floral jumpsuit"
+    },
+    {
+      "id": "polo1",
+      "description": "A man in a classic navy blue polo shirt.",
+      "imageUrl": "https://picsum.photos/seed/polo1/600/400",
+      "imageHint": "navy polo"
+    },
+    {
+      "id": "polo2",
+      "description": "A man wearing a bright red polo shirt.",
+      "imageUrl": "https://picsum.photos/seed/polo2/600/400",
+      "imageHint": "red polo"
+    },
+    {
+      "id": "polo3",
+      "description": "A man in a striped polo shirt.",
+      "imageUrl": "https://picsum.photos/seed/polo3/600/400",
+      "imageHint": "striped polo"
+    },
+    {
+      "id": "wbeach1",
+      "description": "A woman in a vibrant one-piece swimsuit.",
+      "imageUrl": "https://picsum.photos/seed/wbeach1/600/400",
+      "imageHint": "one-piece swimsuit"
+    },
+    {
+      "id": "wbeach2",
+      "description": "A woman wearing a stylish bikini set.",
+      "imageUrl": "https://picsum.photos/seed/wbeach2/600/400",
+      "imageHint": "bikini set"
+    },
+    {
+      "id": "wbeach3",
+      "description": "A woman in a breezy beach cover-up.",
+      "imageUrl": "https://picsum.photos/seed/wbeach3/600/400",
+      "imageHint": "beach cover-up"
+    },
+    {
+      "id": "mbeach1",
+      "description": "A man in classic board shorts.",
+      "imageUrl": "https://picsum.photos/seed/mbeach1/600/400",
+      "imageHint": "board shorts"
+    },
+    {
+      "id": "mbeach2",
+      "description": "A man wearing stylish swim trunks.",
+      "imageUrl": "https://picsum.photos/seed/mbeach2/600/400",
+      "imageHint": "swim trunks"
+    },
+    {
+      "id": "mbeach3",
+      "description": "A man in a lightweight beach rash guard.",
+      "imageUrl": "https://picsum.photos/seed/mbeach3/600/400",
+      "imageHint": "rash guard"
+    },
+    {
+      "id": "newarrival1",
+      "description": "A new stylish trench coat.",
+      "imageUrl": "https://picsum.photos/seed/newarrival1/600/400",
+      "imageHint": "trench coat"
+    },
+    {
+      "id": "newarrival2",
+      "description": "A new pair of summer sandals.",
+      "imageUrl": "https://picsum.photos/seed/newarrival2/600/400",
+      "imageHint": "summer sandals"
+    },
+    {
+      "id": "newcatalog1",
+      "description": "An item from the new catalog.",
+      "imageUrl": "https://picsum.photos/seed/newcatalog1/600/400",
+      "imageHint": "catalog item"
     }
   ]
 }

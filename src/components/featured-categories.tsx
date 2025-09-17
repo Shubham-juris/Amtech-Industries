@@ -50,12 +50,12 @@ export function FeaturedCategories() {
 
   return (
     <section 
-      className="relative grid grid-cols-1 lg:grid-cols-4 bg-[#FFFAE6] text-black" 
+      className="relative grid grid-cols-1 lg:grid-cols-3 bg-[#FFFAE6] text-black" 
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     >
         <Wave />
-      <div className="lg:col-span-3 py-20 overflow-hidden">
+      <div className="lg:col-span-2 py-20 overflow-hidden">
         <div 
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * (100 / ITEMS_TO_SHOW)}%)` }}

@@ -28,7 +28,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <Link href={`/products/${product.id}`} className="group">
-      <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:scale-105">
+      <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 ease-in-out group-hover:shadow-xl">
         <CardHeader className="p-0">
           <div className="relative aspect-square w-full overflow-hidden">
             <Image
@@ -47,7 +47,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </CardContent>
         <CardFooter className="p-4 pt-0 flex justify-between items-center">
           <p className="font-semibold text-primary">{formatPrice(product.price)}</p>
-          <Button onClick={handleAddToCart} variant="secondary" size="sm">
+          <Button onClick={handleAddToCart} variant="default" size="sm" className="bg-black text-white hover:bg-white hover:text-black border border-black">
             Add to Cart
           </Button>
         </CardFooter>

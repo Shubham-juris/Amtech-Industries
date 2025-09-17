@@ -1,8 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { allProducts } from '@/lib/products';
-import { ProductCard } from '@/components/product-card';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -12,14 +10,10 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
   const router = useRouter();
 
-  const filteredProducts = allProducts.filter((product) =>
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     router.push(`/wholesale/search/${searchTerm}`);
-  }
+  };
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -44,17 +38,9 @@ export default function Home() {
         </form>
       </div>
 
-      {filteredProducts.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-      ) : (
-        <div className="text-center py-16">
-          <p className="text-xl text-muted-foreground">No products found matching your search.</p>
-        </div>
-      )}
+      <div className="text-center py-16">
+        <p className="text-xl text-muted-foreground">Please use the search bar or navigate to our wholesale section to find products.</p>
+      </div>
     </div>
   );
 }

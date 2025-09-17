@@ -72,6 +72,66 @@
       "description": "A black and gray duffle bag.",
       "imageUrl": "https://picsum.photos/seed/bag12/600/400",
       "imageHint": "duffle bag"
+    },
+    {
+      "id": "cap1",
+      "description": "Man wearing a classic baseball cap backwards.",
+      "imageUrl": "https://picsum.photos/seed/cap1/600/400",
+      "imageHint": "baseball cap"
+    },
+    {
+      "id": "cap2",
+      "description": "A person wearing a warm wool beanie in the city.",
+      "imageUrl": "https://picsum.photos/seed/cap2/600/400",
+      "imageHint": "wool beanie"
+    },
+    {
+      "id": "cap3",
+      "description": "A person in a stylish snapback hat.",
+      "imageUrl": "https://picsum.photos/seed/cap3/600/400",
+      "imageHint": "snapback hat"
+    },
+    {
+      "id": "cap4",
+      "description": "A person wearing a trendy bucket hat outdoors.",
+      "imageUrl": "https://picsum.photos/seed/cap4/600/400",
+      "imageHint": "bucket hat"
+    },
+    {
+      "id": "cap5",
+      "description": "A person in a classic trucker hat.",
+      "imageUrl": "https://picsum.photos/seed/cap5/600/400",
+      "imageHint": "trucker hat"
+    },
+    {
+      "id": "tshirt1",
+      "description": "A man in a plain white crewneck t-shirt.",
+      "imageUrl": "https://picsum.photos/seed/tshirt1/600/400",
+      "imageHint": "crewneck t-shirt"
+    },
+    {
+      "id": "tshirt2",
+      "description": "A woman wearing a simple black v-neck t-shirt.",
+      "imageUrl": "https://picsum.photos/seed/tshirt2/600/400",
+      "imageHint": "v-neck t-shirt"
+    },
+    {
+      "id": "tshirt3",
+      "description": "A person wearing a t-shirt with a cool graphic print.",
+      "imageUrl": "https://picsum.photos/seed/tshirt3/600/400",
+      "imageHint": "graphic t-shirt"
+    },
+    {
+      "id": "tshirt4",
+      "description": "A person in a classic polo t-shirt.",
+      "imageUrl": "https://picsum.photos/seed/tshirt4/600/400",
+      "imageHint": "polo shirt"
+    },
+    {
+      "id": "tshirt5",
+      "description": "A person wearing a comfortable long-sleeve t-shirt.",
+      "imageUrl": "https://picsum.photos/seed/tshirt5/600/400",
+      "imageHint": "long-sleeve shirt"
     }
   ]
 }

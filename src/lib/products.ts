@@ -169,7 +169,7 @@ export const allProducts: Product[] = [
 
   // T-Shirts (5)
   {
-    id: 'tshirt_001',
+    id: 't-shirt_001',
     name: 'Men\'s Crewneck T-Shirt',
     description: 'A basic essential for any wardrobe.',
     longDescription: 'Crafted from soft, breathable cotton, this crewneck T-shirt offers a classic fit for everyday comfort.',
@@ -178,7 +178,7 @@ export const allProducts: Product[] = [
     imageHint: getImage('tshirt1', 'tshirt1').hint,
   },
   {
-    id: 'tshirt_002',
+    id: 't-shirt_002',
     name: 'Women\'s V-Neck T-Shirt',
     description: 'A flattering V-neck cut.',
     longDescription: 'This V-neck T-shirt is made from a soft cotton blend, providing a stylish and comfortable fit.',
@@ -187,7 +187,7 @@ export const allProducts: Product[] = [
     imageHint: getImage('tshirt2', 'tshirt2').hint,
   },
   {
-    id: 'tshirt_003',
+    id: 't-shirt_003',
     name: 'Graphic Print T-Shirt',
     description: 'A bold graphic print to make a statement.',
     longDescription: 'Featuring a unique graphic print, this T-shirt is perfect for adding a touch of personality to your look.',
@@ -196,7 +196,7 @@ export const allProducts: Product[] = [
     imageHint: getImage('tshirt3', 'tshirt3').hint,
   },
   {
-    id: 'tshirt_004',
+    id: 't-shirt_004',
     name: 'Polo T-Shirt',
     description: 'A classic polo for a smart-casual look.',
     longDescription: 'This polo T-shirt is made from high-quality piqué cotton, offering a refined yet comfortable style.',
@@ -205,7 +205,7 @@ export const allProducts: Product[] = [
     imageHint: getImage('tshirt4', 'tshirt4').hint,
   },
   {
-    id: 'tshirt_005',
+    id: 't-shirt_005',
     name: 'Long-Sleeve T-Shirt',
     description: 'Perfect for layering in cooler weather.',
     longDescription: 'This long-sleeve T-shirt is made from a soft and warm cotton fabric, ideal for transitional seasons.',

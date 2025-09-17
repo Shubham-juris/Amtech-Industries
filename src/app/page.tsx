@@ -5,13 +5,21 @@ import { allProducts } from '@/lib/products';
 import { ProductCard } from '@/components/product-card';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
+  const router = useRouter();
 
   const filteredProducts = allProducts.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    router.push(`/wholesale/search/${searchTerm}`);
+  }
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -23,16 +31,17 @@ export default function Home() {
       </header>
 
       <div className="mb-8 max-w-lg mx-auto">
-        <div className="relative">
+        <form onSubmit={handleSearch} className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
             type="text"
             placeholder="Search for products..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 py-3 text-base rounded-full shadow-sm"
+            className="w-full pl-10 pr-24 py-3 text-base rounded-full shadow-sm"
           />
-        </div>
+          <Button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full">Search</Button>
+        </form>
       </div>
 
       {filteredProducts.length > 0 ? (

@@ -12,6 +12,8 @@ interface CartContextType {
   clearCart: () => void;
   cartTotal: number;
   itemCount: number;
+  isCartOpen: boolean;
+  setCartOpen: (isOpen: boolean) => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -26,6 +28,7 @@ export const useCart = () => {
 
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [isCartOpen, setCartOpen] = useState(false);
   const { toast } = useToast();
 
   useEffect(() => {
@@ -59,6 +62,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
       }
       return [...prevItems, { ...product, quantity }];
     });
+    setCartOpen(true);
     toast({
         title: "Added to cart",
         description: `${product.name} has been added to your cart.`,
@@ -110,6 +114,8 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
         clearCart,
         cartTotal,
         itemCount,
+        isCartOpen,
+        setCartOpen,
       }}
     >
       {children}

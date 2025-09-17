@@ -5,7 +5,6 @@ import { ShoppingBag, Sparkles, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { useCart } from '@/hooks/use-cart';
 import { CartSheet } from './cart-sheet';
-import { useState } from 'react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -46,8 +45,7 @@ const MenuColumn = ({ title, items }: { title: string; items: string[] }) => (
 
 
 export function SiteHeader() {
-  const { itemCount } = useCart();
-  const [isCartOpen, setCartOpen] = useState(false);
+  const { itemCount, setCartOpen } = useCart();
 
   return (
     <>
@@ -133,7 +131,7 @@ export function SiteHeader() {
           </div>
         </div>
       </header>
-      <CartSheet open={isCartOpen} onOpenChange={setCartOpen} />
+      <CartSheet />
     </>
   );
 }

@@ -34,12 +34,10 @@ export default function WholesaleSubCategoryPage({
     const fetchProducts = async () => {
       setLoading(true);
       
-      const searchKeyword = subcategory.split('-').pop() || '';
+      const searchKeyword = subcategory.split('-').shift() || '';
 
       const filtered = allProducts.filter(p => 
-        p.id.toLowerCase().includes(searchKeyword) ||
-        p.name.toLowerCase().includes(searchKeyword) ||
-        p.description.toLowerCase().includes(searchKeyword)
+        p.id.toLowerCase().startsWith(searchKeyword)
       );
 
       setProducts(filtered);

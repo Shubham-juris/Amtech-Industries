@@ -17,13 +17,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Separator } from './ui/separator';
 
-type CartSheetProps = {
-    open: boolean;
-    onOpenChange: (open: boolean) => void;
-}
 
-export function CartSheet({ open, onOpenChange }: CartSheetProps) {
-  const { cartItems, removeFromCart, updateQuantity, cartTotal, itemCount } = useCart();
+export function CartSheet() {
+  const { cartItems, removeFromCart, updateQuantity, cartTotal, itemCount, isCartOpen, setCartOpen } = useCart();
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-US', {
@@ -33,7 +29,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
   };
 
   return (
-    <Sheet open={open} onOpenChange={onOpenChange}>
+    <Sheet open={isCartOpen} onOpenChange={setCartOpen}>
       <SheetContent className="flex w-full flex-col pr-0 sm:max-w-lg">
         <SheetHeader className="px-6">
           <SheetTitle>Shopping Cart ({itemCount})</SheetTitle>

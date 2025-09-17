@@ -2,52 +2,76 @@
 {
   "placeholderImages": [
     {
-      "id": "1",
-      "description": "A futuristic drone with sleek design.",
-      "imageUrl": "https://picsum.photos/seed/tech1/600/400",
-      "imageHint": "drone technology"
+      "id": "bag1",
+      "description": "A man holding a brown travel bag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "travel bag"
     },
     {
-      "id": "2",
-      "description": "A high-tech virtual reality headset.",
-      "imageUrl": "https://picsum.photos/seed/tech2/600/400",
-      "imageHint": "vr headset"
+      "id": "bag2",
+      "description": "A woman with a classy brown handbag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "handbag"
     },
     {
-      "id": "3",
-      "description": "A sophisticated robotic arm in a lab setting.",
-      "imageUrl": "https://picsum.photos/seed/tech3/600/400",
-      "imageHint": "robotic arm"
+      "id": "bag3",
+      "description": "A woman holding a white tote bag with an ethnic print.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "tote bag"
     },
     {
-      "id": "4",
-      "description": "A modern smart watch with a glowing interface.",
-      "imageUrl": "https://picsum.photos/seed/tech4/600/400",
-      "imageHint": "smart watch"
+      "id": "bag4",
+      "description": "A woman with a white and blue sling bag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "sling bag"
     },
     {
-      "id": "5",
-      "description": "An advanced cybernetic implant.",
-      "imageUrl": "https://picsum.photos/seed/tech5/600/400",
-      "imageHint": "cybernetic implant"
+      "id": "bag5",
+      "description": "A woman holding a tan brown textured bag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "textured bag"
     },
     {
-      "id": "6",
-      "description": "A personal AI assistant device.",
-      "imageUrl": "https://picsum.photos/seed/tech6/600/400",
-      "imageHint": "ai assistant"
+      "id": "bag6",
+      "description": "A woman with a chic gray circular bag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "circular bag"
     },
     {
-      "id": "7",
-      "description": "A quantum computing chip.",
-      "imageUrl": "https://picsum.photos/seed/tech7/600/400",
-      "imageHint": "quantum chip"
+      "id": "bag7",
+      "description": "A woman in a purple dress with a black sling bag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "embellished bag"
     },
     {
-      "id": "8",
-      "description": "An electric self-driving car.",
-      "imageUrl": "https://picsum.photos/seed/tech8/600/400",
-      "imageHint": "electric car"
+      "id": "bag8",
+      "description": "A woman holding a futuristic silver handbag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "silver handbag"
+    },
+    {
+      "id": "bag9",
+      "description": "A classic black sports bag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "sports bag"
+    },
+    {
+      "id": "bag10",
+      "description": "A red and black gym bag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "gym bag"
+    },
+    {
+      "id": "bag11",
+      "description": "A green and black bag for fishing rods or similar equipment.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "equipment bag"
+    },
+    {
+      "id": "bag12",
+      "description": "A black and gray duffle bag.",
+      "imageUrl": "https://placehold.co/400x400/FFFFFF/000000?text=Bag",
+      "imageHint": "duffle bag"
     }
   ]
 }

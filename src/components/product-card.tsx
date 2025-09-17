@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import type { Product } from '@/lib/types';
+import { Button } from './ui/button';
 
 interface ProductCardProps {
   product: Product;
@@ -34,8 +35,11 @@ export function ProductCard({ product }: ProductCardProps) {
           <CardTitle className="text-lg leading-tight mb-2">{product.name}</CardTitle>
           <p className="text-sm text-muted-foreground line-clamp-2">{product.description}</p>
         </CardContent>
-        <CardFooter className="p-4 pt-0">
+        <CardFooter className="p-4 pt-0 flex justify-between items-center">
           <p className="font-semibold text-primary">{formatPrice(product.price)}</p>
+          <Button asChild>
+            <span className="bg-accent text-accent-foreground">View More</span>
+          </Button>
         </CardFooter>
       </Card>
     </Link>

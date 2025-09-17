@@ -2,16 +2,16 @@
 
 import { useState, useEffect } from 'react';
 import { ProductCard } from '@/components/product-card';
-import { Input } from '@/components/ui/input';
-import { Search } from 'lucide-react';
 import { allProducts } from '@/lib/products';
 import { Product } from '@/lib/types';
 import { getFilteredProductsAction } from '@/app/actions';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
-import { Slider } from '@/components/ui/slider';
 import { Button } from '@/components/ui/button';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import Image from 'next/image';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export default function WholesaleSubCategoryPage({
   params,
@@ -23,124 +23,116 @@ export default function WholesaleSubCategoryPage({
   const [searchTerm, setSearchTerm] = useState('');
   const [priceRange, setPriceRange] = useState([0, 150000]);
   const [brands, setBrands] = useState<string[]>([]);
-  
-  const fromTitle = (slug: string) => slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
-  const availableBrands = Array.from(new Set(allProducts.map(p => p.name.split(' ')[0])));
+  const fromTitle = (slug: string) => slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  const pageTitle = fromTitle(params.subcategory);
+
+  const productCategories = ['Men', 'Women', 'Kids', 'Running Fitness', 'Custom Clothing', 'Sports', 'Accessories', 'Footwear'];
 
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true);
-      const filteredProducts = await getFilteredProductsAction({
-        category: params.category,
-        subcategory: params.subcategory,
-        searchTerm,
-        priceRange,
-        brands,
-      });
-      setProducts(filteredProducts);
+      // For now, we will just show all products.
+      // In a real app, you would filter based on category/subcategory.
+      setProducts(allProducts.filter(p => p.name.toLowerCase().includes('bag')));
       setLoading(false);
     };
     fetchProducts();
-  }, [params.category, params.subcategory, searchTerm, priceRange, brands]);
-
-  const handleBrandChange = (brand: string) => {
-    setBrands(prev => 
-      prev.includes(brand) ? prev.filter(b => b !== brand) : [...prev, brand]
-    );
-  };
-  
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      maximumFractionDigits: 0,
-    }).format(price);
-  };
-
-  const pageTitle = `${fromTitle(params.category)} / ${fromTitle(params.subcategory)}`;
+  }, [params.category, params.subcategory]);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <header className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-primary tracking-tight">{pageTitle}</h1>
-      </header>
+    <div>
+        <div className="relative h-64 bg-gray-200">
+            <Image 
+                src="https://picsum.photos/seed/cityscape/1200/400"
+                alt="Bags"
+                fill
+                className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-start p-12">
+                <h1 className="text-5xl font-bold text-white">{pageTitle}</h1>
+                <p className="text-white">Home / {pageTitle}</p>
+            </div>
+        </div>
 
-      <div className="grid md:grid-cols-[280px_1fr] gap-12">
+      <div className="container mx-auto px-4 py-12 grid md:grid-cols-[300px_1fr] gap-12">
         <aside className="space-y-8">
-            <h2 className="text-xl font-semibold">Filters</h2>
-            
-            <div>
-                <h3 className="font-medium mb-4">Price Range</h3>
-                <Slider
-                    min={0}
-                    max={150000}
-                    step={100}
-                    value={priceRange}
-                    onValueChange={(value) => setPriceRange(value as [number, number])}
-                />
-                <div className="flex justify-between text-sm text-muted-foreground mt-2">
-                    <span>{formatPrice(priceRange[0])}</span>
-                    <span>{formatPrice(priceRange[1])}</span>
-                </div>
-            </div>
-
-            <div>
-                <h3 className="font-medium mb-4">Brand</h3>
-                <div className="space-y-3">
-                    {availableBrands.map(brand => (
-                        <div key={brand} className="flex items-center space-x-2">
-                            <Checkbox 
-                                id={`brand-${brand}`} 
-                                checked={brands.includes(brand)}
-                                onCheckedChange={() => handleBrandChange(brand)}
-                            />
-                            <Label htmlFor={`brand-${brand}`} className="font-normal">{brand}</Label>
-                        </div>
+            <div className="p-4 border">
+                <h3 className="font-bold mb-4">Product Categories</h3>
+                <Accordion type="multiple" defaultValue={['Men', 'Women', 'Kids']} className="w-full">
+                    {productCategories.map(category => (
+                        <AccordionItem value={category} key={category}>
+                             <AccordionTrigger className="font-medium text-sm py-2">{category}</AccordionTrigger>
+                             <AccordionContent>
+                                {/* Add sub-category links here if needed */}
+                             </AccordionContent>
+                        </AccordionItem>
                     ))}
-                </div>
+                </Accordion>
             </div>
 
-            <Button onClick={() => { setPriceRange([0, 150000]); setBrands([]); setSearchTerm(''); }} variant="outline" className="w-full">
-                Clear Filters
-            </Button>
+            <div className="p-4 border text-center">
+                <h4 className="font-semibold">Design is the silent ambassador of your brand.</h4>
+                <Button variant="default" className="mt-4 bg-black text-white hover:bg-gray-800">Redden With A Text</Button>
+            </div>
+            
+            <div className="p-4 border">
+                <h3 className="font-bold mb-4">Get In Touch</h3>
+                <form className="space-y-4">
+                    <div className="grid grid-cols-2 gap-4">
+                        <Input placeholder="Name" />
+                        <Input placeholder="Email" />
+                    </div>
+                     <div className="grid grid-cols-2 gap-4">
+                        <Input placeholder="Quantity" />
+                        <Input placeholder="Country" />
+                    </div>
+                    <Textarea placeholder="Message" />
+                    <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800">Submit</Button>
+                </form>
+            </div>
         </aside>
 
         <main>
-          <div className="mb-8">
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-              <Input
-                type="text"
-                placeholder="Search in this category..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 py-3 text-base"
-              />
-            </div>
-          </div>
+          <h2 className="text-2xl font-bold mb-6 text-center">NEW ARRIVAL</h2>
           
           {loading ? (
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[...Array(6)].map((_, i) => (
-                    <div key={i} className="space-y-2">
-                        <Skeleton className="h-48 w-full" />
-                        <Skeleton className="h-6 w-3/4" />
-                        <Skeleton className="h-4 w-1/2" />
-                    </div>
-                ))}
+                <p>Loading...</p>
              </div>
           ) : products.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
+                <div key={product.id} className="border p-4 text-center rounded-lg shadow-sm">
+                    <div className="relative aspect-square w-full mb-4">
+                         <Image src={product.image} alt={product.name} fill className="object-contain" />
+                    </div>
+                    <h4 className="font-medium text-sm mb-2">{product.name}</h4>
+                    <Button variant="default" size="sm" className="bg-black text-white hover:bg-gray-800">View More</Button>
+                </div>
               ))}
             </div>
           ) : (
             <div className="text-center py-16">
-              <p className="text-xl text-muted-foreground">No products found matching your criteria.</p>
+              <p className="text-xl text-muted-foreground">No products found.</p>
             </div>
           )}
+
+          <div className="flex justify-center mt-8">
+             <nav aria-label="Page navigation">
+                <ul className="inline-flex items-center -space-x-px">
+                    <li>
+                        <a href="#" className="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">1</a>
+                    </li>
+                    <li>
+                        <a href="#" className="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
+                    </li>
+                    <li>
+                        <a href="#" className="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700">&rarr;</a>
+                    </li>
+                </ul>
+            </nav>
+          </div>
         </main>
       </div>
     </div>

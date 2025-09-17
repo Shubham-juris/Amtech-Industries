@@ -30,6 +30,58 @@ const menuItems = {
     'Sports': ['Athletics', 'Basketball', 'Boxing', 'Cycling', 'Dance Wear', 'Golf', 'Hockey', 'Marathons', 'Tennis', 'Triathlon'],
 };
 
+const subcategoryToPrefixMap: Record<string, string> = {
+    'bags': 'bag_',
+    'cap': 'cap_',
+    'scarf': 'scarf_',
+    'sleepwear': 'sleepwear_',
+    'socks': 'sock_',
+    'towels': 'towel_',
+    'white-label-clothing': 'whitelabel_',
+    'sublimation': 'sublimation_',
+    'women-dress': 'dress_',
+    'women-coats': 'coat_',
+    'women-jackets': 'jacket_',
+    'women-top-wear': 'topwear_',
+    'women-leggings': 'leggings_',
+    'women-lingerie': 'lingerie_',
+    'girls-dresses-collection': 'girls_dress_',
+    'infants-0-24-months': 'infant_',
+    'little-4-7-yrs': 'little_kid_',
+    'toddlers-2-4-yrs': 'toddler_',
+    'men-hoody': 'hoodie_',
+    'men-jackets': 'men_jacket_',
+    'men-pants': 'men_pants_',
+    'men-t-shirts': 'men_tshirt_',
+    'men-shirts': 'men_shirt_',
+    'men-underwear': 'men_underwear_',
+    'flipflops': 'flipflop_',
+    'formal-shoes': 'formal_shoe_',
+    'lifestyle': 'lifestyle_shoe_',
+    'running-shoes': 'running_shoe_',
+    'new-catalog': 'new_catalog_',
+    'new-arrivals': 'new_arrivals_',
+    'jumpsuits': 'jumpsuit_',
+    'polo-t-shirts': 'polo_t_shirt_',
+    'womens-beachwear': 'womens_beachwear_',
+    'mens-beachwear': 'mens_beachwear_',
+    'activewear': 'activewear_',
+    'compression': 'compression_',
+    'men-running-fitness': 'men_running_fitness_',
+    'women-running-fitness': 'women_running_fitness_',
+    'athletics': 'athletics_',
+    'basketball': 'basketball_',
+    'boxing': 'boxing_',
+    'cycling': 'cycling_',
+    'dance-wear': 'dancewear_',
+    'golf': 'golf_',
+    'hockey': 'hockey_',
+    'marathons': 'marathon_',
+    'tennis': 'tennis_',
+    'triathlon': 'triathlon_',
+};
+
+
 const toSlug = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 
 export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategoryPageProps) {
@@ -44,8 +96,7 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
     const fetchProducts = async () => {
       setLoading(true);
       
-      // Improved filtering logic
-      const searchPrefix = subcategory.replace(/-/g, '_').replace(/s_collection$/, '').replace(/s$/, '');
+      const searchPrefix = subcategoryToPrefixMap[subcategory] ?? subcategory.replace(/-/g, '_');
 
       const filtered = allProducts.filter(p => 
         p.id.toLowerCase().startsWith(searchPrefix)

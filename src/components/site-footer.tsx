@@ -17,9 +17,9 @@ export function SiteFooter() {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Sitemap */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Sitemap</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="text-muted-foreground hover:text-primary-foreground transition-colors">Home</Link></li>
               <li><Link href="/about" className="text-muted-foreground hover:text-primary-foreground transition-colors">About Us</Link></li>

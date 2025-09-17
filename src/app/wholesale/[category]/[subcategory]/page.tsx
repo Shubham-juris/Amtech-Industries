@@ -182,11 +182,6 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
                     ))}
                 </Accordion>
             </div>
-
-            <div className="p-4 border text-center">
-                <h4 className="font-semibold">Design is the silent ambassador of your brand.</h4>
-                <Button variant="default" className="mt-4 bg-black text-white hover:bg-gray-800">Redden With A Text</Button>
-            </div>
             
             <div className="p-4 border">
                 <h3 className="font-bold mb-4">Get In Touch</h3>

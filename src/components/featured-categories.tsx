@@ -4,9 +4,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getImage } from '@/lib/placeholder-images';
-import { Card, CardContent } from "@/components/ui/card";
-import { useState, useEffect, useRef } from 'react';
-import { cn } from '@/lib/utils';
+import { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const categories = [
     { name: 'Lingerie', href: '/wholesale/women/women-lingerie', image: getImage('featured_lingerie').url, hint: getImage('featured_lingerie').hint },
@@ -25,61 +24,73 @@ const categories = [
 ];
 
 const TICKER_INTERVAL = 3000;
-const ITEMS_TO_SHOW = 5;
+const ITEMS_TO_SHOW = 4;
 
 export function FeaturedCategories() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  // Extend the array to create a seamless loop effect
   const extendedCategories = [...categories, ...categories.slice(0, ITEMS_TO_SHOW)];
 
   useEffect(() => {
     if (isHovered) return;
 
     const interval = setInterval(() => {
-      setCurrentIndex(prevIndex => {
-        if (prevIndex >= categories.length - 1) {
-          return 0;
-        }
-        return prevIndex + 1;
-      });
+      setCurrentIndex(prevIndex => (prevIndex + 1) % categories.length);
     }, TICKER_INTERVAL);
 
     return () => clearInterval(interval);
   }, [isHovered]);
-
+  
+  const Wave = () => (
+    <svg className="absolute top-0 left-0 w-full h-auto" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 24C240 40 480 8 720 24S1200 8 1440 24V0H0V24Z" fill="white"/>
+    </svg>
+  );
 
   return (
-    <section className="py-12" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-primary text-center mb-8">Featured Categories</h2>
-        <div className="w-full overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * (100 / ITEMS_TO_SHOW)}%)` }}
-          >
-            {extendedCategories.map((category, index) => (
-              <div key={index} className="p-2 shrink-0" style={{ flexBasis: `${100 / ITEMS_TO_SHOW}%`}}>
-                <Card className="overflow-hidden group">
-                  <CardContent className="relative flex aspect-square items-center justify-center p-0">
-                    <Image
-                      src={category.image}
-                      alt={category.name}
-                      data-ai-hint={category.hint}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                      <Link href={category.href}>
-                        <span className="inline-block bg-white/90 text-black px-4 py-2 text-md font-semibold shadow-md hover:bg-white transition-colors text-center">
-                          {category.name}
-                        </span>
-                      </Link>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
-          </div>
+    <section 
+      className="relative grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 bg-[#FFFAE6] text-black" 
+      onMouseEnter={() => setIsHovered(true)} 
+      onMouseLeave={() => setIsHovered(false)}
+    >
+        <Wave />
+      <div className="md:col-span-2 xl:col-span-3 py-20 overflow-hidden">
+        <div 
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * (100 / ITEMS_TO_SHOW)}%)` }}
+        >
+          {extendedCategories.map((category, index) => (
+            <div key={index} className="px-4 shrink-0 text-center" style={{ flexBasis: `${100 / ITEMS_TO_SHOW}%` }}>
+              <Link href={category.href} className="group">
+                <div className="relative aspect-[3/4] mb-4">
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    data-ai-hint={category.hint}
+                    fill
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                  />
+                </div>
+                <span className="inline-block bg-white px-6 py-2 text-md font-semibold shadow-md">
+                    {category.name}
+                </span>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="bg-black text-white flex flex-col justify-center p-8 lg:p-16">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">FEATURED<br/>CATEGORIES</h2>
+        <p className="text-lg text-neutral-300 mb-8">Discover the most trending products in Amtech.</p>
+        <div className="flex items-center gap-4">
+            <button className="border border-white/50 rounded-full p-2 hover:bg-white/10 transition-colors">
+                <ChevronLeft className="h-6 w-6"/>
+            </button>
+             <button className="border border-white/50 rounded-full p-2 hover:bg-white/10 transition-colors">
+                <ChevronRight className="h-6 w-6"/>
+            </button>
         </div>
       </div>
     </section>

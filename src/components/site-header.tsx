@@ -83,7 +83,7 @@ export function SiteHeader() {
                     <ChevronDown className="relative top-[1px] ml-1 h-4 w-4" />
                   </button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-[--radix-dropdown-menu-content-available-width] max-w-7xl p-6 bg-primary text-primary-foreground" align="start">
+                <DropdownMenuContent className="w-screen max-w-7xl p-6 bg-primary text-primary-foreground" align="start">
                     <div className="grid grid-cols-5 gap-x-8 gap-y-6">
                         <div className="flex flex-col gap-6">
                            <MenuColumn title="Accessories" items={menuItems['Accessories']} />

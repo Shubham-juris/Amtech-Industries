@@ -50,13 +50,16 @@ export function SiteHeader() {
   return (
     <>
       <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur-sm">
-        <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-          <div className="flex gap-6 md:gap-10">
+        <div className="container flex h-16 items-center">
+          <div className="flex-1 flex justify-start">
             <Link href="/" className="flex items-center space-x-2">
               <Sparkles className="h-6 w-6 text-primary" />
               <span className="inline-block font-bold text-lg">Amtech Industries</span>
             </Link>
-            <nav className="hidden md:flex gap-6">
+          </div>
+
+          <div className="flex flex-1 items-center justify-end space-x-4">
+            <nav className="hidden md:flex gap-6 items-center">
               <Link
                 href="/"
                 className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
@@ -83,7 +86,7 @@ export function SiteHeader() {
                     <ChevronDown className="relative top-[1px] ml-1 h-4 w-4" />
                   </button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-screen max-w-7xl p-6 bg-primary text-primary-foreground" align="start">
+                <DropdownMenuContent className="w-screen max-w-7xl p-6 bg-primary text-primary-foreground" align="end" sideOffset={14}>
                     <div className="grid grid-cols-5 gap-x-8 gap-y-6">
                         <div className="flex flex-col gap-6">
                            <MenuColumn title="Accessories" items={menuItems['Accessories']} />
@@ -114,11 +117,7 @@ export function SiteHeader() {
               >
                 Contact Us
               </Link>
-            </nav>
-          </div>
-          <div className="flex flex-1 items-center justify-end space-x-4">
-            <nav className="flex items-center space-x-1">
-              <Button variant="ghost" size="icon" className="relative" onClick={() => setCartOpen(true)}>
+               <Button variant="ghost" size="icon" className="relative" onClick={() => setCartOpen(true)}>
                 <ShoppingBag className="h-5 w-5" />
                 {itemCount > 0 && (
                   <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-accent-foreground text-xs font-bold">
@@ -128,6 +127,15 @@ export function SiteHeader() {
                 <span className="sr-only">Open shopping cart</span>
               </Button>
             </nav>
+             <Button variant="ghost" size="icon" className="relative md:hidden" onClick={() => setCartOpen(true)}>
+                <ShoppingBag className="h-5 w-5" />
+                {itemCount > 0 && (
+                  <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-accent-foreground text-xs font-bold">
+                    {itemCount}
+                  </span>
+                )}
+                <span className="sr-only">Open shopping cart</span>
+              </Button>
           </div>
         </div>
       </header>

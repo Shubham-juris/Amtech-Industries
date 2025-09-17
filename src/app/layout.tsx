@@ -7,6 +7,7 @@ import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Toaster } from "@/components/ui/toaster"
 import { WholesaleBanner } from '@/components/wholesale-banner';
+import { WhatsAppChatButton } from '@/components/whatsapp-chat-button';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
             <SiteFooter />
             <Toaster />
             <WholesaleBanner />
+            <WhatsAppChatButton />
           </div>
         </CartProvider>
       </body>

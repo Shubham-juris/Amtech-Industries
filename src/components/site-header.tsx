@@ -12,7 +12,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
-import { useIsMobile } from '@/hooks/use-mobile';
+import { usePathname } from 'next/navigation';
 
 
 const menuItems = {
@@ -47,7 +47,7 @@ const MenuColumn = ({ title, items }: { title: string; items: string[] }) => (
 
 export function SiteHeader() {
   const { itemCount, setCartOpen } = useCart();
-  const isMobile = useIsMobile();
+  const pathname = usePathname();
 
   return (
     <>
@@ -61,29 +61,29 @@ export function SiteHeader() {
           </div>
 
           <div className="flex flex-1 items-center justify-end space-x-4">
-            <nav className={cn("items-center space-x-4 lg:space-x-6", isMobile ? "hidden" : "flex")}>
+            <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
               <Link
                 href="/"
-                className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className={cn("flex items-center text-base font-medium text-muted-foreground hover:text-primary transition-colors", pathname === "/" && "text-primary")}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className={cn("flex items-center text-base font-medium text-muted-foreground hover:text-primary transition-colors", pathname === "/about" && "text-primary")}
               >
                 About
               </Link>
               <Link
                 href="/manufacturers"
-                className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className={cn("flex items-center text-base font-medium text-muted-foreground hover:text-primary transition-colors", pathname === "/manufacturers" && "text-primary")}
               >
                 Manufacturers
               </Link>
               
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <button className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors focus:outline-none">
+                  <button className={cn("flex items-center text-base font-medium text-muted-foreground hover:text-primary transition-colors focus:outline-none", pathname.startsWith('/wholesale') && "text-primary")}>
                     Wholesale
                     <ChevronDown className="relative top-[1px] ml-1 h-4 w-4" />
                   </button>
@@ -115,7 +115,7 @@ export function SiteHeader() {
 
               <Link
                 href="/contact"
-                className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className={cn("flex items-center text-base font-medium text-muted-foreground hover:text-primary transition-colors", pathname === "/contact" && "text-primary")}
               >
                 Contact Us
               </Link>

@@ -105,8 +105,10 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
       setProducts(filtered);
       setLoading(false);
     };
-    fetchProducts();
-  }, [category, subcategory]);
+    if (subcategory) {
+        fetchProducts();
+    }
+  }, [subcategory]);
 
 
   return (
@@ -120,7 +122,7 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
             />
             <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-start p-12">
                 <h1 className="text-5xl font-bold text-white">{pageTitle}</h1>
-                <p className="text-white">Home / {fromTitle(category)} / {pageTitle}</p>
+                <p className="text-white">Home / {category ? fromTitle(category) : ''} / {pageTitle}</p>
             </div>
         </div>
 

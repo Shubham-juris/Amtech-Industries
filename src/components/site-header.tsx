@@ -17,7 +17,7 @@ import { cn } from '@/lib/utils';
 const menuItems = {
   'Accessories': ['Bags', 'Cap', 'Scarf', 'Sleepwear', 'Socks', 'Towels'],
   'Custom Clothing': ['White Label Clothing', 'Sublimation'],
-  'Women': ['Dress', 'Coats', 'Jackets', 'Top Wear', 'Leggings', 'Lingerie'],
+  'Women': ['Lingerie', 'Shrug', 'Women Coats', 'Women Dress', 'Women FullCoverUps', 'Women Jackets', 'Women Shirts', 'Women Sweater', 'Women Tops', 'Womens Beachwear', 'Womens Bottoms', 'Womens Leggings'],
   'Kids': ['Girls Dresses Collection', 'Infants-0-24-Months', 'Little-4-7-Yrs', 'Toddlers-2-4-Yrs'],
   'Men': ['Men Bottoms', 'Men Hoody', 'Men Jackets', 'Men Tees', 'Mens Beachwear', 'Mens Shirts', 'Mens Underwear', 'Polo T-Shirts Manufacturers'],
   'Footwear': ['Flipflops', 'Formal Shoes', 'Lifestyle', 'Running Shoes'],

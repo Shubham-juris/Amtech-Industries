@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
+import { PopularProducts } from '@/components/popular-products';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -24,7 +25,7 @@ export default function Home() {
         </p>
       </header>
 
-      <div className="mb-8 max-w-lg mx-auto">
+      <div className="mb-12 max-w-lg mx-auto">
         <form onSubmit={handleSearch} className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
@@ -38,9 +39,8 @@ export default function Home() {
         </form>
       </div>
 
-      <div className="text-center py-16">
-        <p className="text-xl text-muted-foreground">Please use the search bar or navigate to our wholesale section to find products.</p>
-      </div>
+      <PopularProducts />
+
     </div>
   );
 }

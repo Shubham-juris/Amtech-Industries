@@ -90,6 +90,8 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
   const [loading, setLoading] = useState(true);
   const [openCategories, setOpenCategories] = useState<string[]>([]);
 
+  const fromTitle = (slug: string) => slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  
   useEffect(() => {
     try {
       const storedCategories = localStorage.getItem('openCategories');
@@ -116,7 +118,6 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
     }
   }, [openCategories]);
 
-  const fromTitle = (slug: string) => slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   const pageTitle = fromTitle(subcategory);
 
   useEffect(() => {

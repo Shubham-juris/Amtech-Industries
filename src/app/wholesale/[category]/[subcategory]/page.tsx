@@ -93,28 +93,32 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
   const fromTitle = (slug: string) => slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   
   useEffect(() => {
+    const currentCategoryTitle = category ? fromTitle(category) : '';
     try {
       const storedCategories = localStorage.getItem('openCategories');
-      if (storedCategories) {
-        setOpenCategories(JSON.parse(storedCategories));
-      } else if (category) {
-        const currentCategoryTitle = fromTitle(category);
-        setOpenCategories([currentCategoryTitle]);
+      const parsedStored = storedCategories ? JSON.parse(storedCategories) : [];
+      // Ensure the current category is always open
+      if (currentCategoryTitle && !parsedStored.includes(currentCategoryTitle)) {
+        parsedStored.push(currentCategoryTitle);
       }
+      setOpenCategories(parsedStored);
     } catch (error) {
       console.error('Failed to parse open categories from localStorage', error);
-      if (category) {
-        const currentCategoryTitle = fromTitle(category);
+      if (currentCategoryTitle) {
         setOpenCategories([currentCategoryTitle]);
       }
     }
   }, [category]);
   
   useEffect(() => {
-    try {
-        localStorage.setItem('openCategories', JSON.stringify(openCategories));
-    } catch (error) {
-        console.error('Failed to save open categories to localStorage', error);
+    // This effect should only run when openCategories changes, not on initial load
+    // to prevent overwriting localStorage with a potentially empty initial state.
+    if (openCategories.length > 0) {
+      try {
+          localStorage.setItem('openCategories', JSON.stringify(openCategories));
+      } catch (error) {
+          console.error('Failed to save open categories to localStorage', error);
+      }
     }
   }, [openCategories]);
 

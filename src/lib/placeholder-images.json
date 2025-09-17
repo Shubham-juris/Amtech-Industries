@@ -1146,6 +1146,78 @@
       "description": "Polyester sports jersey for sublimation.",
       "imageUrl": "https://picsum.photos/seed/sublimation8/600/400",
       "imageHint": "sports jersey"
+    },
+    {
+      "id": "girls_dress_1",
+      "description": "A cute pink party dress for girls.",
+      "imageUrl": "https://picsum.photos/seed/girlsdress1/600/400",
+      "imageHint": "girls dress"
+    },
+    {
+      "id": "girls_dress_2",
+      "description": "A casual floral print dress for girls.",
+      "imageUrl": "https://picsum.photos/seed/girlsdress2/600/400",
+      "imageHint": "floral dress"
+    },
+    {
+      "id": "girls_dress_3",
+      "description": "A blue denim dress for girls.",
+      "imageUrl": "https://picsum.photos/seed/girlsdress3/600/400",
+      "imageHint": "denim dress"
+    },
+    {
+      "id": "infant_1",
+      "description": "A soft cotton onesie for infants.",
+      "imageUrl": "https://picsum.photos/seed/infant1/600/400",
+      "imageHint": "infant onesie"
+    },
+    {
+      "id": "infant_2",
+      "description": "A set of cute infant bibs.",
+      "imageUrl": "https://picsum.photos/seed/infant2/600/400",
+      "imageHint": "infant bibs"
+    },
+    {
+      "id": "infant_3",
+      "description": "A warm sleep sack for infants.",
+      "imageUrl": "https://picsum.photos/seed/infant3/600/400",
+      "imageHint": "sleep sack"
+    },
+    {
+      "id": "toddler_1",
+      "description": "A playful t-shirt for toddlers.",
+      "imageUrl": "https://picsum.photos/seed/toddler1/600/400",
+      "imageHint": "toddler t-shirt"
+    },
+    {
+      "id": "toddler_2",
+      "description": "A pair of comfortable toddler leggings.",
+      "imageUrl": "https://picsum.photos/seed/toddler2/600/400",
+      "imageHint": "toddler leggings"
+    },
+    {
+      "id": "toddler_3",
+      "description": "A cute hoodie for toddlers.",
+      "imageUrl": "https://picsum.photos/seed/toddler3/600/400",
+      "imageHint": "toddler hoodie"
+    },
+    {
+      "id": "little_kid_1",
+      "description": "A fun graphic t-shirt for little kids.",
+      "imageUrl": "https://picsum.photos/seed/littlekid1/600/400",
+      "imageHint": "kids t-shirt"
+    },
+    {
+      "id": "little_kid_2",
+      "description": "A pair of durable jeans for little kids.",
+      "imageUrl": "https://picsum.photos/seed/littlekid2/600/400",
+      "imageHint": "kids jeans"
+    },
+    {
+      "id": "little_kid_3",
+      "description": "A cozy sweater for little kids.",
+      "imageUrl": "https://picsum.photos/seed/littlekid3/600/400",
+      "imageHint": "kids sweater"
     }
   ]
 }

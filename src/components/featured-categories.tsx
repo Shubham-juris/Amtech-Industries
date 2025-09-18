@@ -10,7 +10,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const categories = [
     { name: 'Lingerie', href: '/wholesale/women/women-lingerie', image: getImage('featured_lingerie').url, hint: getImage('featured_lingerie').hint },
     { name: 'Women Dress', href: '/wholesale/women/women-dress', image: getImage('featured_womendress').url, hint: getImage('featured_womendress').hint },
-    { name: 'Women Full Cover-Ups', href: '/wholesale/collection/womens-beachwear', image: getImage('featured_coverups').url, hint: getImage('featured_coverups').hint },
+    
     { name: 'Bags', href: '/wholesale/accessories/bags', image: getImage('featured_bags').url, hint: getImage('featured_bags').hint },
     { name: 'Towels', href: '/wholesale/accessories/towels', image: getImage('featured_towels').url, hint: getImage('featured_towels').hint },
     { name: 'Formal Shoes', href: '/wholesale/footwear/formal-shoes', image: getImage('featured_formalshoes').url, hint: getImage('featured_formalshoes').hint },
@@ -21,6 +21,12 @@ const categories = [
     { name: 'Sports', href: '/wholesale/sports/athletics', image: getImage('featured_sports').url, hint: getImage('featured_sports').hint },
     { name: 'Dance Wear', href: '/wholesale/sports/dance-wear', image: getImage('featured_dancewear').url, hint: getImage('featured_dancewear').hint },
     { name: 'Tennis', href: '/wholesale/sports/tennis', image: getImage('featured_tennis').url, hint: getImage('featured_tennis').hint },
+
+    { name: 'Women Fashion', href: '/wholesale/women/women-dress', image: getImage('featured_women').url, hint: getImage('featured_women').hint },
+    { name: 'Running Shoes', href: '/wholesale//footwear/running-shoes', image: getImage('featured_runningshoes').url, hint: getImage('featured_runningshoes').hint },
+    { name: 'Men Hoody', href: '/wholesale/men/men-hoody', image: getImage('featured_menhoody').url, hint: getImage('featured_menhoody').hint },
+    { name: 'Compression', href: '/wholesale/running-fitness/compression', image: getImage('featured_compression').url, hint: getImage('featured_compression').hint },
+    { name: 'Men Underwear', href: '/wholesale/men/men-underwear', image: getImage('featured_menunderwear').url, hint: getImage('featured_menunderwear').hint },
 ];
 
 const TICKER_INTERVAL = 3000;
@@ -58,7 +64,7 @@ export function FeaturedCategories() {
 
   return (
     <section 
-      className="relative grid grid-cols-1 lg:grid-cols-5 bg-[#FFFAE6] text-black" 
+      className="relative grid grid-cols-1 lg:grid-cols-5 bg-[#FEEA9F] text-black" 
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     >

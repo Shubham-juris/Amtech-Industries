@@ -1,29 +1,29 @@
+'use client';
 
 import Link from 'next/link';
-
-const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-      fill="currentColor"
-      className="h-8 w-8"
-    >
-        <path
-            d="M16.75 13.96c.25.44.53.84.53 1.41 0 .57-.27 1.12-.63 1.61-.36.49-.83.89-1.38 1.19-.55.3-1.16.45-1.8.45-.64 0-1.26-.15-1.84-.45-.58-.3-.92-.53-1.5-1.19-.58-.66-1.16-1.39-1.5-2.17s-.51-1.41-.51-2.09.17-1.24.51-1.84.73-1.05 1.28-1.5c.55-.45 1.18-.84 1.84-.84.66 0 1.28.15 1.84.45.56.3 1.04.7 1.5 1.19.46.49.84.99.84 1.56 0 .57-.27 1.12-.59 1.41l-.06.07c-.25.3-.53.53-.87.71a.88.88 0 01-1.07-.31l-.2-.33c-.1-.13-.27-.2-.44-.2h-.03c-.2 0-.34.13-.44.33l-.2.33c-.1.14-.27.2-.44.2h-.01c-.2 0-.34-.13-.44-.33l-.2-.33a.88.88 0 00-1.07-.31.88.88 0 00-.87.71l-.06.07a.88.88 0 00.3 1.07l.34.2c.1.07.13.2.13.34v.01c0 .2-.13.34-.33.44l-.33.2c-.14.1-.2.27-.2.44v.01c0 .2.13.34.33.44l.33.2c.14.1.2.27.2.44v.01c0 .2-.13.34-.33.44l-.33.2a.88.88 0 01-1.07-.31l-.06-.07a.88.88 0 01.3-1.07l.33-.2c.1-.07.13-.2.13-.34v-.01c0-.2-.13-.34-.33-.44l-.33-.2c-.14-.1-.2-.27-.2-.44v-.01a.88.88 0 011.07-.31l.06.07c.25.3.53.53.87.71.34.18.71.18 1.07 0l.06-.07a.88.88 0 00.3-1.07l-.33-.2c-.1-.07-.13-.2-.13-.34v-.01c0-.2.13-.34.33-.44l.33-.2c-.1-.13-.27-.2-.44-.2h-.01c-.2 0-.34.13-.44.33l-.2.33a.88.88 0 00-1.07-.31.88.88 0 00-.87.71l-.06.07a.88.88 0 00.3 1.07l.34.2c.1.07.13.2.13.34v.01c0-.2-.13-.34-.33-.44l-.33-.2c-.14-.1-.2-.27-.2-.44v-.01c0-.2.13-.34.33-.44l.33-.2c.14-.1.2-.27.2-.44v-.01c0-.2.13-.34.33-.44l.33-.2a.88.88 0 011.07-.31l.06.07c.25.3.53.53.87.71.34.18.71.18 1.07 0l.06-.07a.88.88 0 00.3-1.07l-.33-.2c-.1-.07-.13-.2-.13-.34v-.01c0-.2-.13-.34-.33-.44l-.33-.2c-.14-.1-.2-.27-.2-.44v-.01a.88.88 0 011.07-.31l.06.07c.25.3.53.53.87.71.34.18.71.18 1.07 0l.06-.07c.25-.3.53-.53.87-.71.34-.18.71-.18 1.07 0z"
-        />
-    </svg>
-  );
+import Image from 'next/image';
 
 export function WhatsAppChatButton() {
   return (
-    <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="fixed bottom-28 right-10 z-50 group">
-        <div className="relative">
-            <div className="absolute inset-0 bg-green-500 rounded-full animate-pulse-ring"></div>
-            <div className="relative bg-green-500 text-white p-3 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-200 ease-in-out">
-                <WhatsAppIcon />
-            </div>
+    <Link
+      href="https://wa.me/1234567890"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-1 right-1 z-50 group"
+    >
+      <div className="relative w-48 h-48"> 
+        <div className="absolute inset-10 bg-green-500 rounded-full animate-pulse-ring"></div>
+
+        <div className="relative animate-bounce-slow p-3 group-hover:scale-110 transition-transform duration-1000 ease-in-out">
+          <Image
+            src="/images/whatsapp/chatbot.png"
+            alt="Chat on WhatsApp"
+            width={200}
+            height={200}
+            className="object-contain"
+          />
         </div>
+      </div>
     </Link>
   );
 }

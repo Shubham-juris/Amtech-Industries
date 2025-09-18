@@ -18,32 +18,48 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <header className="mb-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary tracking-tight">Welcome to Amtech Industries</h1>
-        <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Discover the pinnacle of innovation and quality with Amtech Industries. Browse our catalog of cutting-edge products.
-        </p>
-      </header>
+    <div>
+      <section className="relative h-[70vh] flex flex-col items-center justify-center text-center text-white bg-black">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-50 -z-10"
+          src="/videos/hero-video.mp4"
+        >
+          {/* Provide a fallback image for browsers that do not support video */}
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
+        
+        <div className="z-10 p-4">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">Welcome to Amtech Industries</h1>
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
+            Discover the pinnacle of innovation and quality with Amtech Industries. Browse our catalog of cutting-edge products.
+          </p>
+        </div>
 
-      <div className="mb-12 max-w-lg mx-auto">
-        <form onSubmit={handleSearch} className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-          <Input
-            type="text"
-            placeholder="Search for products..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-24 py-3 text-base rounded-full shadow-sm"
-          />
-          <Button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full">Search</Button>
-        </form>
+        <div className="mt-8 z-10 w-full max-w-2xl px-4">
+          <form onSubmit={handleSearch} className="relative">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+            <Input
+              type="text"
+              placeholder="Search for products..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-12 pr-28 py-6 text-lg rounded-full shadow-lg text-black"
+            />
+            <Button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full py-3 px-6 text-base">
+              Search
+            </Button>
+          </form>
+        </div>
+      </section>
+
+      <div className="container mx-auto px-4 py-8">
+        <FeaturedCategories />
+        <PopularProducts />
       </div>
-
-      <FeaturedCategories />
-
-      <PopularProducts />
-
     </div>
   );
 }

@@ -41,8 +41,8 @@ export function ProductCard({ product }: ProductCardProps) {
             />
           </div>
         </CardHeader>
-        <CardContent className="p-4 flex-grow">
-          <CardTitle className="text-lg leading-tight mb-2">{product.name}</CardTitle>
+        <CardContent className="p-4 flex-grow flex flex-col">
+          <CardTitle className="text-base leading-tight mb-2 flex-grow">{product.name}</CardTitle>
           <p className="text-sm text-muted-foreground line-clamp-2">{product.description}</p>
         </CardContent>
         <CardFooter className="p-4 pt-0 flex justify-between items-center">

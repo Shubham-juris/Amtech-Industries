@@ -15,7 +15,9 @@ export default function Home() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    router.push(`/wholesale/search/${searchTerm}`);
+    if (searchTerm.trim()) {
+      router.push(`/wholesale/search/${searchTerm.trim()}`);
+    }
   };
 
   return (
@@ -40,7 +42,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-8 z-10 w-full max-w-2xl px-4">
+        <div className="mt-8 z-10 w-full max-w-md md:max-w-2xl px-4">
           <form onSubmit={handleSearch} className="relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
@@ -48,9 +50,9 @@ export default function Home() {
               placeholder="Search for products..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-12 pr-28 py-6 text-lg rounded-full shadow-lg text-black"
+              className="w-full pl-12 pr-24 md:pr-28 py-3 md:py-6 text-sm md:text-lg rounded-full shadow-lg text-black"
             />
-            <Button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full py-3 px-6 text-base">
+            <Button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full py-2 md:py-3 px-4 md:px-6 text-sm md:text-base">
               Search
             </Button>
           </form>

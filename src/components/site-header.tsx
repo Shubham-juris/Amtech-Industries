@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image'; 
-import { ShoppingCart, Sparkles, ChevronDown } from 'lucide-react';
+import { ShoppingCart, Sparkles, ChevronDown, Menu } from 'lucide-react';
 import { Button } from './ui/button';
 import { useCart } from '@/hooks/use-cart';
 import { CartSheet } from './cart-sheet';
@@ -12,8 +12,22 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 
 const menuItems = {
@@ -55,12 +69,87 @@ const MenuColumn = ({ title, items }: { title: string; items: string[] }) => (
 export function SiteHeader() {
   const { itemCount, setCartOpen } = useCart();
   const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <>
       <header className="sticky pt-8 top-0 z-40 w-full bg-background/80 backdrop-blur-sm">
         <div className="container flex h-16 items-center">
-          <div className="flex-1 flex justify-start">
+          <div className="md:hidden flex-1 flex justify-start">
+             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Open menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="w-full max-w-sm">
+                <SheetHeader>
+                  <SheetTitle>Menu</SheetTitle>
+                </SheetHeader>
+                <nav className="mt-8 flex flex-col space-y-4">
+                   <Link
+                      href="/"
+                      className={cn("text-lg font-medium", pathname === "/" ? "text-primary" : "text-muted-foreground")}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      href="/about"
+                      className={cn("text-lg font-medium", pathname === "/about" ? "text-primary" : "text-muted-foreground")}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href="/manufacturers"
+                      className={cn("text-lg font-medium", pathname === "/manufacturers" ? "text-primary" : "text-muted-foreground")}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Manufacturers
+                    </Link>
+                    <Accordion type="single" collapsible className="w-full">
+                      <AccordionItem value="wholesale">
+                        <AccordionTrigger className={cn("text-lg font-medium", pathname.startsWith('/wholesale') ? "text-primary" : "text-muted-foreground")}>Wholesale</AccordionTrigger>
+                        <AccordionContent>
+                          <div className="flex flex-col space-y-2 pl-4">
+                            {Object.entries(menuItems).map(([category, subcategories]) => (
+                               <Accordion type="single" collapsible key={category}>
+                                <AccordionItem value={category}>
+                                  <AccordionTrigger className="text-base font-medium">{category}</AccordionTrigger>
+                                  <AccordionContent className="pl-4">
+                                     {subcategories.map(subcategory => (
+                                      <Link
+                                        key={subcategory}
+                                        href={`/wholesale/${toSlug(category)}/${toSlug(subcategory)}`}
+                                        className="block py-2 text-muted-foreground"
+                                        onClick={() => setMobileMenuOpen(false)}
+                                      >
+                                        {subcategory}
+                                      </Link>
+                                    ))}
+                                  </AccordionContent>
+                                </AccordionItem>
+                              </Accordion>
+                            ))}
+                          </div>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                     <Link
+                      href="/contact"
+                      className={cn("text-lg font-medium", pathname === "/contact" ? "text-primary" : "text-muted-foreground")}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Contact Us
+                    </Link>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
+          
+          <div className="flex-1 flex justify-start items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Image
                 src="/images/amtech.jpeg"
@@ -72,7 +161,7 @@ export function SiteHeader() {
             </Link>
           </div>
 
-          <div className="flex flex-1 items-center justify-end space-x-4">
+          <div className="flex-1 flex items-center justify-end space-x-2 md:space-x-4">
             <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
               <Link
                 href="/"

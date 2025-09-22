@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { PopularProducts } from '@/components/popular-products';
 import { FeaturedCategories } from '@/components/featured-categories';
+import { CategoryTicker } from '@/components/category-ticker';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -55,6 +56,8 @@ export default function Home() {
           </form>
         </div>
       </section>
+
+      <CategoryTicker />
 
       <div className="container mx-auto px-4 py-8">
         <FeaturedCategories />

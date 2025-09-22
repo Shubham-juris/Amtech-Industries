@@ -22,6 +22,7 @@ export default {
         body: ['Inter', 'sans-serif'],
         headline: ['Inter', 'sans-serif'],
         code: ['monospace'],
+        serif: ['Georgia', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -111,11 +112,16 @@ export default {
                 opacity: '0',
             },
         },
+        'marquee-slow': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-33.3333%)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse-ring': 'pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'marquee-slow': 'marquee-slow 40s linear infinite',
       },
     },
   },

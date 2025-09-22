@@ -17,7 +17,7 @@ export function CategoryTicker() {
   const extendedCategories = [...categories, ...categories, ...categories];
 
   return (
-    <section className="bg-background text-black py-12 overflow-hidden">
+    <section className="bg-background text-black py-28 overflow-hidden">
       <div className="relative transform -rotate-3">
         <div className="bg-white py-4">
           <div className="flex animate-marquee-slow">

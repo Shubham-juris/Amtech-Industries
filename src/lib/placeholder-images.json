@@ -539,6 +539,12 @@
       "description": "A woman doing ab exercises on a pink yoga mat.",
       "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHdvcmtvdXR8ZW58MHx8fHwxNzU4NjE4NjEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman workout"
+    },
+    {
+      "id": "about_white_label",
+      "description": "Woman with red hair wearing a brown hat and coat.",
+      "imageUrl": "https://images.unsplash.com/photo-1593476087123-36d1de271f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMGhhdHxlbnwwfHx8fDE3NTg1OTM3NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman hat"
     }
   ]
 }

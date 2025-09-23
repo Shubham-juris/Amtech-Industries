@@ -55,6 +55,30 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <section className="py-16 bg-background">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative aspect-[4/5]">
+               <Image
+                src={getImage('about_white_label').url}
+                alt="Woman in a hat and coat"
+                data-ai-hint={getImage('about_white_label').hint}
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold text-primary tracking-tight">
+                What We Can Do For White Label And Private Label Business Owners
+              </h2>
+              <p className="text-muted-foreground">
+                For those in need of white label apparel, we offer premium products with top discounts, and for private label business owners, we provide A-Z customization as well as logo embossment services. We assure complete satisfaction to our bulk buyers. Our ultimate goal is to form an ever-lasting business relationship with you so that you come back for more and we help you grab awesome business deals that will be just wow for your business.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

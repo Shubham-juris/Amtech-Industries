@@ -65,7 +65,6 @@ export default function Home() {
         </div>
       </section>
 
-      <ReasonsToPartner />
       <div className="container mx-auto px-4 py-8">
         <FeaturedCategories />
       </div>
@@ -100,6 +99,7 @@ export default function Home() {
         />
       </div>
       <PromoBanners />
+      <ReasonsToPartner />
     </div>
   );
 }

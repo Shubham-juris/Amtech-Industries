@@ -13,6 +13,7 @@ import { PromoBanners } from '@/components/promo-banners';
 import { FashionBanner } from '@/components/fashion-banner';
 import { trendingPlusSize, trendingSportsBras } from '@/lib/data/trending';
 import { ReasonsToPartner } from '@/components/reasons-to-partner';
+import { ManufacturingProcedure } from '@/components/manufacturing-procedure';
 
 
 export default function Home() {
@@ -65,6 +66,7 @@ export default function Home() {
         </div>
       </section>
 
+      <ManufacturingProcedure />
       <div className="container mx-auto px-4 py-8">
         <FeaturedCategories />
       </div>

@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -9,6 +10,8 @@ import { ProductCard } from '@/components/product-card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const menuItems = {
     'Accessories': ['Bags', 'Cap', 'Scarf', 'Sleepwear', 'Socks', 'Towels'],
@@ -26,6 +29,8 @@ const toSlug = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 
 export default function ManufacturersPage() {
   const [openCategories, setOpenCategories] = useState<string[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 15;
   
   useEffect(() => {
     try {
@@ -48,6 +53,67 @@ export default function ManufacturersPage() {
 
   const handleAccordionChange = (value: string[]) => {
     setOpenCategories(value);
+  };
+  
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = allProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+  const totalPages = Math.ceil(allProducts.length / productsPerPage);
+
+  const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+  }
+
+  const renderPageNumbers = () => {
+    const pageNumbers = [];
+    const maxPagesToShow = 4;
+    
+    if (totalPages <= maxPagesToShow + 2) {
+      for (let i = 1; i <= totalPages; i++) {
+        pageNumbers.push(i);
+      }
+    } else {
+      let startPage, endPage;
+      if (currentPage <= maxPagesToShow -1) {
+        startPage = 1;
+        endPage = maxPagesToShow;
+        pageNumbers.push(...Array.from({ length: endPage - startPage + 1 }, (_, i) => startPage + i));
+        pageNumbers.push('...');
+        pageNumbers.push(totalPages);
+      } else if (currentPage >= totalPages - (maxPagesToShow - 2)) {
+        startPage = totalPages - maxPagesToShow + 1;
+        pageNumbers.push(1);
+        pageNumbers.push('...');
+        for (let i = startPage; i <= totalPages; i++) {
+          pageNumbers.push(i);
+        }
+      } else {
+        pageNumbers.push(1);
+        pageNumbers.push('...');
+        for (let i = currentPage - 1; i <= currentPage + 1; i++) {
+          pageNumbers.push(i);
+        }
+        pageNumbers.push('...');
+        pageNumbers.push(totalPages);
+      }
+    }
+
+    return pageNumbers.map((number, index) =>
+      typeof number === 'string' ? (
+        <span key={`ellipsis-${index}`} className="px-3 py-1">
+          {number}
+        </span>
+      ) : (
+        <Button
+          key={number}
+          onClick={() => handlePageChange(number)}
+          variant={currentPage === number ? 'default' : 'outline'}
+          className="mx-1"
+        >
+          {number}
+        </Button>
+      )
+    );
   };
 
   return (
@@ -95,9 +161,22 @@ export default function ManufacturersPage() {
         </aside>
         <main>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {allProducts.map((product) => (
+            {currentProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
             ))}
+            </div>
+            <div className="flex justify-center items-center mt-12">
+                <Button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} variant="outline">
+                    <ChevronLeft className="h-4 w-4" />
+                    <span className="ml-2">Previous</span>
+                </Button>
+                <div className="mx-4 flex items-center">
+                    {renderPageNumbers()}
+                </div>
+                <Button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} variant="outline">
+                    <span className="mr-2">Next</span>
+                    <ChevronRight className="h-4 w-4" />
+                </Button>
             </div>
         </main>
       </div>

@@ -112,6 +112,16 @@ export default {
                 opacity: '0',
             },
         },
+        'bounce-slow': {
+          '0%, 100%': {
+            transform: 'translateY(-5%)',
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+        },
         'marquee-slow': {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-33.3333%)' },
@@ -121,6 +131,7 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse-ring': 'pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'bounce-slow': 'bounce-slow 3s infinite',
         'marquee-slow': 'marquee-slow 10s linear infinite',
       },
     },

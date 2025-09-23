@@ -28,32 +28,8 @@ const officeLocations = [
     {
         name: 'Offices USA & Canada',
         address: 'Penthouse, 8730 Wilshire Blvd, Beverly Hills, California, 90211, USA',
-        phone: '1 855 525 2642',
-        email: 'info@amtech.com'
-    },
-    {
-        name: 'Offices in Australia',
-        address: 'Sydney, Australia',
-        phone: '+61 2 1234 5678',
-        email: 'au-info@amtech.com'
-    },
-    {
-        name: 'Offices in United Kingdom',
-        address: 'London, UK',
-        phone: '+44 20 1234 5678',
-        email: 'uk-info@amtech.com'
-    },
-    {
-        name: 'Distribution in South East Asia (Singapore, Malaysia and Thailand)',
-        address: 'Singapore',
-        phone: '+65 1234 5678',
-        email: 'sea-info@amtech.com'
-    },
-    {
-        name: 'Distribution in South Africa',
-        address: 'Johannesburg, South Africa',
-        phone: '+27 11 123 4567',
-        email: 'za-info@amtech.com'
+        phone: '123456789number',
+        email: 'amtectidustry@gmail.com'
     }
 ]
 

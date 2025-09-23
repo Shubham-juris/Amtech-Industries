@@ -15,7 +15,7 @@ export function FashionBanner() {
               className="absolute inset-0 flex items-center justify-center text-[10rem] font-extrabold text-foreground/5 pointer-events-none -mt-8"
               aria-hidden="true"
             >
-              ALANIC
+              AMTECH
             </h2>
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-4">

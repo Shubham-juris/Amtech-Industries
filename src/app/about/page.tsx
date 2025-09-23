@@ -40,7 +40,7 @@ export default function AboutPage() {
                 We Are The Leading Manufacturer And Supplier Of Top-Quality And Trendy Apparel
               </h2>
               <p className="text-muted-foreground">
-                Alanic Clothing has earned a name as a famed clothing manufacturer and boutique as we understand the needs of our global clients with complete acuity. Join hands with us if you want your business to perform well, do great and earn high revenues in return. We do our best to make your store's collection the most talked-about one. We are all ears to your bulk stocking needs-connect today with your custom requirements!
+                Amtech Industries has earned a name as a famed clothing manufacturer and boutique as we understand the needs of our global clients with complete acuity. Join hands with us if you want your business to perform well, do great and earn high revenues in return. We do our best to make your store's collection the most talked-about one. We are all ears to your bulk stocking needs-connect today with your custom requirements!
               </p>
             </div>
             <div className="relative aspect-square">

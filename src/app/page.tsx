@@ -8,9 +8,11 @@ import { useRouter } from 'next/navigation';
 import { PopularProducts } from '@/components/popular-products';
 import { FeaturedCategories } from '@/components/featured-categories';
 import { CategoryTicker } from '@/components/category-ticker';
-import { TrendingNow } from '@/components/trending-now';
+import { TrendingProductsBanner } from '@/components/trending-products-banner';
 import { PromoBanners } from '@/components/promo-banners';
 import { FashionBanner } from '@/components/fashion-banner';
+import { trendingPlusSize } from '@/lib/data/trending';
+
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -69,7 +71,22 @@ export default function Home() {
       <FashionBanner />
       <div className="container mx-auto px-4 py-8">
         <PopularProducts />
-        <TrendingNow />
+        <TrendingProductsBanner 
+            title="TRENDING NOW" 
+            products={trendingPlusSize}
+            largeImage={{
+                src: "https://picsum.photos/seed/trending-right-1/800/1200",
+                alt: "Fashion model in red dress",
+                hint: "woman red dress"
+            }}
+            largeImageSide='right'
+            wavyImage={{
+              src: "https://picsum.photos/seed/trending-right-2/800/1200",
+              alt: "Fashion model in green dress",
+              hint: "woman green dress"
+            }}
+            overlayText="GET 40% OFF ON WHOLESALE"
+        />
       </div>
       <PromoBanners />
     </div>

@@ -9,16 +9,53 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import { getImage } from '@/lib/placeholder-images';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
   email: z.string().email({ message: 'Please enter a valid email.' }),
+  phone: z.string().optional(),
+  quantity: z.string().optional(),
+  country: z.string().optional(),
   message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
 });
+
+const officeLocations = [
+    {
+        name: 'Offices USA & Canada',
+        address: 'Penthouse, 8730 Wilshire Blvd, Beverly Hills, California, 90211, USA',
+        phone: '1 855 525 2642',
+        email: 'info@amtech.com'
+    },
+    {
+        name: 'Offices in Australia',
+        address: 'Sydney, Australia',
+        phone: '+61 2 1234 5678',
+        email: 'au-info@amtech.com'
+    },
+    {
+        name: 'Offices in United Kingdom',
+        address: 'London, UK',
+        phone: '+44 20 1234 5678',
+        email: 'uk-info@amtech.com'
+    },
+    {
+        name: 'Distribution in South East Asia (Singapore, Malaysia and Thailand)',
+        address: 'Singapore',
+        phone: '+65 1234 5678',
+        email: 'sea-info@amtech.com'
+    },
+    {
+        name: 'Distribution in South Africa',
+        address: 'Johannesburg, South Africa',
+        phone: '+27 11 123 4567',
+        email: 'za-info@amtech.com'
+    }
+]
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -29,6 +66,9 @@ export default function ContactPage() {
       name: '',
       email: '',
       message: '',
+      phone: '',
+      quantity: '',
+      country: ''
     },
   });
 
@@ -78,62 +118,117 @@ export default function ContactPage() {
             </div>
         </section>
         <div className="container mx-auto px-4 py-12">
-        <Card className="max-w-2xl mx-auto shadow-lg">
-            <CardHeader className="text-center">
-            <CardTitle className="text-3xl text-primary">Get In Touch</CardTitle>
-            <CardDescription>
-                Have a question or feedback? Fill out the form below.
-            </CardDescription>
-            </CardHeader>
-            <CardContent>
-            <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                    <FormItem>
-                        <FormLabel>Full Name</FormLabel>
-                        <FormControl>
-                        <Input placeholder="John Doe" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                    </FormItem>
-                    )}
-                />
-                <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                    <FormItem>
-                        <FormLabel>Email</FormLabel>
-                        <FormControl>
-                        <Input placeholder="you@example.com" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                    </FormItem>
-                    )}
-                />
-                <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                    <FormItem>
-                        <FormLabel>Message</FormLabel>
-                        <FormControl>
-                        <Textarea placeholder="Your message..." className="min-h-[120px]" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                    </FormItem>
-                    )}
-                />
-                <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" size="lg">
-                    Send Message
-                </Button>
-                </form>
-            </Form>
-            </CardContent>
-        </Card>
+            <div className="grid md:grid-cols-2 gap-12">
+                <aside>
+                    <Accordion type="single" collapsible defaultValue={officeLocations[0].name} className="w-full">
+                        {officeLocations.map(location => (
+                            <AccordionItem value={location.name} key={location.name}>
+                                <AccordionTrigger className="font-semibold text-lg py-4">{location.name}</AccordionTrigger>
+                                <AccordionContent>
+                                    <div className="space-y-3 text-muted-foreground">
+                                        <p className="flex items-start gap-3">
+                                            <MapPin className="h-5 w-5 mt-1 text-primary"/>
+                                            <span>{location.address}</span>
+                                        </p>
+                                        <p className="flex items-center gap-3">
+                                            <Phone className="h-5 w-5 text-primary"/>
+                                            <span>{location.phone}</span>
+                                        </p>
+                                        <p className="flex items-center gap-3">
+                                            <Mail className="h-5 w-5 text-primary"/>
+                                            <span>{location.email}</span>
+                                        </p>
+                                    </div>
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+                </aside>
+                <main>
+                    <h2 className="text-2xl font-bold mb-4">We Will Get Back to You Within One Business Day.</h2>
+                     <Form {...form}>
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                            <div className="grid sm:grid-cols-2 gap-6">
+                                <FormField
+                                    control={form.control}
+                                    name="name"
+                                    render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                        <Input placeholder="Name" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name="email"
+                                    render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                        <Input placeholder="Email" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name="phone"
+                                    render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                        <Input placeholder="Phone" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name="quantity"
+                                    render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                        <Input placeholder="Quantity" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                    )}
+                                />
+                            </div>
+                            <FormField
+                                control={form.control}
+                                name="country"
+                                render={({ field }) => (
+                                <FormItem>
+                                    <FormControl>
+                                    <Input placeholder="Country" {...field} />
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                                )}
+                            />
+                            <FormField
+                                control={form.control}
+                                name="message"
+                                render={({ field }) => (
+                                <FormItem>
+                                    <FormControl>
+                                    <Textarea placeholder="Message" className="min-h-[120px]" {...field} />
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                                )}
+                            />
+                            <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" size="lg">
+                                Submit
+                            </Button>
+                        </form>
+                    </Form>
+                </main>
+            </div>
         </div>
     </div>
   );

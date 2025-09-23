@@ -9,6 +9,7 @@ import { PopularProducts } from '@/components/popular-products';
 import { FeaturedCategories } from '@/components/featured-categories';
 import { CategoryTicker } from '@/components/category-ticker';
 import { TrendingNow } from '@/components/trending-now';
+import { PromoBanners } from '@/components/promo-banners';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -62,10 +63,13 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-8">
         <FeaturedCategories />
-        <CategoryTicker />
+      </div>
+      <CategoryTicker />
+      <div className="container mx-auto px-4 py-8">
         <PopularProducts />
         <TrendingNow />
       </div>
+      <PromoBanners />
     </div>
   );
 }

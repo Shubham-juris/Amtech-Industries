@@ -399,7 +399,7 @@
     {
       "id": "sock7",
       "description": "A pair of fuzzy slipper socks.",
-      "imageUrl": "https://images.unsplash.com/photo-1598818432520-f57c636e9301?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbGlwcGVyJTIwc29ja3N8ZW58MHx8fHwxNzU4NjI4ODI2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1598818432520-f57c636e9301?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbGlwcGVyJTIwc29ja3N8ZW58MHx8fHwxNzU4NjI4ODI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "slipper socks"
     },
     {
@@ -447,7 +447,7 @@
     {
       "id": "sock15",
       "description": "A pair of cotton tube socks.",
-      "imageUrl": "https://images.unsplash.com/photo-1730923179125-4ae9a0cae968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0dWJlJTIwc29ja3N8ZW58MHx8fHwxNzU4NjI4ODI2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1730923179125-4ae9a0cae968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0dWJlJTIwc29ja3N8ZW58MHx8fHwxNzU4NjI4ODI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tube socks"
     },
     {
@@ -551,6 +551,12 @@
       "description": "Three women posing in different stylish outfits against a plain background.",
       "imageUrl": "https://images.unsplash.com/photo-1512437295325-8ef96e1741a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21lbiUyMG1vZGVsc3xlbnwwfHx8fDE3NTg2MzI4MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "women models"
+    },
+    {
+      "id": "contact_hero",
+      "description": "Woman drinking coffee while working",
+      "imageUrl": "https://images.unsplash.com/photo-1545386673-7723f55e5490?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGNvZmZlZXxlbnwwfHx8fDE3NTg2MzMyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman coffee"
     }
   ]
 }

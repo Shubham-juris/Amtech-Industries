@@ -10,6 +10,9 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
+import { getImage } from '@/lib/placeholder-images';
+
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -56,63 +59,82 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <Card className="max-w-2xl mx-auto shadow-lg">
-        <CardHeader className="text-center">
-          <CardTitle className="text-3xl text-primary">Contact Us</CardTitle>
-          <CardDescription>
-            Have a question or feedback? Fill out the form below.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Full Name</FormLabel>
-                    <FormControl>
-                      <Input placeholder="John Doe" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input placeholder="you@example.com" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Message</FormLabel>
-                    <FormControl>
-                      <Textarea placeholder="Your message..." className="min-h-[120px]" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" size="lg">
-                Send Message
-              </Button>
-            </form>
-          </Form>
-        </CardContent>
-      </Card>
+    <div>
+        <section className="relative h-[50vh] flex items-center justify-start text-white">
+            <div className="absolute inset-0">
+                <Image
+                    src={getImage('contact_hero').url}
+                    alt="Woman working on a laptop"
+                    data-ai-hint={getImage('contact_hero').hint}
+                    fill
+                    className="object-cover"
+                    priority
+                />
+                <div className="absolute inset-0 bg-black/60" />
+            </div>
+            <div className="relative container mx-auto px-4 z-10">
+                <h1 className="text-5xl font-bold mb-2">Contact Us</h1>
+                <p className="text-lg">Home / Contact Us</p>
+            </div>
+        </section>
+        <div className="container mx-auto px-4 py-12">
+        <Card className="max-w-2xl mx-auto shadow-lg">
+            <CardHeader className="text-center">
+            <CardTitle className="text-3xl text-primary">Get In Touch</CardTitle>
+            <CardDescription>
+                Have a question or feedback? Fill out the form below.
+            </CardDescription>
+            </CardHeader>
+            <CardContent>
+            <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                    <FormItem>
+                        <FormLabel>Full Name</FormLabel>
+                        <FormControl>
+                        <Input placeholder="John Doe" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                    <FormItem>
+                        <FormLabel>Email</FormLabel>
+                        <FormControl>
+                        <Input placeholder="you@example.com" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                    <FormItem>
+                        <FormLabel>Message</FormLabel>
+                        <FormControl>
+                        <Textarea placeholder="Your message..." className="min-h-[120px]" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                    )}
+                />
+                <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" size="lg">
+                    Send Message
+                </Button>
+                </form>
+            </Form>
+            </CardContent>
+        </Card>
+        </div>
     </div>
   );
 }

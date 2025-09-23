@@ -527,6 +527,18 @@
       "description": "A large bath sheet.",
       "imageUrl": "https://images.unsplash.com/photo-1658893775681-2bc58baae63e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiYXRoJTIwc2hlZXR8ZW58MHx8fHwxNzU4NjI4ODI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bath sheet"
+    },
+    {
+      "id": "about_hero",
+      "description": "A group of people in sportswear.",
+      "imageUrl": "https://images.unsplash.com/photo-1758599880788-414bf6400e2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZW9wbGUlMjBzcG9ydHN3ZWFyfGVufDB8fHx8MTc1ODYzMTQ5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people sportswear"
+    },
+    {
+      "id": "about_workout",
+      "description": "A woman doing ab exercises on a pink yoga mat.",
+      "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHdvcmtvdXR8ZW58MHx8fHwxNzU4NjE4NjEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman workout"
     }
   ]
 }

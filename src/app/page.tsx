@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation';
 import { PopularProducts } from '@/components/popular-products';
 import { FeaturedCategories } from '@/components/featured-categories';
 import { CategoryTicker } from '@/components/category-ticker';
+import { TrendingNow } from '@/components/trending-now';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -63,6 +64,7 @@ export default function Home() {
         <FeaturedCategories />
         <CategoryTicker />
         <PopularProducts />
+        <TrendingNow />
       </div>
     </div>
   );

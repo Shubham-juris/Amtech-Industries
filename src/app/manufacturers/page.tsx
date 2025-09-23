@@ -1,5 +1,4 @@
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { getImage } from '@/lib/placeholder-images';
 import Image from 'next/image';
 
@@ -24,16 +23,7 @@ export default function ManufacturersPage() {
         </div>
       </section>
       <div className="container mx-auto px-4 py-16">
-        <Card className="max-w-4xl mx-auto shadow-lg">
-          <CardHeader>
-            <CardTitle className="text-3xl text-primary text-center">Our Manufacturing Partners</CardTitle>
-          </CardHeader>
-          <CardContent className="text-lg text-muted-foreground text-center">
-            <p>
-              We partner with the world's leading manufacturers to bring you top-tier components and products. Our partners are selected through a rigorous process to ensure they meet our high standards of quality, innovation, and ethical practices.
-            </p>
-          </CardContent>
-        </Card>
+        
       </div>
     </div>
   );

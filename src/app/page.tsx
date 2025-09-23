@@ -11,7 +11,7 @@ import { CategoryTicker } from '@/components/category-ticker';
 import { TrendingProductsBanner } from '@/components/trending-products-banner';
 import { PromoBanners } from '@/components/promo-banners';
 import { FashionBanner } from '@/components/fashion-banner';
-import { trendingPlusSize } from '@/lib/data/trending';
+import { trendingPlusSize, trendingSportsBras } from '@/lib/data/trending';
 
 
 export default function Home() {
@@ -86,6 +86,15 @@ export default function Home() {
               hint: "woman green dress"
             }}
             overlayText="GET 40% OFF ON WHOLESALE"
+        />
+         <TrendingProductsBanner 
+          title="BE SPORTY" 
+          products={trendingSportsBras}
+          largeImage={{
+            src: "https://picsum.photos/seed/trending-right-1/800/1200",
+            alt: "Fashion model in a sporty top",
+            hint: "woman sporty top"
+          }}
         />
       </div>
       <PromoBanners />

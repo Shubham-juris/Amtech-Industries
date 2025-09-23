@@ -1,6 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { TrendingProductsBanner } from '@/components/trending-products-banner';
-import { trendingSportsBras } from '@/lib/data/trending';
 
 export default function AboutPage() {
   return (
@@ -20,15 +18,6 @@ export default function AboutPage() {
           </CardContent>
         </Card>
       </div>
-      <TrendingProductsBanner 
-        title="BE SPORTY" 
-        products={trendingSportsBras}
-        largeImage={{
-          src: "https://picsum.photos/seed/trending-right-1/800/1200",
-          alt: "Fashion model in a sporty top",
-          hint: "woman sporty top"
-        }}
-      />
     </>
   );
 }

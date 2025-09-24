@@ -156,10 +156,10 @@ export function SiteHeader() {
                 <Image
                   src="/images/amtech.jpeg"
                   alt="Amtech Logo"
-                  fill
-                  className="object-contain rounded"
+                  width={92}
+                  height={92}
+                  className="rounded"
                   priority
-                  sizes="(max-width: 768px) 64px, 96px"
                 />
               </div>
             </Link>

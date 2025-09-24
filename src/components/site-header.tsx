@@ -150,15 +150,14 @@ export function SiteHeader() {
             </Sheet>
           </div>
           
-          <div className="flex-1 flex justify-start items-center">
+          <div className="flex-1 flex justify-center md:justify-start items-center">
             <Link href="/" className="flex items-center space-x-2">
               <div className="relative w-16 h-16 md:w-24 md:h-24">
                 <Image
                   src="/images/amtech.jpeg"
                   alt="Amtech Logo"
-                  width={92}
-                  height={92}
-                  className="rounded"
+                  fill
+                  className="object-contain rounded"
                   priority
                 />
               </div>
@@ -214,7 +213,7 @@ export function SiteHeader() {
                   align="end"
                   sideOffset={14}
                 >
-                  <div className="grid grid-cols-5 gap-x-8 gap-y-6">
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-6">
                     <div className="flex flex-col gap-6">
                       <MenuColumn title="Accessories" items={menuItems['Accessories']} />
                       <MenuColumn title="Custom Clothing" items={menuItems['Custom Clothing']} />

@@ -28,8 +28,8 @@ const officeLocations = [
     {
         name: 'Offices USA & Canada',
         address: 'Penthouse, 8730 Wilshire Blvd, Beverly Hills, California, 90211, USA',
-        phone: '123456789number',
-        email: 'amtectidustry@gmail.com'
+        phone: '123456789',
+        email: 'contact@amtech.com'
     }
 ]
 

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image'; 
-import { ShoppingCart, Sparkles, ChevronDown, Menu } from 'lucide-react';
+import { ShoppingCart, Sparkles, ChevronDown, Menu, Moon, Sun } from 'lucide-react';
 import { Button } from './ui/button';
 import { useCart } from '@/hooks/use-cart';
 import { CartSheet } from './cart-sheet';
@@ -28,6 +28,7 @@ import {
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { ThemeToggle } from './theme-toggle';
 
 
 const menuItems = {
@@ -245,6 +246,7 @@ export function SiteHeader() {
               </Link>
             </nav>
 
+            <ThemeToggle />
             <Button
               variant="ghost"
               size="icon"

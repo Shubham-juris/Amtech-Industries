@@ -8,6 +8,7 @@ import { SiteFooter } from '@/components/site-footer';
 import { Toaster } from "@/components/ui/toaster"
 import { WholesaleBanner } from '@/components/wholesale-banner';
 import { WhatsAppChatButton } from '@/components/whatsapp-chat-button';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -29,16 +30,22 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn('min-h-screen bg-background font-sans antialiased', inter.variable)}>
-        <CartProvider>
-          <div className="relative flex min-h-screen flex-col">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
-            <Toaster />
-            <WholesaleBanner />
-            <WhatsAppChatButton />
-          </div>
-        </CartProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
+          <CartProvider>
+            <div className="relative flex min-h-screen flex-col">
+              <SiteHeader />
+              <main className="flex-1">{children}</main>
+              <SiteFooter />
+              <Toaster />
+              <WholesaleBanner />
+              <WhatsAppChatButton />
+            </div>
+          </CartProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -152,13 +152,16 @@ export function SiteHeader() {
           
           <div className="flex-1 flex justify-start items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/images/amtech.jpeg"
-                alt="Amtech Logo"
-                width={92}
-                height={92}
-                className="rounded"
-              />
+              <div className="relative w-16 h-16 md:w-24 md:h-24">
+                <Image
+                  src="/images/amtech.jpeg"
+                  alt="Amtech Logo"
+                  fill
+                  className="object-contain rounded"
+                  priority
+                  sizes="(max-width: 768px) 64px, 96px"
+                />
+              </div>
             </Link>
           </div>
 

@@ -36,10 +36,9 @@ export default function Home() {
           loop
           muted
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-50 -z-10"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
           src="/videos/hero-video.mp4"
         >
-          {/* Provide a fallback image for browsers that do not support video */}
           <source src="/videos/hero-video.mp4" type="video/mp4" />
         </video>
         

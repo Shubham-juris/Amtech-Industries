@@ -11,6 +11,8 @@ import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { ScrollAnimation } from '@/components/scroll-animation';
+import { Skeleton } from '@/components/ui/skeleton';
 
 type WholesaleSubCategoryPageProps = {
   params: {
@@ -146,6 +148,7 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
 
   return (
     <div>
+      <ScrollAnimation>
         <div className="relative h-64 bg-gray-200">
             <Image 
                 src="https://picsum.photos/seed/cityscape/1200/400"
@@ -158,9 +161,11 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
                 <p className="text-white">Home / {category ? fromTitle(category) : ''} / {pageTitle}</p>
             </div>
         </div>
+      </ScrollAnimation>
 
       <div className="container mx-auto px-4 py-12 grid md:grid-cols-[300px_1fr] gap-12">
         <aside className="space-y-8">
+          <ScrollAnimation>
             <div className="p-4 border">
                 <h3 className="font-bold mb-4 text-lg">Product Categories</h3>
                 <Accordion type="multiple" className="w-full" value={openCategories} onValueChange={handleAccordionChange}>
@@ -182,7 +187,9 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
                     ))}
                 </Accordion>
             </div>
+          </ScrollAnimation>
             
+          <ScrollAnimation>
             <div className="p-4 border">
                 <h3 className="font-bold mb-4">Get In Touch</h3>
                 <form className="space-y-4">
@@ -198,42 +205,57 @@ export default function WholesaleSubCategoryPage({ params }: WholesaleSubCategor
                     <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800">Submit</Button>
                 </form>
             </div>
+          </ScrollAnimation>
         </aside>
 
         <main>
-          <h2 className="text-2xl font-bold mb-6 text-center">NEW ARRIVAL</h2>
+          <ScrollAnimation>
+            <h2 className="text-2xl font-bold mb-6 text-center">NEW ARRIVAL</h2>
+          </ScrollAnimation>
           
           {loading ? (
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <p>Loading...</p>
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="space-y-2">
+                    <Skeleton className="h-48 w-full" />
+                    <Skeleton className="h-6 w-3/4" />
+                    <Skeleton className="h-4 w-1/2" />
+                  </div>
+                ))}
              </div>
           ) : products.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
+              {products.map((product, index) => (
+                <ScrollAnimation key={product.id} delay={index * 0.05}>
+                  <ProductCard product={product} />
+                </ScrollAnimation>
               ))}
             </div>
           ) : (
-            <div className="text-center py-16">
-              <p className="text-xl text-muted-foreground">No products found for "{pageTitle}".</p>
-            </div>
+            <ScrollAnimation>
+              <div className="text-center py-16">
+                <p className="text-xl text-muted-foreground">No products found for "{pageTitle}".</p>
+              </div>
+            </ScrollAnimation>
           )}
 
-          <div className="flex justify-center mt-8">
-             <nav aria-label="Page navigation">
-                <ul className="inline-flex items-center -space-x-px">
-                    <li>
-                        <a href="#" className="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">1</a>
-                    </li>
-                    <li>
-                        <a href="#" className="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
-                    </li>
-                    <li>
-                        <a href="#" className="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700">&rarr;</a>
-                    </li>
-                </ul>
-            </nav>
-          </div>
+          <ScrollAnimation>
+            <div className="flex justify-center mt-8">
+              <nav aria-label="Page navigation">
+                  <ul className="inline-flex items-center -space-x-px">
+                      <li>
+                          <a href="#" className="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">1</a>
+                      </li>
+                      <li>
+                          <a href="#" className="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
+                      </li>
+                      <li>
+                          <a href="#" className="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700">&rarr;</a>
+                      </li>
+                  </ul>
+              </nav>
+            </div>
+          </ScrollAnimation>
         </main>
       </div>
     </div>

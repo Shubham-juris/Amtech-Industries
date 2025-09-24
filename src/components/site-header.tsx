@@ -152,7 +152,7 @@ export function SiteHeader() {
           
           <div className="flex-1 flex justify-center md:justify-start items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="relative w-16 h-16 md:w-24 md:h-24">
+              <div className="relative w-14 h-14 md:w-18 md:h-18">
                 <Image
                   src="/images/amtech.jpeg"
                   alt="Amtech Logo"

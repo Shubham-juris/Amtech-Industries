@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { getImage } from '@/lib/placeholder-images';
+import { ScrollAnimation } from '@/components/scroll-animation';
 
 export default function AboutPage() {
   return (
@@ -24,61 +25,67 @@ export default function AboutPage() {
           />
         </div>
         <div className="relative container mx-auto px-4 z-10">
-          <h1 className="text-5xl font-bold mb-2">About Us</h1>
-          <p className="text-lg">Home / About Us</p>
-          <p className="mt-4 max-w-lg">
-            We are used to say that clothing are so beautiful when you wear them.
-          </p>
+          <ScrollAnimation>
+            <h1 className="text-5xl font-bold mb-2">About Us</h1>
+            <p className="text-lg">Home / About Us</p>
+            <p className="mt-4 max-w-lg">
+              We are used to say that clothing are so beautiful when you wear them.
+            </p>
+          </ScrollAnimation>
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold text-primary tracking-tight">
-                We Are The Leading Manufacturer And Supplier Of Top-Quality And Trendy Apparel
-              </h2>
-              <p className="text-muted-foreground">
-                Amtech Industries has earned a name as a famed clothing manufacturer and boutique as we understand the needs of our global clients with complete acuity. Join hands with us if you want your business to perform well, do great and earn high revenues in return. We do our best to make your store's collection the most talked-about one. We are all ears to your bulk stocking needs-connect today with your custom requirements!
-              </p>
-            </div>
-            <div className="relative aspect-square">
-              <Image
-                src={getImage('about_workout').url}
-                alt="Woman doing crunches"
-                data-ai-hint={getImage('about_workout').hint}
-                fill
-                className="object-cover"
-              />
+      <ScrollAnimation>
+        <section className="py-16 bg-white">
+          <div className="container mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-4">
+                <h2 className="text-3xl font-bold text-primary tracking-tight">
+                  We Are The Leading Manufacturer And Supplier Of Top-Quality And Trendy Apparel
+                </h2>
+                <p className="text-muted-foreground">
+                  Amtech Industries has earned a name as a famed clothing manufacturer and boutique as we understand the needs of our global clients with complete acuity. Join hands with us if you want your business to perform well, do great and earn high revenues in return. We do our best to make your store's collection the most talked-about one. We are all ears to your bulk stocking needs-connect today with your custom requirements!
+                </p>
+              </div>
+              <div className="relative aspect-square">
+                <Image
+                  src={getImage('about_workout').url}
+                  alt="Woman doing crunches"
+                  data-ai-hint={getImage('about_workout').hint}
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </ScrollAnimation>
 
-      <section className="py-16 bg-background">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-[4/5]">
-               <Image
-                src={getImage('about_white_label').url}
-                alt="Woman in a hat and coat"
-                data-ai-hint={getImage('about_white_label').hint}
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold text-primary tracking-tight">
-                What We Can Do For White Label And Private Label Business Owners
-              </h2>
-              <p className="text-muted-foreground">
-                For those in need of white label apparel, we offer premium products with top discounts, and for private label business owners, we provide A-Z customization as well as logo embossment services. We assure complete satisfaction to our bulk buyers. Our ultimate goal is to form an ever-lasting business relationship with you so that you come back for more and we help you grab awesome business deals that will be just wow for your business.
-              </p>
+      <ScrollAnimation>
+        <section className="py-16 bg-background">
+          <div className="container mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative aspect-[4/5]">
+                 <Image
+                  src={getImage('about_white_label').url}
+                  alt="Woman in a hat and coat"
+                  data-ai-hint={getImage('about_white_label').hint}
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+              <div className="space-y-4">
+                <h2 className="text-3xl font-bold text-primary tracking-tight">
+                  What We Can Do For White Label And Private Label Business Owners
+                </h2>
+                <p className="text-muted-foreground">
+                  For those in need of white label apparel, we offer premium products with top discounts, and for private label business owners, we provide A-Z customization as well as logo embossment services. We assure complete satisfaction to our bulk buyers. Our ultimate goal is to form an ever-lasting business relationship with you so that you come back for more and we help you grab awesome business deals that will be just wow for your business.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </ScrollAnimation>
     </div>
   );
 }

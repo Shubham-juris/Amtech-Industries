@@ -13,7 +13,7 @@ import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import { getImage } from '@/lib/placeholder-images';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-
+import { ScrollAnimation } from '@/components/scroll-animation';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -29,7 +29,7 @@ const officeLocations = [
         name: 'Offices USA & Canada',
         address: 'Penthouse, 8730 Wilshire Blvd, Beverly Hills, California, 90211, USA',
         phone: '123456789',
-        email: 'contact@amtech.com'
+        email: 'amtectidustry@gmail.com'
     }
 ]
 
@@ -56,20 +56,22 @@ export default function ContactPage() {
   if (submitted) {
     return (
       <div className="container mx-auto px-4 py-20 flex items-center justify-center">
-        <Card className="max-w-lg w-full text-center shadow-lg">
-          <CardHeader className="items-center">
-            <CheckCircle2 className="h-16 w-16 text-green-500 mb-4" />
-            <CardTitle className="text-3xl text-primary">Message Sent!</CardTitle>
-            <CardDescription className="text-lg">
-              Thank you for contacting us.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground">
-              We have received your message and will get back to you shortly.
-            </p>
-          </CardContent>
-        </Card>
+        <ScrollAnimation>
+            <Card className="max-w-lg w-full text-center shadow-lg">
+                <CardHeader className="items-center">
+                    <CheckCircle2 className="h-16 w-16 text-green-500 mb-4" />
+                    <CardTitle className="text-3xl text-primary">Message Sent!</CardTitle>
+                    <CardDescription className="text-lg">
+                    Thank you for contacting us.
+                    </CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-muted-foreground">
+                    We have received your message and will get back to you shortly.
+                    </p>
+                </CardContent>
+            </Card>
+        </ScrollAnimation>
       </div>
     );
   }
@@ -89,49 +91,103 @@ export default function ContactPage() {
                 <div className="absolute inset-0 bg-black/60" />
             </div>
             <div className="relative container mx-auto px-4 z-10">
-                <h1 className="text-5xl font-bold mb-2">Contact Us</h1>
-                <p className="text-lg">Home / Contact Us</p>
+                <ScrollAnimation>
+                    <h1 className="text-5xl font-bold mb-2">Contact Us</h1>
+                    <p className="text-lg">Home / Contact Us</p>
+                </ScrollAnimation>
             </div>
         </section>
         <div className="container mx-auto px-4 py-12">
             <div className="grid md:grid-cols-2 gap-12">
                 <aside>
-                    <Accordion type="single" collapsible defaultValue={officeLocations[0].name} className="w-full">
-                        {officeLocations.map(location => (
-                            <AccordionItem value={location.name} key={location.name}>
-                                <AccordionTrigger className="font-semibold text-lg py-4">{location.name}</AccordionTrigger>
-                                <AccordionContent>
-                                    <div className="space-y-3 text-muted-foreground">
-                                        <p className="flex items-start gap-3">
-                                            <MapPin className="h-5 w-5 mt-1 text-primary"/>
-                                            <span>{location.address}</span>
-                                        </p>
-                                        <p className="flex items-center gap-3">
-                                            <Phone className="h-5 w-5 text-primary"/>
-                                            <span>{location.phone}</span>
-                                        </p>
-                                        <p className="flex items-center gap-3">
-                                            <Mail className="h-5 w-5 text-primary"/>
-                                            <span>{location.email}</span>
-                                        </p>
-                                    </div>
-                                </AccordionContent>
-                            </AccordionItem>
-                        ))}
-                    </Accordion>
+                    <ScrollAnimation>
+                        <Accordion type="single" collapsible defaultValue={officeLocations[0].name} className="w-full">
+                            {officeLocations.map(location => (
+                                <AccordionItem value={location.name} key={location.name}>
+                                    <AccordionTrigger className="font-semibold text-lg py-4">{location.name}</AccordionTrigger>
+                                    <AccordionContent>
+                                        <div className="space-y-3 text-muted-foreground">
+                                            <p className="flex items-start gap-3">
+                                                <MapPin className="h-5 w-5 mt-1 text-primary"/>
+                                                <span>{location.address}</span>
+                                            </p>
+                                            <p className="flex items-center gap-3">
+                                                <Phone className="h-5 w-5 text-primary"/>
+                                                <span>{location.phone}</span>
+                                            </p>
+                                            <p className="flex items-center gap-3">
+                                                <Mail className="h-5 w-5 text-primary"/>
+                                                <span>{location.email}</span>
+                                            </p>
+                                        </div>
+                                    </AccordionContent>
+                                </AccordionItem>
+                            ))}
+                        </Accordion>
+                    </ScrollAnimation>
                 </aside>
                 <main>
-                    <h2 className="text-2xl font-bold mb-4">We Will Get Back to You Within One Business Day.</h2>
-                     <Form {...form}>
-                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                            <div className="grid sm:grid-cols-2 gap-6">
+                    <ScrollAnimation>
+                        <h2 className="text-2xl font-bold mb-4">We Will Get Back to You Within One Business Day.</h2>
+                        <Form {...form}>
+                            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                                <div className="grid sm:grid-cols-2 gap-6">
+                                    <FormField
+                                        control={form.control}
+                                        name="name"
+                                        render={({ field }) => (
+                                        <FormItem>
+                                            <FormControl>
+                                            <Input placeholder="Name" {...field} />
+                                            </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                        )}
+                                    />
+                                    <FormField
+                                        control={form.control}
+                                        name="email"
+                                        render={({ field }) => (
+                                        <FormItem>
+                                            <FormControl>
+                                            <Input placeholder="Email" {...field} />
+                                            </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                        )}
+                                    />
+                                    <FormField
+                                        control={form.control}
+                                        name="phone"
+                                        render={({ field }) => (
+                                        <FormItem>
+                                            <FormControl>
+                                            <Input placeholder="Phone" {...field} />
+                                            </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                        )}
+                                    />
+                                    <FormField
+                                        control={form.control}
+                                        name="quantity"
+                                        render={({ field }) => (
+                                        <FormItem>
+                                            <FormControl>
+                                            <Input placeholder="Quantity" {...field} />
+                                            </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                        )}
+                                    />
+                                </div>
                                 <FormField
                                     control={form.control}
-                                    name="name"
+                                    name="country"
                                     render={({ field }) => (
                                     <FormItem>
                                         <FormControl>
-                                        <Input placeholder="Name" {...field} />
+                                        <Input placeholder="Country" {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
@@ -139,70 +195,22 @@ export default function ContactPage() {
                                 />
                                 <FormField
                                     control={form.control}
-                                    name="email"
+                                    name="message"
                                     render={({ field }) => (
                                     <FormItem>
                                         <FormControl>
-                                        <Input placeholder="Email" {...field} />
+                                        <Textarea placeholder="Message" className="min-h-[120px]" {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
                                     )}
                                 />
-                                <FormField
-                                    control={form.control}
-                                    name="phone"
-                                    render={({ field }) => (
-                                    <FormItem>
-                                        <FormControl>
-                                        <Input placeholder="Phone" {...field} />
-                                        </FormControl>
-                                        <FormMessage />
-                                    </FormItem>
-                                    )}
-                                />
-                                <FormField
-                                    control={form.control}
-                                    name="quantity"
-                                    render={({ field }) => (
-                                    <FormItem>
-                                        <FormControl>
-                                        <Input placeholder="Quantity" {...field} />
-                                        </FormControl>
-                                        <FormMessage />
-                                    </FormItem>
-                                    )}
-                                />
-                            </div>
-                            <FormField
-                                control={form.control}
-                                name="country"
-                                render={({ field }) => (
-                                <FormItem>
-                                    <FormControl>
-                                    <Input placeholder="Country" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                                )}
-                            />
-                            <FormField
-                                control={form.control}
-                                name="message"
-                                render={({ field }) => (
-                                <FormItem>
-                                    <FormControl>
-                                    <Textarea placeholder="Message" className="min-h-[120px]" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                                )}
-                            />
-                            <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" size="lg">
-                                Submit
-                            </Button>
-                        </form>
-                    </Form>
+                                <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800" size="lg">
+                                    Submit
+                                </Button>
+                            </form>
+                        </Form>
+                    </ScrollAnimation>
                 </main>
             </div>
         </div>

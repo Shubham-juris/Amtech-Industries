@@ -1,5 +1,3 @@
-
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -12,6 +10,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ScrollAnimation } from '@/components/scroll-animation';
 
 const menuItems = {
     'Accessories': ['Bags', 'Cap', 'Scarf', 'Sleepwear', 'Socks', 'Towels'],
@@ -131,12 +130,15 @@ export default function ManufacturersPage() {
           <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative container mx-auto px-4 z-10">
-          <h1 className="text-5xl font-bold mb-2 font-serif">Our Products</h1>
-          <p className="text-lg">Home / Manufacturers</p>
+          <ScrollAnimation>
+            <h1 className="text-5xl font-bold mb-2 font-serif">Our Products</h1>
+            <p className="text-lg">Home / Manufacturers</p>
+          </ScrollAnimation>
         </div>
       </section>
       <div className="container mx-auto px-4 py-16 grid md:grid-cols-[300px_1fr] gap-12">
         <aside className="space-y-8">
+          <ScrollAnimation>
             <div className="p-4 border">
                 <h3 className="font-bold mb-4 text-lg">Product Categories</h3>
                 <Accordion type="multiple" className="w-full" value={openCategories} onValueChange={handleAccordionChange}>
@@ -158,26 +160,31 @@ export default function ManufacturersPage() {
                     ))}
                 </Accordion>
             </div>
+            </ScrollAnimation>
         </aside>
         <main>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {currentProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
+            {currentProducts.map((product, index) => (
+                <ScrollAnimation key={product.id} delay={index * 0.05}>
+                    <ProductCard product={product} />
+                </ScrollAnimation>
             ))}
             </div>
-            <div className="flex justify-center items-center mt-12">
-                <Button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} variant="outline">
-                    <ChevronLeft className="h-4 w-4" />
-                    <span className="ml-2">Previous</span>
-                </Button>
-                <div className="mx-4 flex items-center">
-                    {renderPageNumbers()}
+            <ScrollAnimation>
+                <div className="flex justify-center items-center mt-12">
+                    <Button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} variant="outline">
+                        <ChevronLeft className="h-4 w-4" />
+                        <span className="ml-2">Previous</span>
+                    </Button>
+                    <div className="mx-4 flex items-center">
+                        {renderPageNumbers()}
+                    </div>
+                    <Button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} variant="outline">
+                        <span className="mr-2">Next</span>
+                        <ChevronRight className="h-4 w-4" />
+                    </Button>
                 </div>
-                <Button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} variant="outline">
-                    <span className="mr-2">Next</span>
-                    <ChevronRight className="h-4 w-4" />
-                </Button>
-            </div>
+            </ScrollAnimation>
         </main>
       </div>
     </div>

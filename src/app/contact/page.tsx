@@ -26,10 +26,10 @@ const formSchema = z.object({
 
 const officeLocations = [
     {
-        name: 'Offices USA & Canada',
-        address: 'Penthouse, 8730 Wilshire Blvd, Beverly Hills, California, 90211, USA',
-        phone: '123456789',
-        email: 'amtectidustry@gmail.com'
+        name: '5017 50 Street',
+        address: '5017 50 Street Llydminster, SK',
+        phone: '780 - 870 - 2905',
+        email: 'amtechindustries2@gmail.com'
     }
 ]
 

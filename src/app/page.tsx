@@ -84,20 +84,11 @@ export default function Home() {
       </section>
 
       <ScrollAnimation>
-        <ManufacturingProcedure />
-      </ScrollAnimation>
-      <ScrollAnimation>
         <div className="container mx-auto px-4 py-8">
           <FeaturedCategories />
         </div>
       </ScrollAnimation>
-      <ScrollAnimation>
-        <CategoryTicker />
-      </ScrollAnimation>
-      <ScrollAnimation>
-        <FashionBanner />
-      </ScrollAnimation>
-      <div className="container mx-auto px-4 py-8">
+       <div className="container mx-auto px-4 py-8">
         <ScrollAnimation>
           <PopularProducts />
         </ScrollAnimation>
@@ -131,6 +122,15 @@ export default function Home() {
             />
          </ScrollAnimation>
       </div>
+      <ScrollAnimation>
+        <CategoryTicker />
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <FashionBanner />
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <ManufacturingProcedure />
+      </ScrollAnimation>
       <ScrollAnimation>
         <PromoBanners />
       </ScrollAnimation>

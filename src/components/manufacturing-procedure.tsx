@@ -2,7 +2,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Scissors, SewingPin, Wind, Check, Package, Shirt } from 'lucide-react';
+import { Scissors, Wind, Check, Package, Shirt } from 'lucide-react';
 import { getImage } from '@/lib/placeholder-images';
 
 const manufacturingSteps = [

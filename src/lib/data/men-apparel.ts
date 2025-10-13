@@ -215,10 +215,10 @@ export const menApparelProducts: Product[] = [
   {
     id: 'men_jacket_001',
     name: 'Men\'s Denim Jacket',
-    description: 'A classic blue denim jacket for men.',
+    description: 'A classic denim jacket for men.',
     longDescription: 'This versatile denim jacket is a timeless piece for any man\'s wardrobe, perfect for a casual look.',
     price: 95.00,
-    image: getImage('men_jacket_1').url,
+    image: "/images/popular/denimjacket.jpg",
     imageHint: getImage('men_jacket_1').hint,
   },
   {
@@ -256,7 +256,7 @@ export const menApparelProducts: Product[] = [
     description: 'Stylish khaki chino pants for men.',
     longDescription: 'These khaki chino pants are perfect for a smart-casual look, offering both style and comfort.',
     price: 65.00,
-    image: getImage('men_pants_2').url,
+    image: "/images/popular/chino.jpg",
     imageHint: getImage('men_pants_2').hint,
   },
   {
@@ -314,7 +314,7 @@ export const menApparelProducts: Product[] = [
     description: 'A casual plaid flannel shirt for men.',
     longDescription: 'Stay warm and stylish with this classic plaid flannel shirt, perfect for a rugged, outdoor look.',
     price: 55.00,
-    image: getImage('men_shirt_2').url,
+    image: "/images/popular/fannel.jpg",
     imageHint: getImage('men_shirt_2').hint,
   },
   {

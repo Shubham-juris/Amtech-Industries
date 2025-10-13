@@ -1,45 +1,54 @@
-
 'use client';
 
 import Image from 'next/image';
 
+// Correct image imports
+import time from "../../public/images/popular/time.jpg";
+import tech from "../../public/images/popular/tech.jpg";
+import moq from "../../public/images/popular/moq.jpg";
+import support from "../../public/images/popular/support.jpg";
+
 const reasons = [
   {
     title: 'FAST TURNAROUND TIME',
-    description: 'The moment you place your bulk order from us, we get started and can deliver your order timely or sooner than expected. We hate delays!',
+    description:
+      'The moment you place your bulk order from us, we get started and can deliver your order timely or sooner than expected. We hate delays!',
     image: {
-      src: 'https://picsum.photos/seed/warehouse-partner/600/400',
+      src: time,
       alt: 'Warehouse with boxes stacked high',
-      hint: 'warehouse boxes'
-    }
+      hint: 'warehouse boxes',
+    },
   },
   {
     title: 'ACHIEVABLE MOQ',
-    description: 'With a low MOQ, we let you experiment with your stock, get your business stock planning right. Bulk order stock that gives you real value for money.',
+    description:
+      'With a low MOQ, we let you experiment with your stock, get your business stock planning right. Bulk order stock that gives you real value for money.',
     image: {
-      src: 'https://picsum.photos/seed/small-business-partner/600/400',
+      src: moq,
       alt: 'Small business owner managing clothing stock',
-      hint: 'woman clothing rack'
-    }
+      hint: 'woman clothing rack',
+    },
   },
   {
     title: 'PROFESSIONAL SUPPORT',
-    description: 'Whether you need help choosing the best materials, require some custom design tips or need assistance to solve any kind of stock sourcing issues, our expert team is here to guide you at every step of your journey.',
+    description:
+      'Whether you need help choosing the best materials, require some custom design tips or need assistance to solve any kind of stock sourcing issues, our expert team is here to guide you at every step of your journey.',
     image: {
-      src: 'https://picsum.photos/seed/designer-partner/600/400',
+      src: support,
       alt: 'Fashion designer working in a studio',
-      hint: 'man tailor'
-    }
+      hint: 'man tailor',
+    },
   },
   {
     title: 'ADVANCED TECHNOLOGY',
-    description: 'We make use of different design techniques including screen printing, embroidery, sublimation and more to meet your unique custom requirements, seamlessly.',
+    description:
+      'We make use of different design techniques including screen printing, embroidery, sublimation and more to meet your unique custom requirements, seamlessly.',
     image: {
-      src: 'https://picsum.photos/seed/tech-partner/600/400',
+      src: tech,
       alt: 'Automated embroidery machines in a factory',
-      hint: 'embroidery machine'
-    }
-  }
+      hint: 'embroidery machine',
+    },
+  },
 ];
 
 export function ReasonsToPartner() {

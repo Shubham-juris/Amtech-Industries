@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from './ui/button';
+import dist from "../../public/images/popular/dist.jpg"
 
 export function PromoBanners() {
   return (
@@ -14,7 +15,7 @@ export function PromoBanners() {
           <div className="relative bg-[#FDECF0] rounded-lg overflow-hidden p-8 flex items-center">
             <div className="absolute -left-24 -bottom-24 w-80 h-80">
                  <Image
-                    src="https://picsum.photos/seed/promo-woman/400/600"
+                    src={dist}
                     alt="Become a Distributor"
                     fill
                     className="object-cover"
@@ -48,7 +49,7 @@ export function PromoBanners() {
             </div>
             <div className="absolute right-0 bottom-0 h-full w-2/3">
               <Image
-                src="https://picsum.photos/seed/promo-man/400/600"
+                src={dist}
                 alt="Plus Size Apparel"
                 fill
                 className="object-cover object-top"

@@ -8,25 +8,25 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const categories = [
-    { name: 'Lingerie', href: '/wholesale/women/women-lingerie', image: getImage('featured_lingerie').url, hint: getImage('featured_lingerie').hint },
-    { name: 'Women Dress', href: '/wholesale/women/women-dress', image: getImage('featured_womendress').url, hint: getImage('featured_womendress').hint },
+    { name: 'Lingerie', href: '/wholesale/women/women-lingerie', image: "/images/popular/lingerie.jpg", hint: getImage('featured_lingerie').hint },
+    { name: 'Women Dress', href: '/wholesale/women/women-dress', image: "/images/popular/women.jpg", hint: getImage('featured_womendress').hint },
     
-    { name: 'Bags', href: '/wholesale/accessories/bags', image: getImage('featured_bags').url, hint: getImage('featured_bags').hint },
-    { name: 'Towels', href: '/wholesale/accessories/towels', image: getImage('featured_towels').url, hint: getImage('featured_towels').hint },
-    { name: 'Formal Shoes', href: '/wholesale/footwear/formal-shoes', image: getImage('featured_formalshoes').url, hint: getImage('featured_formalshoes').hint },
-    { name: 'Kids', href: '/wholesale/kids/little-4-7-yrs', image: getImage('featured_kids').url, hint: getImage('featured_kids').hint },
-    { name: 'Men', href: '/wholesale/men/men-shirts', image: getImage('featured_men').url, hint: getImage('featured_men').hint },
-    { name: 'Mens Shirts', href: '/wholesale/men/men-shirts', image: getImage('featured_mensshirts').url, hint: getImage('featured_mensshirts').hint },
+    { name: 'Bags', href: '/wholesale/accessories/bags', image: "/images/popular/bag.jpg", hint: getImage('featured_bags').hint },
+    { name: 'Towels', href: '/wholesale/accessories/towels', image: "/images/popular/towel.jpg", hint: getImage('featured_towels').hint },
+    { name: 'Formal Shoes', href: '/wholesale/footwear/formal-shoes', image: "/images/popular/shoes.jpg", hint: getImage('featured_formalshoes').hint },
+    { name: 'Kids', href: '/wholesale/kids/little-4-7-yrs', image: "/images/popular/kids.jpg", hint: getImage('featured_kids').hint },
+    { name: 'Men', href: '/wholesale/men/men-shirts', image: "/images/popular/mencasual.jpg", hint: getImage('featured_men').hint },
+    { name: 'Mens Shirts', href: '/wholesale/men/men-shirts', image: "/images/popular/smart.jpg", hint: getImage('featured_mensshirts').hint },
     { name: 'Activewear', href: '/wholesale/running-fitness/activewear', image: getImage('featured_activewear').url, hint: getImage('featured_activewear').hint },
-    { name: 'Sports', href: '/wholesale/sports/athletics', image: getImage('featured_sports').url, hint: getImage('featured_sports').hint },
-    { name: 'Dance Wear', href: '/wholesale/sports/dance-wear', image: getImage('featured_dancewear').url, hint: getImage('featured_dancewear').hint },
-    { name: 'Tennis', href: '/wholesale/sports/tennis', image: getImage('featured_tennis').url, hint: getImage('featured_tennis').hint },
+    { name: 'Sports', href: '/wholesale/sports/athletics', image: "/images/popular/sport.jpg", hint: getImage('featured_sports').hint },
+    { name: 'Dance Wear', href: '/wholesale/sports/dance-wear', image: "/images/popular/2.jpg", hint: getImage('featured_dancewear').hint },
+    { name: 'Tennis', href: '/wholesale/sports/tennis', image: "/images/popular/tennis.jpg", hint: getImage('featured_tennis').hint },
 
-    { name: 'Women Fashion', href: '/wholesale/women/women-dress', image: getImage('featured_women').url, hint: getImage('featured_women').hint },
-    { name: 'Running Shoes', href: '/wholesale//footwear/running-shoes', image: getImage('featured_runningshoes').url, hint: getImage('featured_runningshoes').hint },
-    { name: 'Men Hoody', href: '/wholesale/men/men-hoody', image: getImage('featured_menhoody').url, hint: getImage('featured_menhoody').hint },
-    { name: 'Compression', href: '/wholesale/running-fitness/compression', image: getImage('featured_compression').url, hint: getImage('featured_compression').hint },
-    { name: 'Men Underwear', href: '/wholesale/men/men-underwear', image: getImage('featured_menunderwear').url, hint: getImage('featured_menunderwear').hint },
+    { name: 'Women Fashion', href: '/wholesale/women/women-dress', image: "/images/popular/fashion.jpg", hint: getImage('featured_women').hint },
+    // { name: 'Running Shoes', href: '/wholesale//footwear/running-shoes', image: getImage('featured_runningshoes').url, hint: getImage('featured_runningshoes').hint },
+    { name: 'Men Hoody', href: '/wholesale/men/men-hoody', image: "/images/popular/bearjacket.jpg", hint: getImage('featured_menhoody').hint },
+    { name: 'Compression', href: '/wholesale/running-fitness/compression', image: "/images/popular/smart.jpg", hint: getImage('featured_compression').hint },
+    // { name: 'Men Underwear', href: '/wholesale/men/men-underwear', image: getImage('featured_menunderwear').url, hint: getImage('featured_menunderwear').hint },
 ];
 
 const TICKER_INTERVAL = 3000;

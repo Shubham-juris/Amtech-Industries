@@ -4,6 +4,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from './ui/button';
+import fashion from "../../public/images/popular/fashion.jpg"
 
 export function FashionBanner() {
   return (
@@ -31,7 +32,7 @@ export function FashionBanner() {
           </div>
           <div className="relative h-80 md:h-full min-h-[300px]">
             <Image
-              src="https://picsum.photos/seed/fashion-man/800/800"
+              src={fashion}
               alt="Fashion model"
               fill
               className="object-cover"

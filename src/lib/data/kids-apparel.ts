@@ -177,7 +177,7 @@ export const kidsApparelProducts: Product[] = [
     description: 'A cute and cozy hoodie for toddlers.',
     longDescription: 'This adorable hoodie with bear ears on the hood will keep your toddler warm and stylish.',
     price: 35.00,
-    image: getImage('toddler_3').url,
+    image: "/images/popular/bearjacket.jpg",
     imageHint: getImage('toddler_3').hint,
   },
   {

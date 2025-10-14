@@ -9,7 +9,7 @@ export const womenApparelProducts: Product[] = [
         description: 'A flattering V-neck cut.',
         longDescription: 'This V-neck T-shirt is made from a soft cotton blend, providing a stylish and comfortable fit.',
         price: 22.00,
-        image: getImage('tshirt2').url,
+        images: getImage('tshirt2').url,
         imageHint: getImage('tshirt2').hint,
     },
     {
@@ -18,7 +18,7 @@ export const womenApparelProducts: Product[] = [
         description: 'A bold graphic print to make a statement.',
         longDescription: 'Featuring a unique graphic print, this T-shirt is perfect for adding a touch of personality to your look.',
         price: 28.00,
-        image: getImage('tshirt3').url,
+        images: getImage('tshirt3').url,
         imageHint: getImage('tshirt3').hint,
     },
   // Women's Dresses
@@ -28,7 +28,7 @@ export const womenApparelProducts: Product[] = [
    description: 'A beautiful and flowing floral maxi dress.',
    longDescription: 'Perfect for summer days, this floral maxi dress is made from lightweight fabric and features a flattering silhouette.',
    price: 120.00,
-   image: "/images/popular/smalldress.jpg",
+   images: "/images/popular/smalldress.jpg",
    imageHint: getImage('dress1').hint,
   },
   {
@@ -37,7 +37,7 @@ export const womenApparelProducts: Product[] = [
    description: 'A timeless and versatile little black dress.',
    longDescription: 'An essential for any wardrobe, this little black dress can be dressed up or down for any occasion.',
    price: 95.00,
-   image: "/images/popular/smalldress.jpg",
+   images: "/images/popular/smalldress.jpg",
    imageHint: getImage('dress2').hint,
   },
   {
@@ -46,7 +46,7 @@ export const womenApparelProducts: Product[] = [
    description: 'A chic little dress in classic black for women.',
    longDescription: 'This elegant little black dress is designed for women, offering a flattering fit and timeless style for any event.',
    price: 105.00,
-   image: getImage('dress2').url,
+   images: getImage('dress2').url,
    imageHint: getImage('dress2').hint,
   },
   {
@@ -55,7 +55,7 @@ export const womenApparelProducts: Product[] = [
    description: 'A stunning red cocktail dress for special events.',
    longDescription: 'Turn heads in this vibrant red cocktail dress, featuring a figure-hugging fit and elegant design.',
    price: 150.00,
-   image: getImage('dress3').url,
+   images: getImage('dress3').url,
    imageHint: getImage('dress3').hint,
   },
 
@@ -66,7 +66,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A timeless trench coat for a sophisticated look.',
     longDescription: 'This classic tan trench coat is a must-have for any season, offering both style and practicality.',
     price: 180.00,
-    image: "/images/popular/classicoat.jpg",
+    images: "/images/popular/classicoat.jpg",
     imageHint: getImage('coat1').hint,
   },
   {
@@ -75,7 +75,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A warm and stylish wool peacoat.',
     longDescription: 'Stay warm in this classic double-breasted wool peacoat, perfect for colder weather.',
     price: 220.00,
-    image: getImage('coat2').url,
+    images: getImage('coat2').url,
     imageHint: getImage('coat2').hint,
   },
   {
@@ -84,7 +84,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A chic and lightweight duster coat.',
     longDescription: 'This longline duster coat adds a layer of sophistication to any outfit, perfect for transitional weather.',
     price: 130.00,
-    image: "/images/popular/duster.jpg",
+    images: "/images/popular/duster.jpg",
     imageHint: getImage('coat3').hint,
   },
 
@@ -95,7 +95,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A versatile and timeless denim jacket.',
     longDescription: 'A classic wardrobe staple, this denim jacket can be paired with almost any outfit for a casual, cool look.',
     price: 90.00,
-    image: "images/popular/denimjacket.jpg",
+    images: "images/popular/denimjacket.jpg",
     imageHint: getImage('jacket1').hint,
   },
   {
@@ -104,7 +104,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A sleek and edgy leather moto jacket.',
     longDescription: 'Add an edge to your look with this classic leather moto jacket, made from high-quality faux leather.',
     price: 160.00,
-    image: getImage('jacket2').url,
+    images: getImage('jacket2').url,
     imageHint: getImage('jacket2').hint,
   },
   {
@@ -113,7 +113,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A trendy and comfortable bomber jacket.',
     longDescription: 'This stylish bomber jacket is perfect for a casual, sporty look, made from a lightweight material.',
     price: 110.00,
-    image: "/images/popular/bomberjacket.jpg",
+    images: "/images/popular/bomberjacket.jpg",
     imageHint: getImage('jacket3').hint,
   },
 
@@ -124,7 +124,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A crisp and classic white button-down shirt.',
     longDescription: 'An essential piece for any wardrobe, this white button-down shirt is perfect for both professional and casual settings.',
     price: 65.00,
-    image: getImage('topwear1').url,
+    images: getImage('topwear1').url,
     imageHint: getImage('topwear1').hint,
   },
   {
@@ -133,7 +133,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A luxurious and soft cashmere sweater.',
     longDescription: 'Indulge in the softness of this beautiful cashmere sweater, perfect for staying warm and stylish.',
     price: 180.00,
-    image: getImage('topwear2').url,
+    images: getImage('topwear2').url,
     imageHint: getImage('topwear2').hint,
   },
   {
@@ -142,7 +142,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A classic and casual striped t-shirt.',
     longDescription: 'This timeless striped t-shirt is made from soft cotton and is perfect for everyday wear.',
     price: 40.00,
-    image: getImage('topwear3').url,
+    images: getImage('topwear3').url,
     imageHint: getImage('topwear3').hint,
   },
 
@@ -153,7 +153,7 @@ export const womenApparelProducts: Product[] = [
     description: 'Comfortable and supportive high-waisted yoga leggings.',
     longDescription: 'These high-waisted leggings are perfect for yoga or any workout, offering support and flexibility.',
     price: 75.00,
-    image: getImage('leggings1').url,
+    images: getImage('leggings1').url,
     imageHint: getImage('leggings1').hint,
   },
   {
@@ -162,7 +162,7 @@ export const womenApparelProducts: Product[] = [
     description: 'Chic and stylish faux leather leggings.',
     longDescription: 'Elevate your look with these trendy faux leather leggings, perfect for a night out.',
     price: 85.00,
-    image: getImage('leggings2').url,
+    images: getImage('leggings2').url,
     imageHint: getImage('leggings2').hint,
   },
   {
@@ -171,7 +171,7 @@ export const womenApparelProducts: Product[] = [
     description: 'Basic and comfortable cotton leggings for daily wear.',
     longDescription: 'These soft and breathable cotton leggings are a wardrobe staple for everyday comfort.',
     price: 45.00,
-    image: getImage('leggings3').url,
+    images: getImage('leggings3').url,
     imageHint: getImage('leggings3').hint,
   },
 
@@ -182,7 +182,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A delicate and beautiful lace bralette.',
     longDescription: 'This intricate lace bralette is both comfortable and stylish, perfect for everyday wear or a special occasion.',
     price: 50.00,
-    image: getImage('lingerie1').url,
+    images: getImage('lingerie1').url,
     imageHint: getImage('lingerie1').hint,
   },
   {
@@ -191,7 +191,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A luxurious and elegant silk lingerie set.',
     longDescription: 'Feel exquisite in this matching lingerie set made from pure, soft silk.',
     price: 120.00,
-    image: getImage('lingerie2').url,
+    images: getImage('lingerie2').url,
     imageHint: getImage('lingerie2').hint,
   },
   {
@@ -200,7 +200,7 @@ export const womenApparelProducts: Product[] = [
     description: 'A comfortable and invisible seamless underwear set.',
     longDescription: 'This seamless underwear set is perfect for a smooth and invisible look under any outfit.',
     price: 60.00,
-    image: getImage('lingerie3').url,
+    images: getImage('lingerie3').url,
     imageHint: getImage('lingerie3').hint,
   },
 ];

@@ -1,13 +1,8 @@
+import type { StaticImageData } from 'next/image';
+
 export type Product = {
   id: string;
   name: string;
-  description: string;
-  longDescription: string;
   price: number;
-  image: string;
-  imageHint: string;
-};
-
-export type CartItem = Product & {
-  quantity: number;
+  image: StaticImageData; // important for imported images
 };
